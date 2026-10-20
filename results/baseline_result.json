@@ -1,0 +1,82 @@
+{
+  "baseline": "package-based grouping",
+  "unit": "Java source file",
+  "state": {
+    "status": "completed",
+    "files_discovered": 25,
+    "files_assigned": 25,
+    "assignment_coverage": 1.0,
+    "candidate_service_count": 5,
+    "unassigned_files": []
+  },
+  "source_inventory": [
+    "src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java",
+    "src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java",
+    "src/main/java/org/springframework/samples/petclinic/model/Person.java",
+    "src/main/java/org/springframework/samples/petclinic/owner/Owner.java",
+    "src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java",
+    "src/main/java/org/springframework/samples/petclinic/owner/OwnerRepository.java",
+    "src/main/java/org/springframework/samples/petclinic/owner/Pet.java",
+    "src/main/java/org/springframework/samples/petclinic/owner/PetController.java",
+    "src/main/java/org/springframework/samples/petclinic/owner/PetType.java",
+    "src/main/java/org/springframework/samples/petclinic/owner/PetTypeFormatter.java",
+    "src/main/java/org/springframework/samples/petclinic/owner/PetTypeRepository.java",
+    "src/main/java/org/springframework/samples/petclinic/owner/PetValidator.java",
+    "src/main/java/org/springframework/samples/petclinic/owner/Visit.java",
+    "src/main/java/org/springframework/samples/petclinic/owner/VisitController.java",
+    "src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java",
+    "src/main/java/org/springframework/samples/petclinic/PetClinicRuntimeHints.java",
+    "src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration.java",
+    "src/main/java/org/springframework/samples/petclinic/system/CrashController.java",
+    "src/main/java/org/springframework/samples/petclinic/system/WebConfiguration.java",
+    "src/main/java/org/springframework/samples/petclinic/system/WelcomeController.java",
+    "src/main/java/org/springframework/samples/petclinic/vet/Specialty.java",
+    "src/main/java/org/springframework/samples/petclinic/vet/Vet.java",
+    "src/main/java/org/springframework/samples/petclinic/vet/VetController.java",
+    "src/main/java/org/springframework/samples/petclinic/vet/VetRepository.java",
+    "src/main/java/org/springframework/samples/petclinic/vet/Vets.java"
+  ],
+  "candidate_services": {
+    "org.springframework.samples.petclinic.model": [
+      "src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java",
+      "src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java",
+      "src/main/java/org/springframework/samples/petclinic/model/Person.java"
+    ],
+    "org.springframework.samples.petclinic.owner": [
+      "src/main/java/org/springframework/samples/petclinic/owner/Owner.java",
+      "src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java",
+      "src/main/java/org/springframework/samples/petclinic/owner/OwnerRepository.java",
+      "src/main/java/org/springframework/samples/petclinic/owner/Pet.java",
+      "src/main/java/org/springframework/samples/petclinic/owner/PetController.java",
+      "src/main/java/org/springframework/samples/petclinic/owner/PetType.java",
+      "src/main/java/org/springframework/samples/petclinic/owner/PetTypeFormatter.java",
+      "src/main/java/org/springframework/samples/petclinic/owner/PetTypeRepository.java",
+      "src/main/java/org/springframework/samples/petclinic/owner/PetValidator.java",
+      "src/main/java/org/springframework/samples/petclinic/owner/Visit.java",
+      "src/main/java/org/springframework/samples/petclinic/owner/VisitController.java"
+    ],
+    "org.springframework.samples.petclinic": [
+      "src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java",
+      "src/main/java/org/springframework/samples/petclinic/PetClinicRuntimeHints.java"
+    ],
+    "org.springframework.samples.petclinic.system": [
+      "src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration.java",
+      "src/main/java/org/springframework/samples/petclinic/system/CrashController.java",
+      "src/main/java/org/springframework/samples/petclinic/system/WebConfiguration.java",
+      "src/main/java/org/springframework/samples/petclinic/system/WelcomeController.java"
+    ],
+    "org.springframework.samples.petclinic.vet": [
+      "src/main/java/org/springframework/samples/petclinic/vet/Specialty.java",
+      "src/main/java/org/springframework/samples/petclinic/vet/Vet.java",
+      "src/main/java/org/springframework/samples/petclinic/vet/VetController.java",
+      "src/main/java/org/springframework/samples/petclinic/vet/VetRepository.java",
+      "src/main/java/org/springframework/samples/petclinic/vet/Vets.java"
+    ]
+  },
+  "limitations": [
+    "Package boundaries are only preliminary service candidates.",
+    "No semantic, dependency, runtime, or database analysis.",
+    "No LLM or agent integration.",
+    "Coverage does not measure decomposition correctness."
+  ]
+}
