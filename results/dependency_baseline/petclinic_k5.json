@@ -1,0 +1,1145 @@
+{
+  "baseline": "official static dependency graph / deterministic average-link clustering",
+  "algorithm": "Maximum cross-edge density |E(A,B)|/(|A|*|B|); simple undirected links; lexical tuple tie-break; merge to exact k, including zero-link merges.",
+  "target_service_count": 5,
+  "target_count_status": "Experimental setting, not validated reference truth",
+  "raw_analyzer_sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+  "snapshot": {
+    "upstream_commit": null,
+    "provenance": "User-supplied ZIP snapshot; upstream commit not established.",
+    "eligible_java_files_sha256": "c66415bfe029129bc8229a36216547dd41c3ba32d7aad5b8590dd00ac4622e29",
+    "fingerprint_scope": "Eligible production Java files only, not whole repository.",
+    "files": [
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java",
+        "sha256": "2c8f47a328f8bc4ad0ed887890dcf731469ec8f1032b5420d173c7aa5a352600"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java",
+        "sha256": "6695dafa9b8d4cc67c0cf9305b17b897c58103ca33c12dd0f9375edcfe815b32"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/model/Person.java",
+        "sha256": "a872c368cd5b09a7cb8a3f42e1baff1f6b0adc7cfc5bccf5f426374292ba4244"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/owner/Owner.java",
+        "sha256": "a5273cbccaf4993c92cc204c4481d52ebc611b731862f078b203b2a7eefa5f8a"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java",
+        "sha256": "611115841f671065ca2796fbb096102d56ce6aafd20bfe9a264f0a6968cca3ff"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/owner/OwnerRepository.java",
+        "sha256": "654cc5a38b2806748116caf4fbd6a99010a35605db32a12707078c34ccec2cd9"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/owner/Pet.java",
+        "sha256": "ec77c2d70ae043c6eb441e47ebc93a3d848d8ae9729068e8f4e997aedfa0bbd7"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/owner/PetController.java",
+        "sha256": "1a8a8097ff334b85d3a62c4df79ec52c2dbee8777925970e140081cff7e7c25e"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/owner/PetType.java",
+        "sha256": "9e64329633ce98a96f18cecf7426338d57b753fd24b7b47f7af483467a3df92e"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/owner/PetTypeFormatter.java",
+        "sha256": "af232944dba211094ee5f6b5b3e2bc9696e46ba8f40cad0e5bf7e0b283aacac7"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/owner/PetTypeRepository.java",
+        "sha256": "696705e51ab5835ac28630397de2d3f3541d3f419f19461e11755a9aac2afa04"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/owner/PetValidator.java",
+        "sha256": "1cee4c2a57afd7edb3521fa7a19c4b643f23c2f5b91406ecd638319c6cce9f7f"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/owner/Visit.java",
+        "sha256": "587191bc74fbbb696e90114366db6988cd6f07c25cd2e991c038d6bda52df123"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/owner/VisitController.java",
+        "sha256": "b7c8f9cb7b2b2b5827d85787d1f18c95762a0213760013cef9d0a9e1c2c0f8d8"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java",
+        "sha256": "9d99b4b59cc6e185e9a27964b24ede04180ca34211a7e19f968249ee3dac9df3"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/PetClinicRuntimeHints.java",
+        "sha256": "2a365e4c85ec16300ccc6101e2543980a30ea72c34c6a0c51d5e56c0d5ad6633"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration.java",
+        "sha256": "1375dfc554a1efa859d2e54cf6fe82724aecea8b46d0c2ab06aabd1aa14ef9da"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/system/CrashController.java",
+        "sha256": "d7c003dc6357596eefa345eff63ecf3909a50238e030e3c93f09426e537ba517"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/system/WebConfiguration.java",
+        "sha256": "d9eb227f4ffcd434b2000ac30fce9b5e341f85e893c4b3536b50fbbc15384b92"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/system/WelcomeController.java",
+        "sha256": "cfdffa794c8ec7a0c634a7d39d39f9abc1dd2ddc4b4d7a591b341136015a6f66"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/vet/Specialty.java",
+        "sha256": "0fa07bcb3b7b4ddb380a278d98dcfe03bec5e3a1e42b9f08c555d75a6be256d0"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/vet/Vet.java",
+        "sha256": "8548e47aaf310b276d5cc9f58976756339b16a02ac47944f778260f2ed121b78"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/vet/VetController.java",
+        "sha256": "8fb67351a3d4b28c220a870178cb72998ef6dfaa303dd65f2e8c242eb2ddbbfa"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/vet/VetRepository.java",
+        "sha256": "732888e66084f9f94dd79c181e29dbbe2c752959c10ebf82b0940700f61c0dde"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/vet/Vets.java",
+        "sha256": "8a9b86de5dd337047eacd492f03526974d82e3765e0a628341a190ffb1bb1707"
+      }
+    ]
+  },
+  "nodes": [
+    "org.springframework.samples.petclinic.PetClinicApplication",
+    "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+    "org.springframework.samples.petclinic.model.BaseEntity",
+    "org.springframework.samples.petclinic.model.NamedEntity",
+    "org.springframework.samples.petclinic.model.Person",
+    "org.springframework.samples.petclinic.owner.Owner",
+    "org.springframework.samples.petclinic.owner.OwnerController",
+    "org.springframework.samples.petclinic.owner.OwnerRepository",
+    "org.springframework.samples.petclinic.owner.Pet",
+    "org.springframework.samples.petclinic.owner.PetController",
+    "org.springframework.samples.petclinic.owner.PetType",
+    "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+    "org.springframework.samples.petclinic.owner.PetTypeRepository",
+    "org.springframework.samples.petclinic.owner.PetValidator",
+    "org.springframework.samples.petclinic.owner.Visit",
+    "org.springframework.samples.petclinic.owner.VisitController",
+    "org.springframework.samples.petclinic.system.CacheConfiguration",
+    "org.springframework.samples.petclinic.system.CrashController",
+    "org.springframework.samples.petclinic.system.WebConfiguration",
+    "org.springframework.samples.petclinic.system.WelcomeController",
+    "org.springframework.samples.petclinic.vet.Specialty",
+    "org.springframework.samples.petclinic.vet.Vet",
+    "org.springframework.samples.petclinic.vet.VetController",
+    "org.springframework.samples.petclinic.vet.VetRepository",
+    "org.springframework.samples.petclinic.vet.Vets"
+  ],
+  "direct_typed_edges": [
+    {
+      "source": "org.springframework.samples.petclinic.model.NamedEntity",
+      "target": "org.springframework.samples.petclinic.model.BaseEntity",
+      "type": "EXTENDS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.model.Person",
+      "target": "org.springframework.samples.petclinic.model.BaseEntity",
+      "type": "EXTENDS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.Owner",
+      "target": "org.springframework.samples.petclinic.model.BaseEntity",
+      "type": "CALLS",
+      "occurrences": 2
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.Owner",
+      "target": "org.springframework.samples.petclinic.model.Person",
+      "type": "EXTENDS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.Owner",
+      "target": "org.springframework.samples.petclinic.owner.Pet",
+      "type": "ASSOCIATES",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.Owner",
+      "target": "org.springframework.samples.petclinic.owner.Pet",
+      "type": "CALLS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.Owner",
+      "target": "org.springframework.samples.petclinic.owner.Pet",
+      "type": "USES",
+      "occurrences": 14
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.Owner",
+      "target": "org.springframework.samples.petclinic.owner.Visit",
+      "type": "USES",
+      "occurrences": 5
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.OwnerController",
+      "target": "org.springframework.samples.petclinic.model.BaseEntity",
+      "type": "CALLS",
+      "occurrences": 4
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.OwnerController",
+      "target": "org.springframework.samples.petclinic.model.Person",
+      "type": "CALLS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.OwnerController",
+      "target": "org.springframework.samples.petclinic.owner.Owner",
+      "type": "CREATES",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.OwnerController",
+      "target": "org.springframework.samples.petclinic.owner.Owner",
+      "type": "USES",
+      "occurrences": 13
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.OwnerController",
+      "target": "org.springframework.samples.petclinic.owner.OwnerRepository",
+      "type": "USES",
+      "occurrences": 2
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.OwnerRepository",
+      "target": "org.springframework.samples.petclinic.owner.Owner",
+      "type": "PERSISTS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.Pet",
+      "target": "org.springframework.samples.petclinic.model.NamedEntity",
+      "type": "EXTENDS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.Pet",
+      "target": "org.springframework.samples.petclinic.owner.PetType",
+      "type": "ASSOCIATES",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.Pet",
+      "target": "org.springframework.samples.petclinic.owner.PetType",
+      "type": "USES",
+      "occurrences": 3
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.Pet",
+      "target": "org.springframework.samples.petclinic.owner.Visit",
+      "type": "ASSOCIATES",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.Pet",
+      "target": "org.springframework.samples.petclinic.owner.Visit",
+      "type": "USES",
+      "occurrences": 4
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetController",
+      "target": "org.springframework.samples.petclinic.model.BaseEntity",
+      "type": "CALLS",
+      "occurrences": 4
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetController",
+      "target": "org.springframework.samples.petclinic.model.NamedEntity",
+      "type": "CALLS",
+      "occurrences": 5
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetController",
+      "target": "org.springframework.samples.petclinic.owner.Owner",
+      "type": "CALLS",
+      "occurrences": 7
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetController",
+      "target": "org.springframework.samples.petclinic.owner.Owner",
+      "type": "USES",
+      "occurrences": 14
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetController",
+      "target": "org.springframework.samples.petclinic.owner.OwnerRepository",
+      "type": "USES",
+      "occurrences": 2
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetController",
+      "target": "org.springframework.samples.petclinic.owner.Pet",
+      "type": "CALLS",
+      "occurrences": 8
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetController",
+      "target": "org.springframework.samples.petclinic.owner.Pet",
+      "type": "CREATES",
+      "occurrences": 2
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetController",
+      "target": "org.springframework.samples.petclinic.owner.Pet",
+      "type": "USES",
+      "occurrences": 17
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetController",
+      "target": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+      "type": "USES",
+      "occurrences": 2
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetController",
+      "target": "org.springframework.samples.petclinic.owner.PetValidator",
+      "type": "CREATES",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetController",
+      "target": "org.springframework.samples.petclinic.owner.PetValidator",
+      "type": "USES",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetType",
+      "target": "org.springframework.samples.petclinic.model.NamedEntity",
+      "type": "EXTENDS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+      "target": "org.springframework.samples.petclinic.model.NamedEntity",
+      "type": "CALLS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+      "target": "org.springframework.samples.petclinic.owner.PetType",
+      "type": "USES",
+      "occurrences": 4
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+      "target": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+      "type": "USES",
+      "occurrences": 2
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+      "target": "org.springframework.samples.petclinic.owner.PetType",
+      "type": "PERSISTS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetValidator",
+      "target": "org.springframework.samples.petclinic.model.BaseEntity",
+      "type": "CALLS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetValidator",
+      "target": "org.springframework.samples.petclinic.model.NamedEntity",
+      "type": "CALLS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetValidator",
+      "target": "org.springframework.samples.petclinic.owner.Pet",
+      "type": "CALLS",
+      "occurrences": 2
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.PetValidator",
+      "target": "org.springframework.samples.petclinic.owner.Pet",
+      "type": "USES",
+      "occurrences": 2
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.Visit",
+      "target": "org.springframework.samples.petclinic.model.BaseEntity",
+      "type": "EXTENDS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.VisitController",
+      "target": "org.springframework.samples.petclinic.owner.Owner",
+      "type": "CALLS",
+      "occurrences": 2
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.VisitController",
+      "target": "org.springframework.samples.petclinic.owner.Owner",
+      "type": "USES",
+      "occurrences": 6
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.VisitController",
+      "target": "org.springframework.samples.petclinic.owner.OwnerRepository",
+      "type": "USES",
+      "occurrences": 2
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.VisitController",
+      "target": "org.springframework.samples.petclinic.owner.Pet",
+      "type": "CALLS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.VisitController",
+      "target": "org.springframework.samples.petclinic.owner.Pet",
+      "type": "USES",
+      "occurrences": 3
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.VisitController",
+      "target": "org.springframework.samples.petclinic.owner.Visit",
+      "type": "CALLS",
+      "occurrences": 2
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.VisitController",
+      "target": "org.springframework.samples.petclinic.owner.Visit",
+      "type": "CREATES",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.owner.VisitController",
+      "target": "org.springframework.samples.petclinic.owner.Visit",
+      "type": "USES",
+      "occurrences": 9
+    },
+    {
+      "source": "org.springframework.samples.petclinic.vet.Specialty",
+      "target": "org.springframework.samples.petclinic.model.NamedEntity",
+      "type": "EXTENDS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.vet.Vet",
+      "target": "org.springframework.samples.petclinic.model.Person",
+      "type": "EXTENDS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.vet.Vet",
+      "target": "org.springframework.samples.petclinic.vet.Specialty",
+      "type": "ASSOCIATES",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.vet.Vet",
+      "target": "org.springframework.samples.petclinic.vet.Specialty",
+      "type": "USES",
+      "occurrences": 4
+    },
+    {
+      "source": "org.springframework.samples.petclinic.vet.VetController",
+      "target": "org.springframework.samples.petclinic.vet.Vet",
+      "type": "USES",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.vet.VetController",
+      "target": "org.springframework.samples.petclinic.vet.VetRepository",
+      "type": "USES",
+      "occurrences": 2
+    },
+    {
+      "source": "org.springframework.samples.petclinic.vet.VetController",
+      "target": "org.springframework.samples.petclinic.vet.Vets",
+      "type": "CALLS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.vet.VetController",
+      "target": "org.springframework.samples.petclinic.vet.Vets",
+      "type": "CREATES",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.vet.VetController",
+      "target": "org.springframework.samples.petclinic.vet.Vets",
+      "type": "USES",
+      "occurrences": 4
+    },
+    {
+      "source": "org.springframework.samples.petclinic.vet.VetRepository",
+      "target": "org.springframework.samples.petclinic.vet.Vet",
+      "type": "PERSISTS",
+      "occurrences": 1
+    },
+    {
+      "source": "org.springframework.samples.petclinic.vet.Vets",
+      "target": "org.springframework.samples.petclinic.vet.Vet",
+      "type": "USES",
+      "occurrences": 1
+    }
+  ],
+  "graph_groups": {
+    "group_1": [
+      "org.springframework.samples.petclinic.PetClinicApplication",
+      "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+      "org.springframework.samples.petclinic.model.BaseEntity",
+      "org.springframework.samples.petclinic.model.NamedEntity",
+      "org.springframework.samples.petclinic.model.Person",
+      "org.springframework.samples.petclinic.owner.Owner",
+      "org.springframework.samples.petclinic.owner.OwnerController",
+      "org.springframework.samples.petclinic.owner.OwnerRepository",
+      "org.springframework.samples.petclinic.owner.Pet",
+      "org.springframework.samples.petclinic.owner.PetController",
+      "org.springframework.samples.petclinic.owner.PetType",
+      "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+      "org.springframework.samples.petclinic.owner.PetTypeRepository",
+      "org.springframework.samples.petclinic.owner.PetValidator",
+      "org.springframework.samples.petclinic.owner.Visit",
+      "org.springframework.samples.petclinic.owner.VisitController",
+      "org.springframework.samples.petclinic.vet.Specialty",
+      "org.springframework.samples.petclinic.vet.Vet",
+      "org.springframework.samples.petclinic.vet.VetController",
+      "org.springframework.samples.petclinic.vet.VetRepository",
+      "org.springframework.samples.petclinic.vet.Vets"
+    ],
+    "group_2": [
+      "org.springframework.samples.petclinic.system.CacheConfiguration"
+    ],
+    "group_3": [
+      "org.springframework.samples.petclinic.system.CrashController"
+    ],
+    "group_4": [
+      "org.springframework.samples.petclinic.system.WebConfiguration"
+    ],
+    "group_5": [
+      "org.springframework.samples.petclinic.system.WelcomeController"
+    ]
+  },
+  "package_groups": {
+    "org.springframework.samples.petclinic.model": [
+      "org.springframework.samples.petclinic.model.BaseEntity",
+      "org.springframework.samples.petclinic.model.NamedEntity",
+      "org.springframework.samples.petclinic.model.Person"
+    ],
+    "org.springframework.samples.petclinic.owner": [
+      "org.springframework.samples.petclinic.owner.Owner",
+      "org.springframework.samples.petclinic.owner.OwnerController",
+      "org.springframework.samples.petclinic.owner.OwnerRepository",
+      "org.springframework.samples.petclinic.owner.Pet",
+      "org.springframework.samples.petclinic.owner.PetController",
+      "org.springframework.samples.petclinic.owner.PetType",
+      "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+      "org.springframework.samples.petclinic.owner.PetTypeRepository",
+      "org.springframework.samples.petclinic.owner.PetValidator",
+      "org.springframework.samples.petclinic.owner.Visit",
+      "org.springframework.samples.petclinic.owner.VisitController"
+    ],
+    "org.springframework.samples.petclinic": [
+      "org.springframework.samples.petclinic.PetClinicApplication",
+      "org.springframework.samples.petclinic.PetClinicRuntimeHints"
+    ],
+    "org.springframework.samples.petclinic.system": [
+      "org.springframework.samples.petclinic.system.CacheConfiguration",
+      "org.springframework.samples.petclinic.system.CrashController",
+      "org.springframework.samples.petclinic.system.WebConfiguration",
+      "org.springframework.samples.petclinic.system.WelcomeController"
+    ],
+    "org.springframework.samples.petclinic.vet": [
+      "org.springframework.samples.petclinic.vet.Specialty",
+      "org.springframework.samples.petclinic.vet.Vet",
+      "org.springframework.samples.petclinic.vet.VetController",
+      "org.springframework.samples.petclinic.vet.VetRepository",
+      "org.springframework.samples.petclinic.vet.Vets"
+    ]
+  },
+  "merge_history": [
+    {
+      "left": [
+        "org.springframework.samples.petclinic.model.BaseEntity"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.model.NamedEntity"
+      ],
+      "score_numerator": 1,
+      "score_denominator": 1,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.model.BaseEntity",
+        "org.springframework.samples.petclinic.model.NamedEntity"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.owner.PetController"
+      ],
+      "score_numerator": 1,
+      "score_denominator": 1,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.model.BaseEntity",
+        "org.springframework.samples.petclinic.model.NamedEntity",
+        "org.springframework.samples.petclinic.owner.PetController"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.owner.PetValidator"
+      ],
+      "score_numerator": 1,
+      "score_denominator": 1,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.model.Person"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.owner.Owner"
+      ],
+      "score_numerator": 1,
+      "score_denominator": 1,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.model.Person",
+        "org.springframework.samples.petclinic.owner.Owner"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.owner.OwnerController"
+      ],
+      "score_numerator": 1,
+      "score_denominator": 1,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.owner.OwnerRepository"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.owner.VisitController"
+      ],
+      "score_numerator": 1,
+      "score_denominator": 1,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.owner.Pet"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.owner.PetType"
+      ],
+      "score_numerator": 1,
+      "score_denominator": 1,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.owner.PetTypeFormatter"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.owner.PetTypeRepository"
+      ],
+      "score_numerator": 1,
+      "score_denominator": 1,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.vet.Specialty"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.vet.Vet"
+      ],
+      "score_numerator": 1,
+      "score_denominator": 1,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.vet.VetController"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.vet.VetRepository"
+      ],
+      "score_numerator": 1,
+      "score_denominator": 1,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.model.BaseEntity",
+        "org.springframework.samples.petclinic.model.NamedEntity",
+        "org.springframework.samples.petclinic.owner.PetController",
+        "org.springframework.samples.petclinic.owner.PetValidator"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.owner.Pet",
+        "org.springframework.samples.petclinic.owner.PetType"
+      ],
+      "score_numerator": 1,
+      "score_denominator": 2,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.model.Person",
+        "org.springframework.samples.petclinic.owner.Owner",
+        "org.springframework.samples.petclinic.owner.OwnerController"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.owner.OwnerRepository",
+        "org.springframework.samples.petclinic.owner.VisitController"
+      ],
+      "score_numerator": 1,
+      "score_denominator": 2,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.vet.Specialty",
+        "org.springframework.samples.petclinic.vet.Vet"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.vet.VetController",
+        "org.springframework.samples.petclinic.vet.VetRepository"
+      ],
+      "score_numerator": 1,
+      "score_denominator": 2,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.vet.Specialty",
+        "org.springframework.samples.petclinic.vet.Vet",
+        "org.springframework.samples.petclinic.vet.VetController",
+        "org.springframework.samples.petclinic.vet.VetRepository"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.vet.Vets"
+      ],
+      "score_numerator": 1,
+      "score_denominator": 2,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.model.Person",
+        "org.springframework.samples.petclinic.owner.Owner",
+        "org.springframework.samples.petclinic.owner.OwnerController",
+        "org.springframework.samples.petclinic.owner.OwnerRepository",
+        "org.springframework.samples.petclinic.owner.VisitController"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.owner.Visit"
+      ],
+      "score_numerator": 2,
+      "score_denominator": 5,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.model.BaseEntity",
+        "org.springframework.samples.petclinic.model.NamedEntity",
+        "org.springframework.samples.petclinic.owner.Pet",
+        "org.springframework.samples.petclinic.owner.PetController",
+        "org.springframework.samples.petclinic.owner.PetType",
+        "org.springframework.samples.petclinic.owner.PetValidator"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+        "org.springframework.samples.petclinic.owner.PetTypeRepository"
+      ],
+      "score_numerator": 1,
+      "score_denominator": 3,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.model.BaseEntity",
+        "org.springframework.samples.petclinic.model.NamedEntity",
+        "org.springframework.samples.petclinic.owner.Pet",
+        "org.springframework.samples.petclinic.owner.PetController",
+        "org.springframework.samples.petclinic.owner.PetType",
+        "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+        "org.springframework.samples.petclinic.owner.PetTypeRepository",
+        "org.springframework.samples.petclinic.owner.PetValidator"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.model.Person",
+        "org.springframework.samples.petclinic.owner.Owner",
+        "org.springframework.samples.petclinic.owner.OwnerController",
+        "org.springframework.samples.petclinic.owner.OwnerRepository",
+        "org.springframework.samples.petclinic.owner.Visit",
+        "org.springframework.samples.petclinic.owner.VisitController"
+      ],
+      "score_numerator": 3,
+      "score_denominator": 16,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.model.BaseEntity",
+        "org.springframework.samples.petclinic.model.NamedEntity",
+        "org.springframework.samples.petclinic.model.Person",
+        "org.springframework.samples.petclinic.owner.Owner",
+        "org.springframework.samples.petclinic.owner.OwnerController",
+        "org.springframework.samples.petclinic.owner.OwnerRepository",
+        "org.springframework.samples.petclinic.owner.Pet",
+        "org.springframework.samples.petclinic.owner.PetController",
+        "org.springframework.samples.petclinic.owner.PetType",
+        "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+        "org.springframework.samples.petclinic.owner.PetTypeRepository",
+        "org.springframework.samples.petclinic.owner.PetValidator",
+        "org.springframework.samples.petclinic.owner.Visit",
+        "org.springframework.samples.petclinic.owner.VisitController"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.vet.Specialty",
+        "org.springframework.samples.petclinic.vet.Vet",
+        "org.springframework.samples.petclinic.vet.VetController",
+        "org.springframework.samples.petclinic.vet.VetRepository",
+        "org.springframework.samples.petclinic.vet.Vets"
+      ],
+      "score_numerator": 1,
+      "score_denominator": 35,
+      "zero_link_merge": false
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.PetClinicApplication"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.PetClinicRuntimeHints"
+      ],
+      "score_numerator": 0,
+      "score_denominator": 1,
+      "zero_link_merge": true
+    },
+    {
+      "left": [
+        "org.springframework.samples.petclinic.PetClinicApplication",
+        "org.springframework.samples.petclinic.PetClinicRuntimeHints"
+      ],
+      "right": [
+        "org.springframework.samples.petclinic.model.BaseEntity",
+        "org.springframework.samples.petclinic.model.NamedEntity",
+        "org.springframework.samples.petclinic.model.Person",
+        "org.springframework.samples.petclinic.owner.Owner",
+        "org.springframework.samples.petclinic.owner.OwnerController",
+        "org.springframework.samples.petclinic.owner.OwnerRepository",
+        "org.springframework.samples.petclinic.owner.Pet",
+        "org.springframework.samples.petclinic.owner.PetController",
+        "org.springframework.samples.petclinic.owner.PetType",
+        "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+        "org.springframework.samples.petclinic.owner.PetTypeRepository",
+        "org.springframework.samples.petclinic.owner.PetValidator",
+        "org.springframework.samples.petclinic.owner.Visit",
+        "org.springframework.samples.petclinic.owner.VisitController",
+        "org.springframework.samples.petclinic.vet.Specialty",
+        "org.springframework.samples.petclinic.vet.Vet",
+        "org.springframework.samples.petclinic.vet.VetController",
+        "org.springframework.samples.petclinic.vet.VetRepository",
+        "org.springframework.samples.petclinic.vet.Vets"
+      ],
+      "score_numerator": 0,
+      "score_denominator": 1,
+      "zero_link_merge": true
+    }
+  ],
+  "graph_structure": {
+    "node_count": 25,
+    "typed_direct_edge_count": 59,
+    "unique_directed_pair_count": 42,
+    "unique_undirected_pair_count": 42,
+    "analyzer_reported_occurrences": 181,
+    "group_count": 5,
+    "group_sizes": [
+      21,
+      1,
+      1,
+      1,
+      1
+    ],
+    "cross_group_directed_pairs": 0,
+    "within_group_directed_pairs": 42,
+    "cross_group_directed_pair_ratio": 0.0,
+    "isolated_nodes": [
+      "org.springframework.samples.petclinic.PetClinicApplication",
+      "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+      "org.springframework.samples.petclinic.system.CacheConfiguration",
+      "org.springframework.samples.petclinic.system.CrashController",
+      "org.springframework.samples.petclinic.system.WebConfiguration",
+      "org.springframework.samples.petclinic.system.WelcomeController"
+    ],
+    "weak_components": [
+      [
+        "org.springframework.samples.petclinic.PetClinicApplication"
+      ],
+      [
+        "org.springframework.samples.petclinic.PetClinicRuntimeHints"
+      ],
+      [
+        "org.springframework.samples.petclinic.model.BaseEntity",
+        "org.springframework.samples.petclinic.model.NamedEntity",
+        "org.springframework.samples.petclinic.model.Person",
+        "org.springframework.samples.petclinic.owner.Owner",
+        "org.springframework.samples.petclinic.owner.OwnerController",
+        "org.springframework.samples.petclinic.owner.OwnerRepository",
+        "org.springframework.samples.petclinic.owner.Pet",
+        "org.springframework.samples.petclinic.owner.PetController",
+        "org.springframework.samples.petclinic.owner.PetType",
+        "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+        "org.springframework.samples.petclinic.owner.PetTypeRepository",
+        "org.springframework.samples.petclinic.owner.PetValidator",
+        "org.springframework.samples.petclinic.owner.Visit",
+        "org.springframework.samples.petclinic.owner.VisitController",
+        "org.springframework.samples.petclinic.vet.Specialty",
+        "org.springframework.samples.petclinic.vet.Vet",
+        "org.springframework.samples.petclinic.vet.VetController",
+        "org.springframework.samples.petclinic.vet.VetRepository",
+        "org.springframework.samples.petclinic.vet.Vets"
+      ],
+      [
+        "org.springframework.samples.petclinic.system.CacheConfiguration"
+      ],
+      [
+        "org.springframework.samples.petclinic.system.CrashController"
+      ],
+      [
+        "org.springframework.samples.petclinic.system.WebConfiguration"
+      ],
+      [
+        "org.springframework.samples.petclinic.system.WelcomeController"
+      ]
+    ]
+  },
+  "package_structure": {
+    "node_count": 25,
+    "typed_direct_edge_count": 59,
+    "unique_directed_pair_count": 42,
+    "unique_undirected_pair_count": 42,
+    "analyzer_reported_occurrences": 181,
+    "group_count": 5,
+    "group_sizes": [
+      11,
+      5,
+      4,
+      3,
+      2
+    ],
+    "cross_group_directed_pairs": 14,
+    "within_group_directed_pairs": 28,
+    "cross_group_directed_pair_ratio": 0.3333333333333333,
+    "isolated_nodes": [
+      "org.springframework.samples.petclinic.PetClinicApplication",
+      "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+      "org.springframework.samples.petclinic.system.CacheConfiguration",
+      "org.springframework.samples.petclinic.system.CrashController",
+      "org.springframework.samples.petclinic.system.WebConfiguration",
+      "org.springframework.samples.petclinic.system.WelcomeController"
+    ],
+    "weak_components": [
+      [
+        "org.springframework.samples.petclinic.PetClinicApplication"
+      ],
+      [
+        "org.springframework.samples.petclinic.PetClinicRuntimeHints"
+      ],
+      [
+        "org.springframework.samples.petclinic.model.BaseEntity",
+        "org.springframework.samples.petclinic.model.NamedEntity",
+        "org.springframework.samples.petclinic.model.Person",
+        "org.springframework.samples.petclinic.owner.Owner",
+        "org.springframework.samples.petclinic.owner.OwnerController",
+        "org.springframework.samples.petclinic.owner.OwnerRepository",
+        "org.springframework.samples.petclinic.owner.Pet",
+        "org.springframework.samples.petclinic.owner.PetController",
+        "org.springframework.samples.petclinic.owner.PetType",
+        "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+        "org.springframework.samples.petclinic.owner.PetTypeRepository",
+        "org.springframework.samples.petclinic.owner.PetValidator",
+        "org.springframework.samples.petclinic.owner.Visit",
+        "org.springframework.samples.petclinic.owner.VisitController",
+        "org.springframework.samples.petclinic.vet.Specialty",
+        "org.springframework.samples.petclinic.vet.Vet",
+        "org.springframework.samples.petclinic.vet.VetController",
+        "org.springframework.samples.petclinic.vet.VetRepository",
+        "org.springframework.samples.petclinic.vet.Vets"
+      ],
+      [
+        "org.springframework.samples.petclinic.system.CacheConfiguration"
+      ],
+      [
+        "org.springframework.samples.petclinic.system.CrashController"
+      ],
+      [
+        "org.springframework.samples.petclinic.system.WebConfiguration"
+      ],
+      [
+        "org.springframework.samples.petclinic.system.WelcomeController"
+      ]
+    ]
+  },
+  "membership_comparison": [
+    {
+      "class": "org.springframework.samples.petclinic.PetClinicApplication",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.model.BaseEntity",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.model"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.model.NamedEntity",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.model"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.model.Person",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.model"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.Owner",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.OwnerController",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.OwnerRepository",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.Pet",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.PetController",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.PetType",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.PetValidator",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.Visit",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.VisitController",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.system.CacheConfiguration",
+      "graph_group": "group_2",
+      "package_group": "org.springframework.samples.petclinic.system"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.system.CrashController",
+      "graph_group": "group_3",
+      "package_group": "org.springframework.samples.petclinic.system"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.system.WebConfiguration",
+      "graph_group": "group_4",
+      "package_group": "org.springframework.samples.petclinic.system"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.system.WelcomeController",
+      "graph_group": "group_5",
+      "package_group": "org.springframework.samples.petclinic.system"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.vet.Specialty",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.vet"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.vet.Vet",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.vet"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.vet.VetController",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.vet"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.vet.VetRepository",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.vet"
+    },
+    {
+      "class": "org.springframework.samples.petclinic.vet.Vets",
+      "graph_group": "group_1",
+      "package_group": "org.springframework.samples.petclinic.vet"
+    }
+  ],
+  "coverage": {
+    "eligible_source_files": 25,
+    "source_identity_mapping": "package declaration plus filename stem; not compiler type resolution",
+    "missing_filename_identifiers": [],
+    "extra_analyzer_identifiers": [],
+    "reported_classes": 25,
+    "parse_failure_count": null,
+    "unresolved_reference_count": null
+  },
+  "limitations": [
+    "Static heuristic dependencies, not runtime calls or behavioral correctness.",
+    "Original analyzer does not provide complete parse/resolution diagnostics.",
+    "Occurrences reflect analyzer traversal and are not runtime frequencies.",
+    "All types/occurrence weights collapsed for clustering; no shared-class assignments.",
+    "No reference labels or architectural accuracy scoring used."
+  ]
+}

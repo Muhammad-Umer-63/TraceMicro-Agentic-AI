@@ -1,0 +1,1 @@
+Java-source-only subset from the user-supplied General Info.zip. This is not a buildable copy of PetClinic. Original source: https://github.com/spring-projects/spring-petclinic . Exact upstream commit and original download date are unknown. Existing Java copyright headers and Apache license are preserved. See results/reproduced_baseline.json for the eligible-source fingerprint.

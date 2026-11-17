@@ -1,86 +1,39 @@
-# TraceMicro
+﻿# TraceMicro
 
-Agentic analysis framework for monolith-to-microservices decomposition.
+TraceMicro investigates agentic support for decomposing Java monoliths into candidate microservices.
 
-## Phase 1 implementation
+## Current implementation
 
-The current implementation provides a preliminary, non-agentic,
-package-based baseline for Java applications.
+Two deterministic, non-agentic baselines are available:
 
-It reads Java source files, extracts package declarations, groups files
-into candidate services, and exports structured JSON results.
+- baseline.py groups Java source files by package.
+- dependency_baseline.py clusters classes using saved output from the official MicroAgent dependency analyzer.
 
-## Architecture
-
-```mermaid
-flowchart TD
-    A["Java source repository"] --> B["Source discovery"]
-    B --> C["Package extraction"]
-    C --> D["Package-based candidate services"]
-    D --> E["JSON results and run state"]
-```
-
-The proposed agentic architecture is documented in the Phase B proposal.
-It has not yet been implemented.
-
-## Data source
-
-Spring PetClinic:
-https://github.com/spring-projects/spring-petclinic
-
-Source revision: REPLACE_WITH_ACTUAL_COMMIT_ID
-Download date: REPLACE_WITH_ACTUAL_DATE
-
-Input: src/main/java/**/*.java
-Unit of analysis: Java source file.
+Model integration, agent workflows, and reference-based evaluation are not yet implemented.
 
 ## Requirements
 
-Python 3. No external Python packages are required.
+Python 3.10 or newer. No external Python packages are needed for the Python baselines and tests.
 
-## Run
+## Commands
 
-Download and extract Spring PetClinic, then run:
+Package baseline:
+    python baseline.py sample_petclinic --output results/package_run.json
 
-python baseline.py "/path/to/spring-petclinic"
+Dependency baseline using saved analyzer output:
+    python dependency_baseline.py results/dependency_baseline/petclinic_raw.json sample_petclinic --services 5 --output results/dependency_run.json
 
-Output: results/baseline_result.json
+Tests:
+    python -m unittest discover -s tests -v
 
-## Initial evaluation
+Re-running Java dependency extraction requires the separately obtained MicroAgent analyzer and its dependencies.
 
-The initial evaluation input is the recorded Spring PetClinic snapshot.
+## Results and limitations
 
-Reported measures:
-- Number of eligible Java files.
-- Number of assigned files.
-- Assignment coverage.
-- Number of package-based candidate services.
-- Unassigned files.
+The sample contains 25 eligible Java files. Package grouping produced five groups of sizes 11, 5, 4, 3, 2. The dependency baseline produced groups of sizes 21, 1, 1, 1, 1. Five groups was an experimental setting chosen to match the package count.
 
-The actual initial results are stored in results/baseline_result.json.
-These are pipeline and coverage measures, not architectural accuracy.
+These results do not establish architectural accuracy. The analyzer may silently omit malformed files or unresolved references. See docs/DEPENDENCY_BASELINE_REVIEW.md for details.
 
-## Structured output contract
+The PetClinic source subset retains its original license. The analyzer comes from the MicroAgent authors' artifact: https://doi.org/10.5281/zenodo.19250602
 
-- baseline: name of the implemented method.
-- unit: unit of analysis.
-- state: completion status and coverage counts.
-- source_inventory: discovered source-file paths.
-- candidate_services: package names mapped to source-file lists.
-- limitations: known implementation limitations.
-
-## Current limitations
-
-Package structure may not correspond to business service boundaries.
-The baseline does not analyze dependencies, runtime behavior, or data
-ownership. No reference decomposition has been evaluated.
-
-## Remaining work
-
-- Graph-clustering baseline.
-- Model provider configuration and real model invocation.
-- Agent tool interfaces.
-- Targeted evidence collection.
-- Independent verification.
-- Budget-aware orchestration.
-- Reference annotations and decomposition-quality evaluation.****
+The exact upstream revision of the supplied PetClinic snapshot remains unknown.

@@ -1,0 +1,41 @@
+{
+  "metadata" : {
+    "totalClasses" : 4,
+    "relationshipCounts" : {
+      "EXTENDS" : 2
+    },
+    "relationshipTotalOccurrences" : {
+      "EXTENDS" : 2
+    }
+  },
+  "classes" : {
+    "fixture.A" : {
+      "relationships" : {
+        "EXTENDS" : {
+          "fixture.B" : 1
+        }
+      }
+    },
+    "fixture.B" : {
+      "relationships" : {
+        "EXTENDED_BY" : {
+          "fixture.A" : 1
+        }
+      }
+    },
+    "fixture.C" : {
+      "relationships" : {
+        "EXTENDS" : {
+          "fixture.D" : 1
+        }
+      }
+    },
+    "fixture.D" : {
+      "relationships" : {
+        "EXTENDED_BY" : {
+          "fixture.C" : 1
+        }
+      }
+    }
+  }
+}
