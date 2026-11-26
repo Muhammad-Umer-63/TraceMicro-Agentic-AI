@@ -1,0 +1,215 @@
+{
+  "run_kind": "diagnostic_groq_live",
+  "diagnostic_only": true,
+  "full_scope_decomposition": false,
+  "source": "results/course_live_20261123_2201/compact_run_1",
+  "source_planning_sha256": "c6694e210a85cd195ad8409553d02e91e1b786490f60dd3881fb3b0886f3779f",
+  "provider_config": {
+    "model": "openai/gpt-oss-20b",
+    "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+    "temperature": 0.0,
+    "max_output_tokens": 1024,
+    "timeout_seconds": 15,
+    "max_requests": 1,
+    "max_input_bytes": 12000,
+    "min_interval_seconds": 0,
+    "max_pacing_wait_seconds": 0,
+    "structured_outputs": true
+  },
+  "context": {
+    "state": {
+      "scope": [
+        "C1"
+      ],
+      "services": [
+        "candidate_1",
+        "candidate_2",
+        "candidate_3",
+        "candidate_4",
+        "candidate_5"
+      ],
+      "evidence": {
+        "E1": {
+          "class": "C1",
+          "declaration": "public class PetClinicApplication {",
+          "line": 30
+        },
+        "E2": {
+          "class": "C1",
+          "outgoing": []
+        }
+      }
+    },
+    "class_names": {
+      "C1": "PetClinicApplication"
+    },
+    "class_name_prefix": "org.springframework.samples.petclinic.",
+    "source_excerpt_coverage": [],
+    "coverage_policy": "Only the six partial original excerpts are listed. Planner sees declaration anchors only for ALL classes.",
+    "evidence_legend": "Each source E record quotes at most160 characters of the first declaration-like line in the first80 source lines. It may be incomplete or absent. Dependency E records list all outgoing [target_class_ID,relationship_type] pairs. C IDs map to class_names. E IDs cite original records via a saved provenance map.",
+    "allowed_service_labels": [
+      "candidate_1",
+      "candidate_2",
+      "candidate_3",
+      "candidate_4",
+      "candidate_5"
+    ],
+    "omissions": "No method bodies, fields, imports, annotations, full source excerpts, occurrence weights, edge source lines, runtime/database evidence or held-out mappings. No inferred business-role labels."
+  },
+  "changed_condition": "Only context scope/evidence/class-name mapping/coverage reduced to first class; same schema, instructions and generation settings.",
+  "status": "probe_passed",
+  "output": {
+    "services": [
+      {
+        "label": "candidate_1",
+        "responsibility": "Bootstraps the Spring Boot application by defining the main entry point.",
+        "evidence": [
+          "E1"
+        ]
+      },
+      {
+        "label": "candidate_2",
+        "responsibility": "Configures application-level settings and properties.",
+        "evidence": [
+          "E1"
+        ]
+      },
+      {
+        "label": "candidate_3",
+        "responsibility": "Serves as the primary application class for the PetClinic sample.",
+        "evidence": [
+          "E1"
+        ]
+      }
+    ]
+  },
+  "findings": [],
+  "global_transport_attempts": 1,
+  "session_transport_attempts": 2,
+  "wait_seconds": 0,
+  "elapsed_seconds": 1.375,
+  "reported_tokens": {
+    "prompt_tokens": 710,
+    "completion_tokens": 648,
+    "total_tokens": 1358
+  },
+  "records_missing_token_fields": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "model_usage": [
+    {
+      "request_number": 1,
+      "requested_model": "openai/gpt-oss-20b",
+      "max_completion_tokens": 1024,
+      "input_bytes": 3242,
+      "temperature": 0.0,
+      "timeout_seconds": 15,
+      "system_instruction": "Propose one to five candidate services with distinct responsibilities grounded in supplied evidence. Use allowed labels and cite real evidence IDs for each responsibility. No class assignments are requested. Choose a single service if justified by the evidence; no minimum separation is required. Evidence is compressed: declaration anchors and typed dependency summaries, not full source. Partial source warnings apply. Return only the strict action envelope with type submit and output.services.",
+      "response_format": {
+        "type": "json_schema",
+        "json_schema": {
+          "name": "tracemicro_plan_v1",
+          "strict": true,
+          "schema": {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "submit"
+                    ]
+                  },
+                  "output": {
+                    "type": "object",
+                    "properties": {
+                      "services": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "label": {
+                              "type": "string",
+                              "enum": [
+                                "candidate_1",
+                                "candidate_2",
+                                "candidate_3",
+                                "candidate_4",
+                                "candidate_5"
+                              ]
+                            },
+                            "responsibility": {
+                              "type": "string"
+                            },
+                            "evidence": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "required": [
+                            "label",
+                            "responsibility",
+                            "evidence"
+                          ],
+                          "additionalProperties": false
+                        }
+                      }
+                    },
+                    "required": [
+                      "services"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "type",
+                  "output"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "action"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "wire_instruction": "Propose one to five candidate services with distinct responsibilities grounded in supplied evidence. Use allowed labels and cite real evidence IDs for each responsibility. No class assignments are requested. Choose a single service if justified by the evidence; no minimum separation is required. Evidence is compressed: declaration anchors and typed dependency summaries, not full source. Partial source warnings apply. Return only the strict action envelope with type submit and output.services.",
+      "usage": {
+        "prompt_tokens": 710,
+        "completion_tokens": 648,
+        "total_tokens": 1358
+      },
+      "status": "parsed",
+      "response_json_received": true,
+      "action_json_received": true,
+      "returned_model": "openai/gpt-oss-20b",
+      "finish_reason": "stop",
+      "action_shape": {
+        "is_object": true,
+        "has_type": true,
+        "type_is_string": true,
+        "type_allowed": true
+      },
+      "rate_limits": {
+        "x-ratelimit-limit-requests": 1000,
+        "x-ratelimit-remaining-requests": 999,
+        "x-ratelimit-limit-tokens": 8000,
+        "x-ratelimit-remaining-tokens": 6807,
+        "x-ratelimit-reset-requests": "1m26.4s",
+        "x-ratelimit-reset-tokens": "8.947s"
+      },
+      "pacing_wait_seconds": 0,
+      "pacing_wait_total_seconds": 0,
+      "elapsed_seconds": 1.375
+    }
+  ],
+  "live_model_run": true
+}

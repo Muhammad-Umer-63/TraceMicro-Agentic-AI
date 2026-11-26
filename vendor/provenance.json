@@ -1,0 +1,10 @@
+{
+  "title": "Artifact for paper \"MicroAgent: Context-Augmented Multi-agent Framework for Automatic Microservice Decomposition\" (ASE'26)",
+  "record_url": "https://zenodo.org/records/19250602",
+  "doi": "10.5281/zenodo.19250602",
+  "archive": "MicroAgent.zip",
+  "checksum": "md5:3b32543e54e188b2ec392ef0ce3bd6f7",
+  "checksum_verified": true,
+  "paper_doi": "10.1145/3832783.3834441",
+  "note": "Official third-party artifact, unmodified. Its own LICENSE and notices are inside the archive. No model runs executed."
+}

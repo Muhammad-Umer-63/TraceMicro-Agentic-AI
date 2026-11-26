@@ -1,0 +1,178 @@
+{
+  "version": "advisory_critic_v1",
+  "mode": "fixed",
+  "selection_rule": "critic_policy_v1: selective invokes once when local validation has findings OR fewer than two nonempty services; fixed always invokes once; off never invokes",
+  "run_kind": "groq_simulated_http",
+  "selected": true,
+  "source": "results\\course_development_20261123_2201\\synthetic_source_two_groups",
+  "source_status": "synthetic_fixture",
+  "source_summary_sha256": "9e1f7fb08ac0e617a172f2ef4c7ff21bd3e54762a8a8f3bba548115e0cb66cd0",
+  "local_findings": [],
+  "corrections_applied": false,
+  "architectural_accuracy": null,
+  "code_sha256": "e858cd731ea475914dfb3caabea80e9f48a5472d227ce177484668555de0e574",
+  "provider_config": {
+    "model": "openai/gpt-oss-20b",
+    "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+    "temperature": 0.0,
+    "max_output_tokens": 1024,
+    "timeout_seconds": 15,
+    "max_requests": 1,
+    "max_input_bytes": 20000,
+    "min_interval_seconds": 0,
+    "max_pacing_wait_seconds": 0,
+    "structured_outputs": true
+  },
+  "status": "critic_checked",
+  "output": {
+    "issues": [
+      {
+        "class": "org.springframework.samples.petclinic.PetClinicApplication",
+        "kind": "insufficient_evidence",
+        "evidence": [
+          "E1"
+        ],
+        "explanation": "Synthetic fixture concern",
+        "proposed_services": [],
+        "proposed_shared": false
+      }
+    ]
+  },
+  "validation_findings": [],
+  "global_transport_attempts": 1,
+  "session_transport_attempts": 1,
+  "wait_seconds": 0,
+  "elapsed_seconds": 0.01600000006146729,
+  "reported_tokens": {
+    "prompt_tokens": null,
+    "completion_tokens": null,
+    "total_tokens": 20
+  },
+  "records_missing_token_fields": {
+    "prompt_tokens": 1,
+    "completion_tokens": 1,
+    "total_tokens": 0
+  },
+  "model_usage": [
+    {
+      "request_number": 1,
+      "requested_model": "openai/gpt-oss-20b",
+      "max_completion_tokens": 1024,
+      "input_bytes": 15013,
+      "temperature": 0.0,
+      "timeout_seconds": 15,
+      "system_instruction": "Independently challenge the supplied class assignments using only the evidence summaries. No generator dialogue or reference labels are supplied. Use full scoped class names for issues. Cite real evidence IDs, including at least one for the issue class. Explain uncertainty and source omissions. Proposed services must use allowed labels. Empty proposed_services means no correction proposed and proposed_shared=false. An empty issues array is allowed. No correction is automatically accepted. Return the strict submit envelope with output.issues; no hidden reasoning or extra fields.",
+      "response_format": {
+        "type": "json_schema",
+        "json_schema": {
+          "name": "tracemicro_critic_v1",
+          "strict": true,
+          "schema": {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "submit"
+                    ]
+                  },
+                  "output": {
+                    "type": "object",
+                    "properties": {
+                      "issues": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "class": {
+                              "type": "string"
+                            },
+                            "kind": {
+                              "type": "string",
+                              "enum": [
+                                "unsupported_assignment",
+                                "shared_concern",
+                                "boundary_concern",
+                                "insufficient_evidence"
+                              ]
+                            },
+                            "evidence": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "explanation": {
+                              "type": "string"
+                            },
+                            "proposed_services": {
+                              "type": "array",
+                              "items": {
+                                "type": "string",
+                                "enum": [
+                                  "candidate_1",
+                                  "candidate_2"
+                                ]
+                              }
+                            },
+                            "proposed_shared": {
+                              "type": "boolean"
+                            }
+                          },
+                          "required": [
+                            "class",
+                            "kind",
+                            "evidence",
+                            "explanation",
+                            "proposed_services",
+                            "proposed_shared"
+                          ],
+                          "additionalProperties": false
+                        }
+                      }
+                    },
+                    "required": [
+                      "issues"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "type",
+                  "output"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "action"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "wire_instruction": "Independently challenge the supplied class assignments using only the evidence summaries. No generator dialogue or reference labels are supplied. Use full scoped class names for issues. Cite real evidence IDs, including at least one for the issue class. Explain uncertainty and source omissions. Proposed services must use allowed labels. Empty proposed_services means no correction proposed and proposed_shared=false. An empty issues array is allowed. No correction is automatically accepted. Return the strict submit envelope with output.issues; no hidden reasoning or extra fields.",
+      "usage": {
+        "total_tokens": 20
+      },
+      "status": "parsed",
+      "response_json_received": true,
+      "action_json_received": true,
+      "finish_reason": "stop",
+      "action_shape": {
+        "is_object": true,
+        "has_type": true,
+        "type_is_string": true,
+        "type_allowed": true
+      },
+      "rate_limits": {},
+      "pacing_wait_seconds": 0,
+      "pacing_wait_total_seconds": 0,
+      "elapsed_seconds": 0.0
+    }
+  ],
+  "live_model_run": false
+}

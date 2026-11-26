@@ -1,0 +1,18 @@
+{
+  "status": "Prepared development conditions, no independent reference and no live critic evaluation",
+  "dataset": "Exact fixed 25-class PetClinic snapshot",
+  "scope_fingerprint": "c66415bfe029129bc8229a36216547dd41c3ba32d7aad5b8590dd00ac4622e29",
+  "generator": "Use unchanged compact_v2 for future generator comparisons; historical originals are separate development controls",
+  "critic_model": "openai/gpt-oss-20b",
+  "temperature": 0,
+  "critic_max_requests": 1,
+  "critic_max_output_tokens": 1024,
+  "critic_input_bytes_cap": 20000,
+  "timeout_seconds": 15,
+  "arms": ["off", "fixed", "selective"],
+  "selection_rule": "critic_policy_v1: selective calls critic if deterministic validation has any finding OR fewer than two nonempty services. Fixed always calls once. Off never calls.",
+  "capabilities": "Fixed and selective use same advisory critic, same deterministic summary and assignment context, same output schema, same local checks and one-call cap. Routing is deterministic, zero model routing calls.",
+  "corrections": "Preserve proposals only; never mutate generator output",
+  "cost": "Include generator, planning, criticism, failed calls, unknown usage and waits. Use same session ledger for any authorized live calls.",
+  "quality": "Requires independently adjudicated human reference and review of critic findings; current outputs alone cannot measure quality improvement"
+}

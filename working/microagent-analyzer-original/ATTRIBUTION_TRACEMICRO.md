@@ -1,0 +1,1 @@
+Official MicroAgent analyzer build project, copied without source/POM modifications from vendor/MicroAgent_official.zip. Artifact DOI: https://doi.org/10.5281/zenodo.19250602 . Root LICENSE and README retained. Original authors retain authorship; TraceMicro does not claim this implementation. Complete graph/ subtree extracted; no build performed.

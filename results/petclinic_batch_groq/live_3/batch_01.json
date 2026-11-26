@@ -1,0 +1,1900 @@
+{
+  "run_kind": "groq_live",
+  "live_model_run": true,
+  "execution_engine": "langgraph",
+  "langgraph_version": "0.6.11",
+  "provenance": {
+    "source_snapshot": {
+      "upstream_commit": null,
+      "provenance": "User-supplied ZIP snapshot; upstream commit not established.",
+      "eligible_java_files_sha256": "c66415bfe029129bc8229a36216547dd41c3ba32d7aad5b8590dd00ac4622e29",
+      "fingerprint_scope": "Eligible production Java files only, not whole repository.",
+      "files": [
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java",
+          "sha256": "2c8f47a328f8bc4ad0ed887890dcf731469ec8f1032b5420d173c7aa5a352600"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java",
+          "sha256": "6695dafa9b8d4cc67c0cf9305b17b897c58103ca33c12dd0f9375edcfe815b32"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/model/Person.java",
+          "sha256": "a872c368cd5b09a7cb8a3f42e1baff1f6b0adc7cfc5bccf5f426374292ba4244"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/Owner.java",
+          "sha256": "a5273cbccaf4993c92cc204c4481d52ebc611b731862f078b203b2a7eefa5f8a"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java",
+          "sha256": "611115841f671065ca2796fbb096102d56ce6aafd20bfe9a264f0a6968cca3ff"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/OwnerRepository.java",
+          "sha256": "654cc5a38b2806748116caf4fbd6a99010a35605db32a12707078c34ccec2cd9"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/Pet.java",
+          "sha256": "ec77c2d70ae043c6eb441e47ebc93a3d848d8ae9729068e8f4e997aedfa0bbd7"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/PetController.java",
+          "sha256": "1a8a8097ff334b85d3a62c4df79ec52c2dbee8777925970e140081cff7e7c25e"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/PetType.java",
+          "sha256": "9e64329633ce98a96f18cecf7426338d57b753fd24b7b47f7af483467a3df92e"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/PetTypeFormatter.java",
+          "sha256": "af232944dba211094ee5f6b5b3e2bc9696e46ba8f40cad0e5bf7e0b283aacac7"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/PetTypeRepository.java",
+          "sha256": "696705e51ab5835ac28630397de2d3f3541d3f419f19461e11755a9aac2afa04"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/PetValidator.java",
+          "sha256": "1cee4c2a57afd7edb3521fa7a19c4b643f23c2f5b91406ecd638319c6cce9f7f"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/Visit.java",
+          "sha256": "587191bc74fbbb696e90114366db6988cd6f07c25cd2e991c038d6bda52df123"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/VisitController.java",
+          "sha256": "b7c8f9cb7b2b2b5827d85787d1f18c95762a0213760013cef9d0a9e1c2c0f8d8"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java",
+          "sha256": "9d99b4b59cc6e185e9a27964b24ede04180ca34211a7e19f968249ee3dac9df3"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/PetClinicRuntimeHints.java",
+          "sha256": "2a365e4c85ec16300ccc6101e2543980a30ea72c34c6a0c51d5e56c0d5ad6633"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration.java",
+          "sha256": "1375dfc554a1efa859d2e54cf6fe82724aecea8b46d0c2ab06aabd1aa14ef9da"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/system/CrashController.java",
+          "sha256": "d7c003dc6357596eefa345eff63ecf3909a50238e030e3c93f09426e537ba517"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/system/WebConfiguration.java",
+          "sha256": "d9eb227f4ffcd434b2000ac30fce9b5e341f85e893c4b3536b50fbbc15384b92"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/system/WelcomeController.java",
+          "sha256": "cfdffa794c8ec7a0c634a7d39d39f9abc1dd2ddc4b4d7a591b341136015a6f66"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/vet/Specialty.java",
+          "sha256": "0fa07bcb3b7b4ddb380a278d98dcfe03bec5e3a1e42b9f08c555d75a6be256d0"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/vet/Vet.java",
+          "sha256": "8548e47aaf310b276d5cc9f58976756339b16a02ac47944f778260f2ed121b78"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/vet/VetController.java",
+          "sha256": "8fb67351a3d4b28c220a870178cb72998ef6dfaa303dd65f2e8c242eb2ddbbfa"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/vet/VetRepository.java",
+          "sha256": "732888e66084f9f94dd79c181e29dbbe2c752959c10ebf82b0940700f61c0dde"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/vet/Vets.java",
+          "sha256": "8a9b86de5dd337047eacd492f03526974d82e3765e0a628341a190ffb1bb1707"
+        }
+      ]
+    },
+    "dependency_json_sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+    "identity_limit": "filename/package mapping, not compiler resolution"
+  },
+  "state": {
+    "scope": [
+      "org.springframework.samples.petclinic.PetClinicApplication",
+      "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+      "org.springframework.samples.petclinic.model.BaseEntity"
+    ],
+    "services": [
+      "candidate_1",
+      "candidate_2",
+      "candidate_3",
+      "candidate_4",
+      "candidate_5"
+    ],
+    "budget": {
+      "decisions": 1,
+      "tool_calls": 0,
+      "revisions": 1
+    },
+    "candidate_assignments": [
+      {
+        "class": "org.springframework.samples.petclinic.PetClinicApplication",
+        "services": [
+          "candidate_1"
+        ],
+        "shared": false,
+        "evidence": [
+          "E1",
+          "E2"
+        ]
+      },
+      {
+        "class": "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+        "services": [
+          "candidate_2"
+        ],
+        "shared": false,
+        "evidence": [
+          "E3",
+          "E4"
+        ]
+      },
+      {
+        "class": "org.springframework.samples.petclinic.model.BaseEntity",
+        "services": [
+          "candidate_3"
+        ],
+        "shared": false,
+        "evidence": [
+          "E5",
+          "E6"
+        ]
+      }
+    ],
+    "evidence": {
+      "E1": {
+        "tool": "inspect_source",
+        "class": "org.springframework.samples.petclinic.PetClinicApplication",
+        "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java",
+        "sha256": "9d99b4b59cc6e185e9a27964b24ede04180ca34211a7e19f968249ee3dac9df3",
+        "start_line": 1,
+        "end_line": 36,
+        "lines": [
+          {
+            "line": 1,
+            "text": "/*"
+          },
+          {
+            "line": 2,
+            "text": " * Copyright 2012-2025 the original author or authors."
+          },
+          {
+            "line": 3,
+            "text": " *"
+          },
+          {
+            "line": 4,
+            "text": " * Licensed under the Apache License, Version 2.0 (the \"License\");"
+          },
+          {
+            "line": 5,
+            "text": " * you may not use this file except in compliance with the License."
+          },
+          {
+            "line": 6,
+            "text": " * You may obtain a copy of the License at"
+          },
+          {
+            "line": 7,
+            "text": " *"
+          },
+          {
+            "line": 8,
+            "text": " *      https://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "line": 9,
+            "text": " *"
+          },
+          {
+            "line": 10,
+            "text": " * Unless required by applicable law or agreed to in writing, software"
+          },
+          {
+            "line": 11,
+            "text": " * distributed under the License is distributed on an \"AS IS\" BASIS,"
+          },
+          {
+            "line": 12,
+            "text": " * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
+          },
+          {
+            "line": 13,
+            "text": " * See the License for the specific language governing permissions and"
+          },
+          {
+            "line": 14,
+            "text": " * limitations under the License."
+          },
+          {
+            "line": 15,
+            "text": " */"
+          },
+          {
+            "line": 16,
+            "text": ""
+          },
+          {
+            "line": 17,
+            "text": "package org.springframework.samples.petclinic;"
+          },
+          {
+            "line": 18,
+            "text": ""
+          },
+          {
+            "line": 19,
+            "text": "import org.springframework.boot.SpringApplication;"
+          },
+          {
+            "line": 20,
+            "text": "import org.springframework.boot.autoconfigure.SpringBootApplication;"
+          },
+          {
+            "line": 21,
+            "text": "import org.springframework.context.annotation.ImportRuntimeHints;"
+          },
+          {
+            "line": 22,
+            "text": ""
+          },
+          {
+            "line": 23,
+            "text": "/**"
+          },
+          {
+            "line": 24,
+            "text": " * PetClinic Spring Boot Application."
+          },
+          {
+            "line": 25,
+            "text": " *"
+          },
+          {
+            "line": 26,
+            "text": " * @author Dave Syer"
+          },
+          {
+            "line": 27,
+            "text": " */"
+          },
+          {
+            "line": 28,
+            "text": "@SpringBootApplication"
+          },
+          {
+            "line": 29,
+            "text": "@ImportRuntimeHints(PetClinicRuntimeHints.class)"
+          },
+          {
+            "line": 30,
+            "text": "public class PetClinicApplication {"
+          },
+          {
+            "line": 31,
+            "text": ""
+          },
+          {
+            "line": 32,
+            "text": "\tpublic static void main(String[] args) {"
+          },
+          {
+            "line": 33,
+            "text": "\t\tSpringApplication.run(PetClinicApplication.class, args);"
+          },
+          {
+            "line": 34,
+            "text": "\t}"
+          },
+          {
+            "line": 35,
+            "text": ""
+          },
+          {
+            "line": 36,
+            "text": "}"
+          }
+        ],
+        "source_total_lines": 36,
+        "source_excerpt_is_partial": false
+      },
+      "E2": {
+        "tool": "inspect_dependencies",
+        "class": "org.springframework.samples.petclinic.PetClinicApplication",
+        "path": "results/dependency_baseline/petclinic_raw.json",
+        "sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+        "json_pointer": "/classes/org.springframework.samples.petclinic.PetClinicApplication/relationships",
+        "outgoing": [],
+        "incoming": [],
+        "source_edge_line_references": null,
+        "limitation": "Official export has no source line per edge; incoming edges derive from other classes, not this JSON pointer. Parse/resolution diagnostics incomplete."
+      },
+      "E3": {
+        "tool": "inspect_source",
+        "class": "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+        "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/PetClinicRuntimeHints.java",
+        "sha256": "2a365e4c85ec16300ccc6101e2543980a30ea72c34c6a0c51d5e56c0d5ad6633",
+        "start_line": 1,
+        "end_line": 38,
+        "lines": [
+          {
+            "line": 1,
+            "text": "/*"
+          },
+          {
+            "line": 2,
+            "text": " * Copyright 2012-2025 the original author or authors."
+          },
+          {
+            "line": 3,
+            "text": " *"
+          },
+          {
+            "line": 4,
+            "text": " * Licensed under the Apache License, Version 2.0 (the \"License\");"
+          },
+          {
+            "line": 5,
+            "text": " * you may not use this file except in compliance with the License."
+          },
+          {
+            "line": 6,
+            "text": " * You may obtain a copy of the License at"
+          },
+          {
+            "line": 7,
+            "text": " *"
+          },
+          {
+            "line": 8,
+            "text": " *      https://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "line": 9,
+            "text": " *"
+          },
+          {
+            "line": 10,
+            "text": " * Unless required by applicable law or agreed to in writing, software"
+          },
+          {
+            "line": 11,
+            "text": " * distributed under the License is distributed on an \"AS IS\" BASIS,"
+          },
+          {
+            "line": 12,
+            "text": " * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
+          },
+          {
+            "line": 13,
+            "text": " * See the License for the specific language governing permissions and"
+          },
+          {
+            "line": 14,
+            "text": " * limitations under the License."
+          },
+          {
+            "line": 15,
+            "text": " */"
+          },
+          {
+            "line": 16,
+            "text": ""
+          },
+          {
+            "line": 17,
+            "text": "package org.springframework.samples.petclinic;"
+          },
+          {
+            "line": 18,
+            "text": ""
+          },
+          {
+            "line": 19,
+            "text": "import org.springframework.aot.hint.RuntimeHints;"
+          },
+          {
+            "line": 20,
+            "text": "import org.springframework.aot.hint.RuntimeHintsRegistrar;"
+          },
+          {
+            "line": 21,
+            "text": "import org.springframework.samples.petclinic.model.BaseEntity;"
+          },
+          {
+            "line": 22,
+            "text": "import org.springframework.samples.petclinic.model.Person;"
+          },
+          {
+            "line": 23,
+            "text": "import org.springframework.samples.petclinic.vet.Vet;"
+          },
+          {
+            "line": 24,
+            "text": ""
+          },
+          {
+            "line": 25,
+            "text": "public class PetClinicRuntimeHints implements RuntimeHintsRegistrar {"
+          },
+          {
+            "line": 26,
+            "text": ""
+          },
+          {
+            "line": 27,
+            "text": "\t@Override"
+          },
+          {
+            "line": 28,
+            "text": "\tpublic void registerHints(RuntimeHints hints, ClassLoader classLoader) {"
+          },
+          {
+            "line": 29,
+            "text": "\t\thints.resources().registerPattern(\"db/*\"); // https://github.com/spring-projects/spring-boot/issues/32654"
+          },
+          {
+            "line": 30,
+            "text": "\t\thints.resources().registerPattern(\"db/*/*\"); // nested db/{h2,mysql,postgres}"
+          },
+          {
+            "line": 31,
+            "text": "\t\thints.resources().registerPattern(\"messages/*\");"
+          },
+          {
+            "line": 32,
+            "text": "\t\thints.resources().registerPattern(\"mysql-default-conf\");"
+          },
+          {
+            "line": 33,
+            "text": "\t\thints.reflection().registerType(BaseEntity.class, typeHint -> typeHint.withJavaSerialization(true));"
+          },
+          {
+            "line": 34,
+            "text": "\t\thints.reflection().registerType(Person.class, typeHint -> typeHint.withJavaSerialization(true));"
+          },
+          {
+            "line": 35,
+            "text": "\t\thints.reflection().registerType(Vet.class, typeHint -> typeHint.withJavaSerialization(true));"
+          },
+          {
+            "line": 36,
+            "text": "\t}"
+          },
+          {
+            "line": 37,
+            "text": ""
+          },
+          {
+            "line": 38,
+            "text": "}"
+          }
+        ],
+        "source_total_lines": 38,
+        "source_excerpt_is_partial": false
+      },
+      "E4": {
+        "tool": "inspect_dependencies",
+        "class": "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+        "path": "results/dependency_baseline/petclinic_raw.json",
+        "sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+        "json_pointer": "/classes/org.springframework.samples.petclinic.PetClinicRuntimeHints/relationships",
+        "outgoing": [],
+        "incoming": [],
+        "source_edge_line_references": null,
+        "limitation": "Official export has no source line per edge; incoming edges derive from other classes, not this JSON pointer. Parse/resolution diagnostics incomplete."
+      },
+      "E5": {
+        "tool": "inspect_source",
+        "class": "org.springframework.samples.petclinic.model.BaseEntity",
+        "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java",
+        "sha256": "2c8f47a328f8bc4ad0ed887890dcf731469ec8f1032b5420d173c7aa5a352600",
+        "start_line": 1,
+        "end_line": 51,
+        "lines": [
+          {
+            "line": 1,
+            "text": "/*"
+          },
+          {
+            "line": 2,
+            "text": " * Copyright 2012-2025 the original author or authors."
+          },
+          {
+            "line": 3,
+            "text": " *"
+          },
+          {
+            "line": 4,
+            "text": " * Licensed under the Apache License, Version 2.0 (the \"License\");"
+          },
+          {
+            "line": 5,
+            "text": " * you may not use this file except in compliance with the License."
+          },
+          {
+            "line": 6,
+            "text": " * You may obtain a copy of the License at"
+          },
+          {
+            "line": 7,
+            "text": " *"
+          },
+          {
+            "line": 8,
+            "text": " *      https://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "line": 9,
+            "text": " *"
+          },
+          {
+            "line": 10,
+            "text": " * Unless required by applicable law or agreed to in writing, software"
+          },
+          {
+            "line": 11,
+            "text": " * distributed under the License is distributed on an \"AS IS\" BASIS,"
+          },
+          {
+            "line": 12,
+            "text": " * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
+          },
+          {
+            "line": 13,
+            "text": " * See the License for the specific language governing permissions and"
+          },
+          {
+            "line": 14,
+            "text": " * limitations under the License."
+          },
+          {
+            "line": 15,
+            "text": " */"
+          },
+          {
+            "line": 16,
+            "text": "package org.springframework.samples.petclinic.model;"
+          },
+          {
+            "line": 17,
+            "text": ""
+          },
+          {
+            "line": 18,
+            "text": "import java.io.Serializable;"
+          },
+          {
+            "line": 19,
+            "text": ""
+          },
+          {
+            "line": 20,
+            "text": "import jakarta.persistence.GeneratedValue;"
+          },
+          {
+            "line": 21,
+            "text": "import jakarta.persistence.GenerationType;"
+          },
+          {
+            "line": 22,
+            "text": "import jakarta.persistence.Id;"
+          },
+          {
+            "line": 23,
+            "text": "import jakarta.persistence.MappedSuperclass;"
+          },
+          {
+            "line": 24,
+            "text": ""
+          },
+          {
+            "line": 25,
+            "text": "/**"
+          },
+          {
+            "line": 26,
+            "text": " * Simple JavaBean domain object with an id property. Used as a base class for objects"
+          },
+          {
+            "line": 27,
+            "text": " * needing this property."
+          },
+          {
+            "line": 28,
+            "text": " *"
+          },
+          {
+            "line": 29,
+            "text": " * @author Ken Krebs"
+          },
+          {
+            "line": 30,
+            "text": " * @author Juergen Hoeller"
+          },
+          {
+            "line": 31,
+            "text": " */"
+          },
+          {
+            "line": 32,
+            "text": "@MappedSuperclass"
+          },
+          {
+            "line": 33,
+            "text": "public class BaseEntity implements Serializable {"
+          },
+          {
+            "line": 34,
+            "text": ""
+          },
+          {
+            "line": 35,
+            "text": "\t@Id"
+          },
+          {
+            "line": 36,
+            "text": "\t@GeneratedValue(strategy = GenerationType.IDENTITY)"
+          },
+          {
+            "line": 37,
+            "text": "\tprivate Integer id;"
+          },
+          {
+            "line": 38,
+            "text": ""
+          },
+          {
+            "line": 39,
+            "text": "\tpublic Integer getId() {"
+          },
+          {
+            "line": 40,
+            "text": "\t\treturn id;"
+          },
+          {
+            "line": 41,
+            "text": "\t}"
+          },
+          {
+            "line": 42,
+            "text": ""
+          },
+          {
+            "line": 43,
+            "text": "\tpublic void setId(Integer id) {"
+          },
+          {
+            "line": 44,
+            "text": "\t\tthis.id = id;"
+          },
+          {
+            "line": 45,
+            "text": "\t}"
+          },
+          {
+            "line": 46,
+            "text": ""
+          },
+          {
+            "line": 47,
+            "text": "\tpublic boolean isNew() {"
+          },
+          {
+            "line": 48,
+            "text": "\t\treturn this.id == null;"
+          },
+          {
+            "line": 49,
+            "text": "\t}"
+          },
+          {
+            "line": 50,
+            "text": ""
+          },
+          {
+            "line": 51,
+            "text": "}"
+          }
+        ],
+        "source_total_lines": 51,
+        "source_excerpt_is_partial": false
+      },
+      "E6": {
+        "tool": "inspect_dependencies",
+        "class": "org.springframework.samples.petclinic.model.BaseEntity",
+        "path": "results/dependency_baseline/petclinic_raw.json",
+        "sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+        "json_pointer": "/classes/org.springframework.samples.petclinic.model.BaseEntity/relationships",
+        "outgoing": [],
+        "incoming": [
+          {
+            "source": "org.springframework.samples.petclinic.model.NamedEntity",
+            "target": "org.springframework.samples.petclinic.model.BaseEntity",
+            "type": "EXTENDS",
+            "occurrences": 1
+          },
+          {
+            "source": "org.springframework.samples.petclinic.model.Person",
+            "target": "org.springframework.samples.petclinic.model.BaseEntity",
+            "type": "EXTENDS",
+            "occurrences": 1
+          },
+          {
+            "source": "org.springframework.samples.petclinic.owner.Owner",
+            "target": "org.springframework.samples.petclinic.model.BaseEntity",
+            "type": "CALLS",
+            "occurrences": 2
+          },
+          {
+            "source": "org.springframework.samples.petclinic.owner.OwnerController",
+            "target": "org.springframework.samples.petclinic.model.BaseEntity",
+            "type": "CALLS",
+            "occurrences": 4
+          },
+          {
+            "source": "org.springframework.samples.petclinic.owner.PetController",
+            "target": "org.springframework.samples.petclinic.model.BaseEntity",
+            "type": "CALLS",
+            "occurrences": 4
+          },
+          {
+            "source": "org.springframework.samples.petclinic.owner.PetValidator",
+            "target": "org.springframework.samples.petclinic.model.BaseEntity",
+            "type": "CALLS",
+            "occurrences": 1
+          },
+          {
+            "source": "org.springframework.samples.petclinic.owner.Visit",
+            "target": "org.springframework.samples.petclinic.model.BaseEntity",
+            "type": "EXTENDS",
+            "occurrences": 1
+          }
+        ],
+        "source_edge_line_references": null,
+        "limitation": "Official export has no source line per edge; incoming edges derive from other classes, not this JSON pointer. Parse/resolution diagnostics incomplete."
+      }
+    },
+    "verification_findings": [],
+    "revisions": [],
+    "status": "stopped",
+    "termination_reason": "basic_checks_passed"
+  },
+  "events": [
+    {
+      "sequence": 1,
+      "kind": "graph_node",
+      "timestamp_utc": "2026-11-22T05:56:40.242810+00:00",
+      "node": "decide_action"
+    },
+    {
+      "sequence": 2,
+      "kind": "started",
+      "timestamp_utc": "2026-11-22T05:56:40.242810+00:00",
+      "mode": "groq_live",
+      "scope": [
+        "org.springframework.samples.petclinic.PetClinicApplication",
+        "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+        "org.springframework.samples.petclinic.model.BaseEntity"
+      ],
+      "budget": {
+        "decisions": 2,
+        "tool_calls": 0,
+        "revisions": 1
+      }
+    },
+    {
+      "sequence": 3,
+      "kind": "decision_requested",
+      "timestamp_utc": "2026-11-22T05:56:40.242810+00:00",
+      "context": {
+        "instruction": "Return one action object with a mandatory top-level string field \"type\": inspect_source, inspect_dependencies or submit. Follow the object examples below; do not return the examples map. Class keys are exact names. Evidence IDs must come from tools. Source actions may optionally add integer start_line and end_line fields. Investigate pending evidence across the ENTIRE state.scope; avoid repeating identical inspections. Every submission must include exactly one record for EVERY scoped class, with required same-class evidence IDs cited. A shared class uses one record with multiple services and does not replace other scoped classes. Never invent evidence or assignments. per_class_progress is refreshed from available evidence; candidate_record_present is not validation or architectural correctness. state.verification_findings are historical findings from the last submission; tools do not update that history. Available evidence must still be cited in the next submission.",
+        "action_schema": {
+          "inspect_source": {
+            "type": "inspect_source",
+            "class": "org.springframework.samples.petclinic.PetClinicApplication"
+          },
+          "inspect_dependencies": {
+            "type": "inspect_dependencies",
+            "class": "org.springframework.samples.petclinic.PetClinicApplication"
+          },
+          "submit": {
+            "type": "submit",
+            "output": {
+              "assignments": [
+                {
+                  "class": "org.springframework.samples.petclinic.PetClinicApplication",
+                  "services": [
+                    "candidate_1"
+                  ],
+                  "shared": false,
+                  "evidence": [
+                    "E1",
+                    "E2"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "allowed_service_labels": [
+          "candidate_1",
+          "candidate_2",
+          "candidate_3",
+          "candidate_4",
+          "candidate_5"
+        ],
+        "service_label_rule": "Every services value must exactly match an allowed_service_labels entry. Multiple distinct allowed labels require shared=true. Examples are shapes, not class assignments.",
+        "required_evidence_tools_per_assignment": [
+          "inspect_dependencies",
+          "inspect_source"
+        ],
+        "per_class_progress": [
+          {
+            "class": "org.springframework.samples.petclinic.PetClinicApplication",
+            "available_evidence_ids_by_tool": {
+              "inspect_source": [
+                "E1"
+              ],
+              "inspect_dependencies": [
+                "E2"
+              ]
+            },
+            "pending_evidence_tools": [],
+            "candidate_record_present": false,
+            "duplicate_result_ids": []
+          },
+          {
+            "class": "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+            "available_evidence_ids_by_tool": {
+              "inspect_source": [
+                "E3"
+              ],
+              "inspect_dependencies": [
+                "E4"
+              ]
+            },
+            "pending_evidence_tools": [],
+            "candidate_record_present": false,
+            "duplicate_result_ids": []
+          },
+          {
+            "class": "org.springframework.samples.petclinic.model.BaseEntity",
+            "available_evidence_ids_by_tool": {
+              "inspect_source": [
+                "E5"
+              ],
+              "inspect_dependencies": [
+                "E6"
+              ]
+            },
+            "pending_evidence_tools": [],
+            "candidate_record_present": false,
+            "duplicate_result_ids": []
+          }
+        ],
+        "current_candidate_findings": [
+          {
+            "code": "missing_class",
+            "class_name": "org.springframework.samples.petclinic.PetClinicApplication"
+          },
+          {
+            "code": "missing_class",
+            "class_name": "org.springframework.samples.petclinic.PetClinicRuntimeHints"
+          },
+          {
+            "code": "missing_class",
+            "class_name": "org.springframework.samples.petclinic.model.BaseEntity"
+          }
+        ],
+        "state": {
+          "scope": [
+            "org.springframework.samples.petclinic.PetClinicApplication",
+            "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+            "org.springframework.samples.petclinic.model.BaseEntity"
+          ],
+          "services": [
+            "candidate_1",
+            "candidate_2",
+            "candidate_3",
+            "candidate_4",
+            "candidate_5"
+          ],
+          "budget": {
+            "decisions": 1,
+            "tool_calls": 0,
+            "revisions": 1
+          },
+          "candidate_assignments": [],
+          "evidence": {
+            "E1": {
+              "tool": "inspect_source",
+              "class": "org.springframework.samples.petclinic.PetClinicApplication",
+              "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java",
+              "sha256": "9d99b4b59cc6e185e9a27964b24ede04180ca34211a7e19f968249ee3dac9df3",
+              "start_line": 1,
+              "end_line": 36,
+              "lines": [
+                {
+                  "line": 1,
+                  "text": "/*"
+                },
+                {
+                  "line": 2,
+                  "text": " * Copyright 2012-2025 the original author or authors."
+                },
+                {
+                  "line": 3,
+                  "text": " *"
+                },
+                {
+                  "line": 4,
+                  "text": " * Licensed under the Apache License, Version 2.0 (the \"License\");"
+                },
+                {
+                  "line": 5,
+                  "text": " * you may not use this file except in compliance with the License."
+                },
+                {
+                  "line": 6,
+                  "text": " * You may obtain a copy of the License at"
+                },
+                {
+                  "line": 7,
+                  "text": " *"
+                },
+                {
+                  "line": 8,
+                  "text": " *      https://www.apache.org/licenses/LICENSE-2.0"
+                },
+                {
+                  "line": 9,
+                  "text": " *"
+                },
+                {
+                  "line": 10,
+                  "text": " * Unless required by applicable law or agreed to in writing, software"
+                },
+                {
+                  "line": 11,
+                  "text": " * distributed under the License is distributed on an \"AS IS\" BASIS,"
+                },
+                {
+                  "line": 12,
+                  "text": " * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
+                },
+                {
+                  "line": 13,
+                  "text": " * See the License for the specific language governing permissions and"
+                },
+                {
+                  "line": 14,
+                  "text": " * limitations under the License."
+                },
+                {
+                  "line": 15,
+                  "text": " */"
+                },
+                {
+                  "line": 16,
+                  "text": ""
+                },
+                {
+                  "line": 17,
+                  "text": "package org.springframework.samples.petclinic;"
+                },
+                {
+                  "line": 18,
+                  "text": ""
+                },
+                {
+                  "line": 19,
+                  "text": "import org.springframework.boot.SpringApplication;"
+                },
+                {
+                  "line": 20,
+                  "text": "import org.springframework.boot.autoconfigure.SpringBootApplication;"
+                },
+                {
+                  "line": 21,
+                  "text": "import org.springframework.context.annotation.ImportRuntimeHints;"
+                },
+                {
+                  "line": 22,
+                  "text": ""
+                },
+                {
+                  "line": 23,
+                  "text": "/**"
+                },
+                {
+                  "line": 24,
+                  "text": " * PetClinic Spring Boot Application."
+                },
+                {
+                  "line": 25,
+                  "text": " *"
+                },
+                {
+                  "line": 26,
+                  "text": " * @author Dave Syer"
+                },
+                {
+                  "line": 27,
+                  "text": " */"
+                },
+                {
+                  "line": 28,
+                  "text": "@SpringBootApplication"
+                },
+                {
+                  "line": 29,
+                  "text": "@ImportRuntimeHints(PetClinicRuntimeHints.class)"
+                },
+                {
+                  "line": 30,
+                  "text": "public class PetClinicApplication {"
+                },
+                {
+                  "line": 31,
+                  "text": ""
+                },
+                {
+                  "line": 32,
+                  "text": "\tpublic static void main(String[] args) {"
+                },
+                {
+                  "line": 33,
+                  "text": "\t\tSpringApplication.run(PetClinicApplication.class, args);"
+                },
+                {
+                  "line": 34,
+                  "text": "\t}"
+                },
+                {
+                  "line": 35,
+                  "text": ""
+                },
+                {
+                  "line": 36,
+                  "text": "}"
+                }
+              ],
+              "source_total_lines": 36,
+              "source_excerpt_is_partial": false
+            },
+            "E2": {
+              "tool": "inspect_dependencies",
+              "class": "org.springframework.samples.petclinic.PetClinicApplication",
+              "path": "results/dependency_baseline/petclinic_raw.json",
+              "sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+              "json_pointer": "/classes/org.springframework.samples.petclinic.PetClinicApplication/relationships",
+              "outgoing": [],
+              "incoming": [],
+              "source_edge_line_references": null,
+              "limitation": "Official export has no source line per edge; incoming edges derive from other classes, not this JSON pointer. Parse/resolution diagnostics incomplete."
+            },
+            "E3": {
+              "tool": "inspect_source",
+              "class": "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+              "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/PetClinicRuntimeHints.java",
+              "sha256": "2a365e4c85ec16300ccc6101e2543980a30ea72c34c6a0c51d5e56c0d5ad6633",
+              "start_line": 1,
+              "end_line": 38,
+              "lines": [
+                {
+                  "line": 1,
+                  "text": "/*"
+                },
+                {
+                  "line": 2,
+                  "text": " * Copyright 2012-2025 the original author or authors."
+                },
+                {
+                  "line": 3,
+                  "text": " *"
+                },
+                {
+                  "line": 4,
+                  "text": " * Licensed under the Apache License, Version 2.0 (the \"License\");"
+                },
+                {
+                  "line": 5,
+                  "text": " * you may not use this file except in compliance with the License."
+                },
+                {
+                  "line": 6,
+                  "text": " * You may obtain a copy of the License at"
+                },
+                {
+                  "line": 7,
+                  "text": " *"
+                },
+                {
+                  "line": 8,
+                  "text": " *      https://www.apache.org/licenses/LICENSE-2.0"
+                },
+                {
+                  "line": 9,
+                  "text": " *"
+                },
+                {
+                  "line": 10,
+                  "text": " * Unless required by applicable law or agreed to in writing, software"
+                },
+                {
+                  "line": 11,
+                  "text": " * distributed under the License is distributed on an \"AS IS\" BASIS,"
+                },
+                {
+                  "line": 12,
+                  "text": " * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
+                },
+                {
+                  "line": 13,
+                  "text": " * See the License for the specific language governing permissions and"
+                },
+                {
+                  "line": 14,
+                  "text": " * limitations under the License."
+                },
+                {
+                  "line": 15,
+                  "text": " */"
+                },
+                {
+                  "line": 16,
+                  "text": ""
+                },
+                {
+                  "line": 17,
+                  "text": "package org.springframework.samples.petclinic;"
+                },
+                {
+                  "line": 18,
+                  "text": ""
+                },
+                {
+                  "line": 19,
+                  "text": "import org.springframework.aot.hint.RuntimeHints;"
+                },
+                {
+                  "line": 20,
+                  "text": "import org.springframework.aot.hint.RuntimeHintsRegistrar;"
+                },
+                {
+                  "line": 21,
+                  "text": "import org.springframework.samples.petclinic.model.BaseEntity;"
+                },
+                {
+                  "line": 22,
+                  "text": "import org.springframework.samples.petclinic.model.Person;"
+                },
+                {
+                  "line": 23,
+                  "text": "import org.springframework.samples.petclinic.vet.Vet;"
+                },
+                {
+                  "line": 24,
+                  "text": ""
+                },
+                {
+                  "line": 25,
+                  "text": "public class PetClinicRuntimeHints implements RuntimeHintsRegistrar {"
+                },
+                {
+                  "line": 26,
+                  "text": ""
+                },
+                {
+                  "line": 27,
+                  "text": "\t@Override"
+                },
+                {
+                  "line": 28,
+                  "text": "\tpublic void registerHints(RuntimeHints hints, ClassLoader classLoader) {"
+                },
+                {
+                  "line": 29,
+                  "text": "\t\thints.resources().registerPattern(\"db/*\"); // https://github.com/spring-projects/spring-boot/issues/32654"
+                },
+                {
+                  "line": 30,
+                  "text": "\t\thints.resources().registerPattern(\"db/*/*\"); // nested db/{h2,mysql,postgres}"
+                },
+                {
+                  "line": 31,
+                  "text": "\t\thints.resources().registerPattern(\"messages/*\");"
+                },
+                {
+                  "line": 32,
+                  "text": "\t\thints.resources().registerPattern(\"mysql-default-conf\");"
+                },
+                {
+                  "line": 33,
+                  "text": "\t\thints.reflection().registerType(BaseEntity.class, typeHint -> typeHint.withJavaSerialization(true));"
+                },
+                {
+                  "line": 34,
+                  "text": "\t\thints.reflection().registerType(Person.class, typeHint -> typeHint.withJavaSerialization(true));"
+                },
+                {
+                  "line": 35,
+                  "text": "\t\thints.reflection().registerType(Vet.class, typeHint -> typeHint.withJavaSerialization(true));"
+                },
+                {
+                  "line": 36,
+                  "text": "\t}"
+                },
+                {
+                  "line": 37,
+                  "text": ""
+                },
+                {
+                  "line": 38,
+                  "text": "}"
+                }
+              ],
+              "source_total_lines": 38,
+              "source_excerpt_is_partial": false
+            },
+            "E4": {
+              "tool": "inspect_dependencies",
+              "class": "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+              "path": "results/dependency_baseline/petclinic_raw.json",
+              "sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+              "json_pointer": "/classes/org.springframework.samples.petclinic.PetClinicRuntimeHints/relationships",
+              "outgoing": [],
+              "incoming": [],
+              "source_edge_line_references": null,
+              "limitation": "Official export has no source line per edge; incoming edges derive from other classes, not this JSON pointer. Parse/resolution diagnostics incomplete."
+            },
+            "E5": {
+              "tool": "inspect_source",
+              "class": "org.springframework.samples.petclinic.model.BaseEntity",
+              "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java",
+              "sha256": "2c8f47a328f8bc4ad0ed887890dcf731469ec8f1032b5420d173c7aa5a352600",
+              "start_line": 1,
+              "end_line": 51,
+              "lines": [
+                {
+                  "line": 1,
+                  "text": "/*"
+                },
+                {
+                  "line": 2,
+                  "text": " * Copyright 2012-2025 the original author or authors."
+                },
+                {
+                  "line": 3,
+                  "text": " *"
+                },
+                {
+                  "line": 4,
+                  "text": " * Licensed under the Apache License, Version 2.0 (the \"License\");"
+                },
+                {
+                  "line": 5,
+                  "text": " * you may not use this file except in compliance with the License."
+                },
+                {
+                  "line": 6,
+                  "text": " * You may obtain a copy of the License at"
+                },
+                {
+                  "line": 7,
+                  "text": " *"
+                },
+                {
+                  "line": 8,
+                  "text": " *      https://www.apache.org/licenses/LICENSE-2.0"
+                },
+                {
+                  "line": 9,
+                  "text": " *"
+                },
+                {
+                  "line": 10,
+                  "text": " * Unless required by applicable law or agreed to in writing, software"
+                },
+                {
+                  "line": 11,
+                  "text": " * distributed under the License is distributed on an \"AS IS\" BASIS,"
+                },
+                {
+                  "line": 12,
+                  "text": " * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
+                },
+                {
+                  "line": 13,
+                  "text": " * See the License for the specific language governing permissions and"
+                },
+                {
+                  "line": 14,
+                  "text": " * limitations under the License."
+                },
+                {
+                  "line": 15,
+                  "text": " */"
+                },
+                {
+                  "line": 16,
+                  "text": "package org.springframework.samples.petclinic.model;"
+                },
+                {
+                  "line": 17,
+                  "text": ""
+                },
+                {
+                  "line": 18,
+                  "text": "import java.io.Serializable;"
+                },
+                {
+                  "line": 19,
+                  "text": ""
+                },
+                {
+                  "line": 20,
+                  "text": "import jakarta.persistence.GeneratedValue;"
+                },
+                {
+                  "line": 21,
+                  "text": "import jakarta.persistence.GenerationType;"
+                },
+                {
+                  "line": 22,
+                  "text": "import jakarta.persistence.Id;"
+                },
+                {
+                  "line": 23,
+                  "text": "import jakarta.persistence.MappedSuperclass;"
+                },
+                {
+                  "line": 24,
+                  "text": ""
+                },
+                {
+                  "line": 25,
+                  "text": "/**"
+                },
+                {
+                  "line": 26,
+                  "text": " * Simple JavaBean domain object with an id property. Used as a base class for objects"
+                },
+                {
+                  "line": 27,
+                  "text": " * needing this property."
+                },
+                {
+                  "line": 28,
+                  "text": " *"
+                },
+                {
+                  "line": 29,
+                  "text": " * @author Ken Krebs"
+                },
+                {
+                  "line": 30,
+                  "text": " * @author Juergen Hoeller"
+                },
+                {
+                  "line": 31,
+                  "text": " */"
+                },
+                {
+                  "line": 32,
+                  "text": "@MappedSuperclass"
+                },
+                {
+                  "line": 33,
+                  "text": "public class BaseEntity implements Serializable {"
+                },
+                {
+                  "line": 34,
+                  "text": ""
+                },
+                {
+                  "line": 35,
+                  "text": "\t@Id"
+                },
+                {
+                  "line": 36,
+                  "text": "\t@GeneratedValue(strategy = GenerationType.IDENTITY)"
+                },
+                {
+                  "line": 37,
+                  "text": "\tprivate Integer id;"
+                },
+                {
+                  "line": 38,
+                  "text": ""
+                },
+                {
+                  "line": 39,
+                  "text": "\tpublic Integer getId() {"
+                },
+                {
+                  "line": 40,
+                  "text": "\t\treturn id;"
+                },
+                {
+                  "line": 41,
+                  "text": "\t}"
+                },
+                {
+                  "line": 42,
+                  "text": ""
+                },
+                {
+                  "line": 43,
+                  "text": "\tpublic void setId(Integer id) {"
+                },
+                {
+                  "line": 44,
+                  "text": "\t\tthis.id = id;"
+                },
+                {
+                  "line": 45,
+                  "text": "\t}"
+                },
+                {
+                  "line": 46,
+                  "text": ""
+                },
+                {
+                  "line": 47,
+                  "text": "\tpublic boolean isNew() {"
+                },
+                {
+                  "line": 48,
+                  "text": "\t\treturn this.id == null;"
+                },
+                {
+                  "line": 49,
+                  "text": "\t}"
+                },
+                {
+                  "line": 50,
+                  "text": ""
+                },
+                {
+                  "line": 51,
+                  "text": "}"
+                }
+              ],
+              "source_total_lines": 51,
+              "source_excerpt_is_partial": false
+            },
+            "E6": {
+              "tool": "inspect_dependencies",
+              "class": "org.springframework.samples.petclinic.model.BaseEntity",
+              "path": "results/dependency_baseline/petclinic_raw.json",
+              "sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+              "json_pointer": "/classes/org.springframework.samples.petclinic.model.BaseEntity/relationships",
+              "outgoing": [],
+              "incoming": [
+                {
+                  "source": "org.springframework.samples.petclinic.model.NamedEntity",
+                  "target": "org.springframework.samples.petclinic.model.BaseEntity",
+                  "type": "EXTENDS",
+                  "occurrences": 1
+                },
+                {
+                  "source": "org.springframework.samples.petclinic.model.Person",
+                  "target": "org.springframework.samples.petclinic.model.BaseEntity",
+                  "type": "EXTENDS",
+                  "occurrences": 1
+                },
+                {
+                  "source": "org.springframework.samples.petclinic.owner.Owner",
+                  "target": "org.springframework.samples.petclinic.model.BaseEntity",
+                  "type": "CALLS",
+                  "occurrences": 2
+                },
+                {
+                  "source": "org.springframework.samples.petclinic.owner.OwnerController",
+                  "target": "org.springframework.samples.petclinic.model.BaseEntity",
+                  "type": "CALLS",
+                  "occurrences": 4
+                },
+                {
+                  "source": "org.springframework.samples.petclinic.owner.PetController",
+                  "target": "org.springframework.samples.petclinic.model.BaseEntity",
+                  "type": "CALLS",
+                  "occurrences": 4
+                },
+                {
+                  "source": "org.springframework.samples.petclinic.owner.PetValidator",
+                  "target": "org.springframework.samples.petclinic.model.BaseEntity",
+                  "type": "CALLS",
+                  "occurrences": 1
+                },
+                {
+                  "source": "org.springframework.samples.petclinic.owner.Visit",
+                  "target": "org.springframework.samples.petclinic.model.BaseEntity",
+                  "type": "EXTENDS",
+                  "occurrences": 1
+                }
+              ],
+              "source_edge_line_references": null,
+              "limitation": "Official export has no source line per edge; incoming edges derive from other classes, not this JSON pointer. Parse/resolution diagnostics incomplete."
+            }
+          },
+          "verification_findings": [],
+          "revisions": [],
+          "status": "investigating",
+          "termination_reason": ""
+        },
+        "source_excerpt_coverage": [
+          {
+            "class": "org.springframework.samples.petclinic.PetClinicApplication",
+            "evidence_ids": [
+              "E1",
+              "E2"
+            ],
+            "source_total_lines": 36,
+            "source_excerpt_end_line": 36,
+            "source_excerpt_is_partial": false
+          },
+          {
+            "class": "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+            "evidence_ids": [
+              "E3",
+              "E4"
+            ],
+            "source_total_lines": 38,
+            "source_excerpt_end_line": 38,
+            "source_excerpt_is_partial": false
+          },
+          {
+            "class": "org.springframework.samples.petclinic.model.BaseEntity",
+            "evidence_ids": [
+              "E5",
+              "E6"
+            ],
+            "source_total_lines": 51,
+            "source_excerpt_end_line": 51,
+            "source_excerpt_is_partial": false
+          }
+        ],
+        "previous_accepted_assignments_for_global_label_consistency": [],
+        "batch_guidance": "Evidence is precollected. Submit all current scoped classes using existing evidence IDs. No further inspections are budgeted. Partial source excerpts are NOT complete files; do not claim unseen code was inspected. Use the SAME global service labels across batches; prior accepted assignments provide context, not reference truth. Shared classes use one row with multiple labels. Allowed literal service labels: [\"candidate_1\", \"candidate_2\", \"candidate_3\", \"candidate_4\", \"candidate_5\"]. On unknown_or_duplicate_service findings, repair invalid or repeated labels using only that list; do not repeat the rejected submission unchanged.",
+        "service_label_feedback": []
+      }
+    },
+    {
+      "sequence": 4,
+      "kind": "decision_received",
+      "timestamp_utc": "2026-11-22T05:56:41.842874+00:00",
+      "action": {
+        "type": "submit",
+        "output": {
+          "assignments": [
+            {
+              "class": "org.springframework.samples.petclinic.PetClinicApplication",
+              "services": [
+                "candidate_1"
+              ],
+              "shared": false,
+              "evidence": [
+                "E1",
+                "E2"
+              ]
+            },
+            {
+              "class": "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+              "services": [
+                "candidate_2"
+              ],
+              "shared": false,
+              "evidence": [
+                "E3",
+                "E4"
+              ]
+            },
+            {
+              "class": "org.springframework.samples.petclinic.model.BaseEntity",
+              "services": [
+                "candidate_3"
+              ],
+              "shared": false,
+              "evidence": [
+                "E5",
+                "E6"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sequence": 5,
+      "kind": "graph_node",
+      "timestamp_utc": "2026-11-22T05:56:41.846870+00:00",
+      "node": "validate_submission"
+    },
+    {
+      "sequence": 6,
+      "kind": "verification",
+      "timestamp_utc": "2026-11-22T05:56:41.846870+00:00",
+      "candidate": {
+        "assignments": [
+          {
+            "class": "org.springframework.samples.petclinic.PetClinicApplication",
+            "services": [
+              "candidate_1"
+            ],
+            "shared": false,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "class": "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+            "services": [
+              "candidate_2"
+            ],
+            "shared": false,
+            "evidence": [
+              "E3",
+              "E4"
+            ]
+          },
+          {
+            "class": "org.springframework.samples.petclinic.model.BaseEntity",
+            "services": [
+              "candidate_3"
+            ],
+            "shared": false,
+            "evidence": [
+              "E5",
+              "E6"
+            ]
+          }
+        ]
+      },
+      "findings": [],
+      "interpretation": "Basic schema/evidence-reference checks only, not architectural correctness"
+    },
+    {
+      "sequence": 7,
+      "kind": "terminated",
+      "timestamp_utc": "2026-11-22T05:56:41.846870+00:00",
+      "reason": "basic_checks_passed"
+    },
+    {
+      "sequence": 8,
+      "kind": "graph_node",
+      "timestamp_utc": "2026-11-22T05:56:41.849872+00:00",
+      "node": "finish"
+    }
+  ],
+  "run_config": {
+    "batch": 1,
+    "global_limits": {
+      "global_requests": 18,
+      "requests_per_batch": 2,
+      "max_output_tokens": 1024,
+      "global_requested_completion_token_cap": 18432,
+      "interval_seconds": 60.0,
+      "global_wait_seconds": 1020.0,
+      "socket_timeout_seconds": 15,
+      "request_bytes": 64000,
+      "additional_tools_per_batch": 0,
+      "corrections_per_batch": 1
+    },
+    "allowed_service_labels": [
+      "candidate_1",
+      "candidate_2",
+      "candidate_3",
+      "candidate_4",
+      "candidate_5"
+    ],
+    "service_schema_enum_enabled": true,
+    "provider_config": {
+      "model": "openai/gpt-oss-20b",
+      "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+      "temperature": 0.0,
+      "max_output_tokens": 1024,
+      "timeout_seconds": 15,
+      "max_requests": 2,
+      "max_input_bytes": 64000,
+      "min_interval_seconds": 0,
+      "max_pacing_wait_seconds": 0,
+      "structured_outputs": true
+    },
+    "precollected_tool_reads": 6,
+    "fixed_evidence_policy": "first80lines plus saved full-graph dependencies"
+  },
+  "model_usage": [
+    {
+      "request_number": 1,
+      "requested_model": "openai/gpt-oss-20b",
+      "max_completion_tokens": 1024,
+      "input_bytes": 18076,
+      "temperature": 0.0,
+      "timeout_seconds": 15,
+      "system_instruction": "Return the strict-schema envelope {\"action\": <one workflow action>}. The mandatory type field belongs to the inner action object. Follow the provided JSON schema and inner action examples. No markdown, hidden reasoning, invented evidence IDs or extra fields. Shared classes use one record with shared=true and multiple services.",
+      "response_format": {
+        "type": "json_schema",
+        "json_schema": {
+          "name": "tracemicro_action_v1",
+          "strict": true,
+          "schema": {
+            "type": "object",
+            "properties": {
+              "action": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "inspect_source"
+                        ]
+                      },
+                      "class": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "class"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "inspect_dependencies"
+                        ]
+                      },
+                      "class": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "class"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "submit"
+                        ]
+                      },
+                      "output": {
+                        "type": "object",
+                        "properties": {
+                          "assignments": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "class": {
+                                  "type": "string"
+                                },
+                                "services": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string",
+                                    "enum": [
+                                      "candidate_1",
+                                      "candidate_2",
+                                      "candidate_3",
+                                      "candidate_4",
+                                      "candidate_5"
+                                    ]
+                                  }
+                                },
+                                "shared": {
+                                  "type": "boolean"
+                                },
+                                "evidence": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "required": [
+                                "class",
+                                "services",
+                                "shared",
+                                "evidence"
+                              ],
+                              "additionalProperties": false
+                            }
+                          }
+                        },
+                        "required": [
+                          "assignments"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "output"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            },
+            "required": [
+              "action"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "wire_instruction": "Return exactly {\"action\": <one action object>}. The action examples describe only the inner object. Its mandatory type is inspect_source, inspect_dependencies or submit. Inspection objects contain only type/class and use default source ranges. Use exact class names and real tool evidence IDs; preserve shared-class rules.",
+      "usage": {
+        "prompt_tokens": 4053,
+        "completion_tokens": 778,
+        "total_tokens": 4831
+      },
+      "status": "parsed",
+      "response_json_received": true,
+      "action_json_received": true,
+      "returned_model": "openai/gpt-oss-20b",
+      "finish_reason": "stop",
+      "action_shape": {
+        "is_object": true,
+        "has_type": true,
+        "type_is_string": true,
+        "type_allowed": true
+      },
+      "rate_limits": {
+        "x-ratelimit-limit-requests": 1000,
+        "x-ratelimit-remaining-requests": 999,
+        "x-ratelimit-limit-tokens": 8000,
+        "x-ratelimit-remaining-tokens": 2923,
+        "x-ratelimit-reset-requests": "1m26.4s",
+        "x-ratelimit-reset-tokens": "38.077s"
+      },
+      "pacing_wait_seconds": 0,
+      "pacing_wait_total_seconds": 0,
+      "elapsed_seconds": 1.609
+    }
+  ],
+  "architectural_accuracy": null
+}

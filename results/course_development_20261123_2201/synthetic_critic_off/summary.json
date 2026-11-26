@@ -1,0 +1,31 @@
+{
+  "version": "advisory_critic_v1",
+  "mode": "off",
+  "selection_rule": "critic_policy_v1: selective invokes once when local validation has findings OR fewer than two nonempty services; fixed always invokes once; off never invokes",
+  "run_kind": "offline_routing",
+  "selected": false,
+  "source": "results\\course_development_20261123_2201\\synthetic_source_two_groups",
+  "source_status": "synthetic_fixture",
+  "source_summary_sha256": "9e1f7fb08ac0e617a172f2ef4c7ff21bd3e54762a8a8f3bba548115e0cb66cd0",
+  "local_findings": [],
+  "corrections_applied": false,
+  "architectural_accuracy": null,
+  "code_sha256": "e858cd731ea475914dfb3caabea80e9f48a5472d227ce177484668555de0e574",
+  "status": "critic_skipped",
+  "global_transport_attempts": 0,
+  "session_transport_attempts": 0,
+  "wait_seconds": 0,
+  "elapsed_seconds": 0.0,
+  "reported_tokens": {
+    "prompt_tokens": null,
+    "completion_tokens": null,
+    "total_tokens": null
+  },
+  "records_missing_token_fields": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "model_usage": [],
+  "live_model_run": false
+}

@@ -1,0 +1,45 @@
+{
+  "experiment": "global_plan_v1 PetClinic development comparison",
+  "status": "Prepared before live variant execution; development design, not preregistration",
+  "source_fingerprint": "c66415bfe029129bc8229a36216547dd41c3ba32d7aad5b8590dd00ac4622e29",
+  "dependency_json_sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+  "model": "openai/gpt-oss-20b",
+  "temperature": 0,
+  "max_completion_tokens_per_request": 1024,
+  "socket_timeout_seconds": 15,
+  "planning_request_cap": 1,
+  "planning_input_byte_cap": 256000,
+  "batch_input_byte_cap": 64000,
+  "batch_request_cap": 2,
+  "batch_sizes": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    1
+  ],
+  "batch_order": "Sorted fully qualified class identifiers, identical to original",
+  "evidence": "Same 50 first80-source-line and static dependency records as original. Planner sees all records; batches see local records plus the full proposed plan and previous assignments.",
+  "planning_output": "One to five unique allowed labels, each with responsibility and real evidence citations",
+  "fixed_nonempty_service_count": null,
+  "hardcoded_domain_reference": false,
+  "session": {
+    "requests": 40,
+    "wall_seconds": 3600,
+    "pace_seconds": 60,
+    "requested_wait_seconds": 2340,
+    "maximum_runs": 3
+  },
+  "reference_accuracy": null,
+  "original_runs": [
+    "results/submit_only_live_20261122_1827/attempt_1",
+    "results/reproducibility_live_20261122_1847/run_1",
+    "results/reproducibility_live_20261122_1847/run_2"
+  ],
+  "comparability": "Different workflow context and one planning call. Assignment generation settings and original code path retained. Resource costs are unequal and must be reported. Proposal matched-count research evaluation remains pending.",
+  "heldouts": "JPetStore and AcmeAir excluded from development"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "petclinic_three_class_development_pilot",
+  "scope": [
+    "org.springframework.samples.petclinic.owner.Owner",
+    "org.springframework.samples.petclinic.vet.Vet",
+    "org.springframework.samples.petclinic.model.BaseEntity"
+  ],
+  "services": ["owners_candidate", "vets_candidate"],
+  "required_evidence_tools": ["inspect_source", "inspect_dependencies"],
+  "limits": {
+    "model_requests": 8,
+    "tool_calls": 6,
+    "max_output_tokens": 1024,
+    "revisions": 1,
+    "timeout_seconds": 15,
+    "max_input_bytes": 64000
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "run_kind": "synthetic_test_only",
+  "actual_application_runs": 0,
+  "model_calls": 0,
+  "scenarios": {
+    "synthetic_scenario_0": [
+      {
+        "event": "synthetic_only",
+        "class": "FixtureClass0"
+      }
+    ],
+    "synthetic_scenario_1": [
+      {
+        "event": "synthetic_only",
+        "class": "FixtureClass1"
+      }
+    ],
+    "synthetic_scenario_2": [
+      {
+        "event": "synthetic_only",
+        "class": "FixtureClass2"
+      }
+    ],
+    "synthetic_scenario_3": [
+      {
+        "event": "synthetic_only",
+        "class": "FixtureClass3"
+      }
+    ]
+  },
+  "trials": [
+    {
+      "availability": 1,
+      "initial_scenarios": [
+        "synthetic_scenario_0",
+        "synthetic_scenario_1",
+        "synthetic_scenario_2",
+        "synthetic_scenario_3"
+      ],
+      "after_recovery": [
+        "synthetic_scenario_0",
+        "synthetic_scenario_1",
+        "synthetic_scenario_2",
+        "synthetic_scenario_3"
+      ],
+      "recovery_tool_calls": 1
+    },
+    {
+      "availability": 0.5,
+      "initial_scenarios": [
+        "synthetic_scenario_0",
+        "synthetic_scenario_1"
+      ],
+      "after_recovery": [
+        "synthetic_scenario_0",
+        "synthetic_scenario_1",
+        "synthetic_scenario_3"
+      ],
+      "recovery_tool_calls": 1
+    },
+    {
+      "availability": 0,
+      "initial_scenarios": [],
+      "after_recovery": [
+        "synthetic_scenario_3"
+      ],
+      "recovery_tool_calls": 1
+    }
+  ]
+}

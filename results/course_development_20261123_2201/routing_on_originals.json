@@ -1,0 +1,22 @@
+{
+  "run_kind": "offline_routing_only",
+  "policy": "critic_policy_v1: selective invokes once when local validation has findings OR fewer than two nonempty services; fixed always invokes once; off never invokes",
+  "actual_model_calls": 0,
+  "results": [
+    {
+      "source": "results/submit_only_live_20261122_1827/attempt_1",
+      "fixed_selected": true,
+      "selective_selected": true
+    },
+    {
+      "source": "results/reproducibility_live_20261122_1847/run_1",
+      "fixed_selected": true,
+      "selective_selected": true
+    },
+    {
+      "source": "results/reproducibility_live_20261122_1847/run_2",
+      "fixed_selected": true,
+      "selective_selected": true
+    }
+  ]
+}

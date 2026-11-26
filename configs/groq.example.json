@@ -1,0 +1,11 @@
+{
+  "provider": "groq",
+  "model": "SET_EXPLICIT_MODEL_BEFORE_ANY_LIVE_RUN",
+  "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+  "temperature": 0.0,
+  "max_output_tokens": 512,
+  "timeout_seconds": 15,
+  "max_requests": 2,
+  "max_input_bytes": 24000,
+  "transport_enabled": false
+}

@@ -1,1 +1,2 @@
-*.java -text
+# Preserve byte-level fingerprints across checkout platforms.
+* -text
