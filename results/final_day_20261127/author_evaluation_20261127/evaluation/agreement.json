@@ -1,0 +1,187 @@
+{
+  "reference": {
+    "reference_status": "author-reviewed-development",
+    "reference_label": "Author-reviewed development reference; reviewer has seen model outputs.",
+    "reviewer_has_seen_model_outputs": true,
+    "fulfills_two_independent_annotators": false,
+    "chatgpt_assistance_disclosed": true,
+    "reference_sha256": "6c7b6e67e3267d356beb04ea6bc2c628bf1a98637c8f06bd8349c0931fe67906",
+    "decisions": {
+      "infrastructure": 6,
+      "shared": 3,
+      "domain": 16
+    }
+  },
+  "results": [
+    {
+      "method": "package",
+      "eligible_classes": 25,
+      "scored_classes": 25,
+      "uncertain": [],
+      "excluded": [],
+      "missing_predictions": [],
+      "coverage": 1.0,
+      "domain_pairs": {
+        "tp": 65,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "shared_identification": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "shared_domain_anchor_associations": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 48,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "limitations": "Pair metrics use reference domain classes only. Missing predictions create no positive links. Shared associations use shared-class/domain-class anchors, ignoring service label spelling. Groups with no domain anchors cannot be assessed by association pairs. Infrastructure contributes to coverage and shared detection, not domain pair quality. Zero-denominator metrics are null; no perfect score is inferred."
+    },
+    {
+      "method": "dependency",
+      "eligible_classes": 25,
+      "scored_classes": 25,
+      "uncertain": [],
+      "excluded": [],
+      "missing_predictions": [],
+      "coverage": 1.0,
+      "domain_pairs": {
+        "tp": 65,
+        "fp": 55,
+        "fn": 0,
+        "precision": 0.5416666666666666,
+        "recall": 1.0,
+        "f1": 0.7027027027027027
+      },
+      "shared_identification": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "shared_domain_anchor_associations": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 48,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "limitations": "Pair metrics use reference domain classes only. Missing predictions create no positive links. Shared associations use shared-class/domain-class anchors, ignoring service label spelling. Groups with no domain anchors cannot be assessed by association pairs. Infrastructure contributes to coverage and shared detection, not domain pair quality. Zero-denominator metrics are null; no perfect score is inferred."
+    },
+    {
+      "method": "original_1",
+      "eligible_classes": 25,
+      "scored_classes": 25,
+      "uncertain": [],
+      "excluded": [],
+      "missing_predictions": [],
+      "coverage": 1.0,
+      "domain_pairs": {
+        "tp": 65,
+        "fp": 55,
+        "fn": 0,
+        "precision": 0.5416666666666666,
+        "recall": 1.0,
+        "f1": 0.7027027027027027
+      },
+      "shared_identification": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "shared_domain_anchor_associations": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 48,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "limitations": "Pair metrics use reference domain classes only. Missing predictions create no positive links. Shared associations use shared-class/domain-class anchors, ignoring service label spelling. Groups with no domain anchors cannot be assessed by association pairs. Infrastructure contributes to coverage and shared detection, not domain pair quality. Zero-denominator metrics are null; no perfect score is inferred."
+    },
+    {
+      "method": "original_2",
+      "eligible_classes": 25,
+      "scored_classes": 25,
+      "uncertain": [],
+      "excluded": [],
+      "missing_predictions": [],
+      "coverage": 1.0,
+      "domain_pairs": {
+        "tp": 65,
+        "fp": 55,
+        "fn": 0,
+        "precision": 0.5416666666666666,
+        "recall": 1.0,
+        "f1": 0.7027027027027027
+      },
+      "shared_identification": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "shared_domain_anchor_associations": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 48,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "limitations": "Pair metrics use reference domain classes only. Missing predictions create no positive links. Shared associations use shared-class/domain-class anchors, ignoring service label spelling. Groups with no domain anchors cannot be assessed by association pairs. Infrastructure contributes to coverage and shared detection, not domain pair quality. Zero-denominator metrics are null; no perfect score is inferred."
+    },
+    {
+      "method": "original_3",
+      "eligible_classes": 25,
+      "scored_classes": 25,
+      "uncertain": [],
+      "excluded": [],
+      "missing_predictions": [],
+      "coverage": 1.0,
+      "domain_pairs": {
+        "tp": 65,
+        "fp": 55,
+        "fn": 0,
+        "precision": 0.5416666666666666,
+        "recall": 1.0,
+        "f1": 0.7027027027027027
+      },
+      "shared_identification": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "shared_domain_anchor_associations": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 48,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "limitations": "Pair metrics use reference domain classes only. Missing predictions create no positive links. Shared associations use shared-class/domain-class anchors, ignoring service label spelling. Groups with no domain anchors cannot be assessed by association pairs. Infrastructure contributes to coverage and shared detection, not domain pair quality. Zero-denominator metrics are null; no perfect score is inferred."
+    }
+  ]
+}

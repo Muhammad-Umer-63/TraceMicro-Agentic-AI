@@ -1,0 +1,22 @@
+{
+  "source_fingerprint": "c66415bfe029129bc8229a36216547dd41c3ba32d7aad5b8590dd00ac4622e29",
+  "dependency_json_sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+  "files": {
+    "configs/petclinic_global_plan_compact_v3.json": "b1c0fa9abd7525ff46a84386c77d5656e75311646935eda0f373b39399e2849a",
+    "requirements.txt": "de61b40091e45aa83990581ab7f6b6c7856ed1ba0bf805096993eb20c00ef3d2",
+    "results/dependency_baseline/petclinic_raw.json": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+    "results/dependency_baseline/petclinic_k5.json": "0a94f1858b3e405a362e995d92d6f1bee4ce293761e165e0062e70fa1ed34ca9",
+    "petclinic_final_day_live.py": "d5177c9c3d21bbc64f87f0c17bad25249e8b82e18dd8923c20e3bf341663e958",
+    "results/final_day_20261127/CONTRACT.md": "b74059452a68a9f0ebb7b04d594bedd568ae723c7e3da8efd3e77dac6b069270",
+    "petclinic_global_plan.py": "0dda943229b7446304b5526cbf9fbc5166104e169c2bdd786001c755f0a419dc",
+    "petclinic_batch_groq.py": "c1555dfccf9a8f88b726838475cefb9ef4f7be8ebd0d4ab78b1171f9d20686e5",
+    "tracemicro/workflow.py": "9ccf9fec8376cd7e367059e7a26caba926502fd3fa10b8fc55ef38d2cf284a33",
+    "tracemicro/providers.py": "f557c7c7189b35823269218de85a49e13ad8c7d088ca39ed5fce9f57ff8d2cdc",
+    "tracemicro/langgraph_workflow.py": "aaf34acb99882f19235117915f655cc04e9ed8a0b726b1485211de559240c014",
+    "tracemicro/action_schema.py": "69abc3025fa2dc872974437931501e411001f5af3938a43310038a420b7d4aa5",
+    "petclinic_batch_prototype.py": "d733de5f3c622835d34ad339575cf7030c5a3ab89b8b0c74ead845abf489c1fa",
+    "tracemicro/pilot.py": "d8f42e912354d105d6b684a1dd8190945677fca7fe08bd439fffb161fdb719eb",
+    "tracemicro/evidence.py": "5d8dc205be0be041c08d5bf6c5d10977eda8168468a567c80b95df2330b0a5c4"
+  },
+  "planner_code_matches_prior_simulation": true
+}

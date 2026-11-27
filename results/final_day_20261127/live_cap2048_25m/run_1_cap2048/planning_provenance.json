@@ -1,0 +1,352 @@
+{
+  "E1": {
+    "class": "org.springframework.samples.petclinic.PetClinicApplication",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java",
+    "sha256": "9d99b4b59cc6e185e9a27964b24ede04180ca34211a7e19f968249ee3dac9df3",
+    "original_excerpt_end": 36,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E2": {
+    "class": "org.springframework.samples.petclinic.PetClinicApplication",
+    "original_evidence_id": "E2",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E3": {
+    "class": "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/PetClinicRuntimeHints.java",
+    "sha256": "2a365e4c85ec16300ccc6101e2543980a30ea72c34c6a0c51d5e56c0d5ad6633",
+    "original_excerpt_end": 38,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E4": {
+    "class": "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+    "original_evidence_id": "E4",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E5": {
+    "class": "org.springframework.samples.petclinic.model.BaseEntity",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java",
+    "sha256": "2c8f47a328f8bc4ad0ed887890dcf731469ec8f1032b5420d173c7aa5a352600",
+    "original_excerpt_end": 51,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E6": {
+    "class": "org.springframework.samples.petclinic.model.BaseEntity",
+    "original_evidence_id": "E6",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E7": {
+    "class": "org.springframework.samples.petclinic.model.NamedEntity",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java",
+    "sha256": "6695dafa9b8d4cc67c0cf9305b17b897c58103ca33c12dd0f9375edcfe815b32",
+    "original_excerpt_end": 51,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E8": {
+    "class": "org.springframework.samples.petclinic.model.NamedEntity",
+    "original_evidence_id": "E8",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E9": {
+    "class": "org.springframework.samples.petclinic.model.Person",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/model/Person.java",
+    "sha256": "a872c368cd5b09a7cb8a3f42e1baff1f6b0adc7cfc5bccf5f426374292ba4244",
+    "original_excerpt_end": 57,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E10": {
+    "class": "org.springframework.samples.petclinic.model.Person",
+    "original_evidence_id": "E10",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E11": {
+    "class": "org.springframework.samples.petclinic.owner.Owner",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/owner/Owner.java",
+    "sha256": "a5273cbccaf4993c92cc204c4481d52ebc611b731862f078b203b2a7eefa5f8a",
+    "original_excerpt_end": 80,
+    "original_partial": true,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E12": {
+    "class": "org.springframework.samples.petclinic.owner.Owner",
+    "original_evidence_id": "E12",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E13": {
+    "class": "org.springframework.samples.petclinic.owner.OwnerController",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java",
+    "sha256": "611115841f671065ca2796fbb096102d56ce6aafd20bfe9a264f0a6968cca3ff",
+    "original_excerpt_end": 80,
+    "original_partial": true,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E14": {
+    "class": "org.springframework.samples.petclinic.owner.OwnerController",
+    "original_evidence_id": "E14",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E15": {
+    "class": "org.springframework.samples.petclinic.owner.OwnerRepository",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/owner/OwnerRepository.java",
+    "sha256": "654cc5a38b2806748116caf4fbd6a99010a35605db32a12707078c34ccec2cd9",
+    "original_excerpt_end": 62,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E16": {
+    "class": "org.springframework.samples.petclinic.owner.OwnerRepository",
+    "original_evidence_id": "E16",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E17": {
+    "class": "org.springframework.samples.petclinic.owner.Pet",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/owner/Pet.java",
+    "sha256": "ec77c2d70ae043c6eb441e47ebc93a3d848d8ae9729068e8f4e997aedfa0bbd7",
+    "original_excerpt_end": 80,
+    "original_partial": true,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E18": {
+    "class": "org.springframework.samples.petclinic.owner.Pet",
+    "original_evidence_id": "E18",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E19": {
+    "class": "org.springframework.samples.petclinic.owner.PetController",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/owner/PetController.java",
+    "sha256": "1a8a8097ff334b85d3a62c4df79ec52c2dbee8777925970e140081cff7e7c25e",
+    "original_excerpt_end": 80,
+    "original_partial": true,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E20": {
+    "class": "org.springframework.samples.petclinic.owner.PetController",
+    "original_evidence_id": "E20",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E21": {
+    "class": "org.springframework.samples.petclinic.owner.PetType",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/owner/PetType.java",
+    "sha256": "9e64329633ce98a96f18cecf7426338d57b753fd24b7b47f7af483467a3df92e",
+    "original_excerpt_end": 30,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E22": {
+    "class": "org.springframework.samples.petclinic.owner.PetType",
+    "original_evidence_id": "E22",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E23": {
+    "class": "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/owner/PetTypeFormatter.java",
+    "sha256": "af232944dba211094ee5f6b5b3e2bc9696e46ba8f40cad0e5bf7e0b283aacac7",
+    "original_excerpt_end": 62,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E24": {
+    "class": "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+    "original_evidence_id": "E24",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E25": {
+    "class": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/owner/PetTypeRepository.java",
+    "sha256": "696705e51ab5835ac28630397de2d3f3541d3f419f19461e11755a9aac2afa04",
+    "original_excerpt_end": 39,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E26": {
+    "class": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+    "original_evidence_id": "E26",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E27": {
+    "class": "org.springframework.samples.petclinic.owner.PetValidator",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/owner/PetValidator.java",
+    "sha256": "1cee4c2a57afd7edb3521fa7a19c4b643f23c2f5b91406ecd638319c6cce9f7f",
+    "original_excerpt_end": 69,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E28": {
+    "class": "org.springframework.samples.petclinic.owner.PetValidator",
+    "original_evidence_id": "E28",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E29": {
+    "class": "org.springframework.samples.petclinic.owner.Visit",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/owner/Visit.java",
+    "sha256": "587191bc74fbbb696e90114366db6988cd6f07c25cd2e991c038d6bda52df123",
+    "original_excerpt_end": 70,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E30": {
+    "class": "org.springframework.samples.petclinic.owner.Visit",
+    "original_evidence_id": "E30",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E31": {
+    "class": "org.springframework.samples.petclinic.owner.VisitController",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/owner/VisitController.java",
+    "sha256": "b7c8f9cb7b2b2b5827d85787d1f18c95762a0213760013cef9d0a9e1c2c0f8d8",
+    "original_excerpt_end": 80,
+    "original_partial": true,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E32": {
+    "class": "org.springframework.samples.petclinic.owner.VisitController",
+    "original_evidence_id": "E32",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E33": {
+    "class": "org.springframework.samples.petclinic.system.CacheConfiguration",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration.java",
+    "sha256": "1375dfc554a1efa859d2e54cf6fe82724aecea8b46d0c2ab06aabd1aa14ef9da",
+    "original_excerpt_end": 53,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E34": {
+    "class": "org.springframework.samples.petclinic.system.CacheConfiguration",
+    "original_evidence_id": "E34",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E35": {
+    "class": "org.springframework.samples.petclinic.system.CrashController",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/system/CrashController.java",
+    "sha256": "d7c003dc6357596eefa345eff63ecf3909a50238e030e3c93f09426e537ba517",
+    "original_excerpt_end": 37,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E36": {
+    "class": "org.springframework.samples.petclinic.system.CrashController",
+    "original_evidence_id": "E36",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E37": {
+    "class": "org.springframework.samples.petclinic.system.WebConfiguration",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/system/WebConfiguration.java",
+    "sha256": "d9eb227f4ffcd434b2000ac30fce9b5e341f85e893c4b3536b50fbbc15384b92",
+    "original_excerpt_end": 60,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E38": {
+    "class": "org.springframework.samples.petclinic.system.WebConfiguration",
+    "original_evidence_id": "E38",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E39": {
+    "class": "org.springframework.samples.petclinic.system.WelcomeController",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/system/WelcomeController.java",
+    "sha256": "cfdffa794c8ec7a0c634a7d39d39f9abc1dd2ddc4b4d7a591b341136015a6f66",
+    "original_excerpt_end": 30,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E40": {
+    "class": "org.springframework.samples.petclinic.system.WelcomeController",
+    "original_evidence_id": "E40",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E41": {
+    "class": "org.springframework.samples.petclinic.vet.Specialty",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/vet/Specialty.java",
+    "sha256": "0fa07bcb3b7b4ddb380a278d98dcfe03bec5e3a1e42b9f08c555d75a6be256d0",
+    "original_excerpt_end": 32,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E42": {
+    "class": "org.springframework.samples.petclinic.vet.Specialty",
+    "original_evidence_id": "E42",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E43": {
+    "class": "org.springframework.samples.petclinic.vet.Vet",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/vet/Vet.java",
+    "sha256": "8548e47aaf310b276d5cc9f58976756339b16a02ac47944f778260f2ed121b78",
+    "original_excerpt_end": 74,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E44": {
+    "class": "org.springframework.samples.petclinic.vet.Vet",
+    "original_evidence_id": "E44",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E45": {
+    "class": "org.springframework.samples.petclinic.vet.VetController",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/vet/VetController.java",
+    "sha256": "8fb67351a3d4b28c220a870178cb72998ef6dfaa303dd65f2e8c242eb2ddbbfa",
+    "original_excerpt_end": 80,
+    "original_partial": true,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E46": {
+    "class": "org.springframework.samples.petclinic.vet.VetController",
+    "original_evidence_id": "E46",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E47": {
+    "class": "org.springframework.samples.petclinic.vet.VetRepository",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/vet/VetRepository.java",
+    "sha256": "732888e66084f9f94dd79c181e29dbbe2c752959c10ebf82b0940700f61c0dde",
+    "original_excerpt_end": 58,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E48": {
+    "class": "org.springframework.samples.petclinic.vet.VetRepository",
+    "original_evidence_id": "E48",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  },
+  "E49": {
+    "class": "org.springframework.samples.petclinic.vet.Vets",
+    "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/vet/Vets.java",
+    "sha256": "8a9b86de5dd337047eacd492f03526974d82e3765e0a628341a190ffb1bb1707",
+    "original_excerpt_end": 43,
+    "original_partial": false,
+    "declaration_characters_max": 160,
+    "declaration_clipped": false
+  },
+  "E50": {
+    "class": "org.springframework.samples.petclinic.vet.Vets",
+    "original_evidence_id": "E50",
+    "policy": "All outgoing target/type pairs, deduplicated; occurrences omitted; incoming derivable globally."
+  }
+}

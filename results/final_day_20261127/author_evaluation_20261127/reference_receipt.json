@@ -1,0 +1,26 @@
+{
+  "reference": "author_reference_20261127.csv",
+  "sha256": "6c7b6e67e3267d356beb04ea6bc2c628bf1a98637c8f06bd8349c0931fe67906",
+  "frozen_utc": "2026-11-27T11:35:39.523773+00:00",
+  "source_draft": "results/final_day_20261127/author_worksheet_draft.csv",
+  "eligible_source_sha256": "c66415bfe029129bc8229a36216547dd41c3ba32d7aad5b8590dd00ac4622e29",
+  "approved_by": "Muhammad Umer Bin Usman",
+  "approval_basis": "User explicitly confirmed completion and approval in the 27 November 2026 task message.",
+  "reference_label": "Author-reviewed development reference; reviewer has seen model outputs.",
+  "chatgpt_assistance_disclosed": true,
+  "reviewer_has_seen_model_outputs": true,
+  "independent": false,
+  "draft_metadata_note": "This frozen CSV preserves the approved draft byte for byte. This receipt supersedes the pending-approval text in its reviewer and reference_label columns.",
+  "validation": {
+    "eligible_classes": 25,
+    "unique_scope_complete": true,
+    "source_index_and_source_bytes_checked": true,
+    "evidence_filename_references_resolve": true,
+    "decision_counts": {
+      "infrastructure": 6,
+      "shared": 3,
+      "domain": 16
+    },
+    "semantic_judgments": "author-approved"
+  }
+}

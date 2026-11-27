@@ -1,0 +1,879 @@
+{
+  "run_kind": "groq_live",
+  "created_utc": "2026-11-22T18:34:40.553960+00:00",
+  "source_fingerprint": "c66415bfe029129bc8229a36216547dd41c3ba32d7aad5b8590dd00ac4622e29",
+  "dependency_json_sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+  "code_sha256": {
+    "petclinic_batch_groq.py": "5b5745d212982bb9125d2c2dff18f52fb2ab44ce65af2fd40cb574a5ffb28110",
+    "tracemicro\\langgraph_workflow.py": "aaf34acb99882f19235117915f655cc04e9ed8a0b726b1485211de559240c014",
+    "tracemicro\\providers.py": "f557c7c7189b35823269218de85a49e13ad8c7d088ca39ed5fce9f57ff8d2cdc",
+    "petclinic_batch_prototype.py": "d733de5f3c622835d34ad339575cf7030c5a3ab89b8b0c74ead845abf489c1fa",
+    "tracemicro\\action_schema.py": "69abc3025fa2dc872974437931501e411001f5af3938a43310038a420b7d4aa5",
+    "tracemicro\\workflow.py": "9ccf9fec8376cd7e367059e7a26caba926502fd3fa10b8fc55ef38d2cf284a33"
+  },
+  "limits": {
+    "global_requests": 18,
+    "requests_per_batch": 2,
+    "max_output_tokens": 1024,
+    "global_requested_completion_token_cap": 18432,
+    "interval_seconds": 60.0,
+    "global_wait_seconds": 1020.0,
+    "socket_timeout_seconds": 15,
+    "request_bytes": 64000,
+    "additional_tools_per_batch": 0,
+    "corrections_per_batch": 1
+  },
+  "provider_config": {
+    "model": "openai/gpt-oss-20b",
+    "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+    "temperature": 0.0,
+    "max_output_tokens": 1024,
+    "timeout_seconds": 15,
+    "max_requests": 2,
+    "max_input_bytes": 64000,
+    "min_interval_seconds": 0,
+    "max_pacing_wait_seconds": 0,
+    "structured_outputs": true
+  },
+  "precollection_reads": 50,
+  "allowed_service_labels": [
+    "candidate_1",
+    "candidate_2",
+    "candidate_3",
+    "candidate_4",
+    "candidate_5"
+  ],
+  "service_schema_enum_enabled": true,
+  "allowed_actions": [
+    "submit"
+  ],
+  "precollection_elapsed_seconds": 0.0,
+  "batch_sizes": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    1
+  ],
+  "cost": null,
+  "cost_note": "No billing/pricing supplied; missing usage is unknown, not zero.",
+  "architectural_accuracy": null,
+  "status": "basic_checks_passed",
+  "batches": [
+    {
+      "batch": 1,
+      "scope": [
+        "org.springframework.samples.petclinic.PetClinicApplication",
+        "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+        "org.springframework.samples.petclinic.model.BaseEntity"
+      ],
+      "stop": "basic_checks_passed",
+      "last_candidate": [
+        {
+          "class": "org.springframework.samples.petclinic.PetClinicApplication",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "class": "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E3",
+            "E4"
+          ]
+        },
+        {
+          "class": "org.springframework.samples.petclinic.model.BaseEntity",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E5",
+            "E6"
+          ]
+        }
+      ],
+      "findings": [],
+      "errors": [],
+      "transport_attempts": 1,
+      "provider_request_records": 1,
+      "wait_seconds": 0,
+      "elapsed_seconds": 1.125,
+      "reported_tokens": {
+        "prompt_tokens": 3912,
+        "completion_tokens": 431,
+        "total_tokens": 4343
+      },
+      "records_missing_token_fields": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "batch": 2,
+      "scope": [
+        "org.springframework.samples.petclinic.model.NamedEntity",
+        "org.springframework.samples.petclinic.model.Person",
+        "org.springframework.samples.petclinic.owner.Owner"
+      ],
+      "stop": "basic_checks_passed",
+      "last_candidate": [
+        {
+          "class": "org.springframework.samples.petclinic.model.NamedEntity",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E7",
+            "E8"
+          ]
+        },
+        {
+          "class": "org.springframework.samples.petclinic.model.Person",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E9",
+            "E10"
+          ]
+        },
+        {
+          "class": "org.springframework.samples.petclinic.owner.Owner",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E11",
+            "E12"
+          ]
+        }
+      ],
+      "findings": [],
+      "errors": [],
+      "transport_attempts": 1,
+      "provider_request_records": 1,
+      "wait_seconds": 59.98499999998603,
+      "elapsed_seconds": 61.04700000002049,
+      "reported_tokens": {
+        "prompt_tokens": 5201,
+        "completion_tokens": 458,
+        "total_tokens": 5659
+      },
+      "records_missing_token_fields": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "batch": 3,
+      "scope": [
+        "org.springframework.samples.petclinic.owner.OwnerController",
+        "org.springframework.samples.petclinic.owner.OwnerRepository",
+        "org.springframework.samples.petclinic.owner.Pet"
+      ],
+      "stop": "basic_checks_passed",
+      "last_candidate": [
+        {
+          "class": "org.springframework.samples.petclinic.owner.OwnerController",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E13",
+            "E14"
+          ]
+        },
+        {
+          "class": "org.springframework.samples.petclinic.owner.OwnerRepository",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E15",
+            "E16"
+          ]
+        },
+        {
+          "class": "org.springframework.samples.petclinic.owner.Pet",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E17",
+            "E18"
+          ]
+        }
+      ],
+      "findings": [],
+      "errors": [],
+      "transport_attempts": 1,
+      "provider_request_records": 1,
+      "wait_seconds": 59.98499999998603,
+      "elapsed_seconds": 61.35999999998603,
+      "reported_tokens": {
+        "prompt_tokens": 6074,
+        "completion_tokens": 495,
+        "total_tokens": 6569
+      },
+      "records_missing_token_fields": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "batch": 4,
+      "scope": [
+        "org.springframework.samples.petclinic.owner.PetController",
+        "org.springframework.samples.petclinic.owner.PetType",
+        "org.springframework.samples.petclinic.owner.PetTypeFormatter"
+      ],
+      "stop": "basic_checks_passed",
+      "last_candidate": [
+        {
+          "class": "org.springframework.samples.petclinic.owner.PetController",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E19",
+            "E20"
+          ]
+        },
+        {
+          "class": "org.springframework.samples.petclinic.owner.PetType",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E21",
+            "E22"
+          ]
+        },
+        {
+          "class": "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E23",
+            "E24"
+          ]
+        }
+      ],
+      "findings": [],
+      "errors": [],
+      "transport_attempts": 1,
+      "provider_request_records": 1,
+      "wait_seconds": 59.96900000004098,
+      "elapsed_seconds": 61.10999999998603,
+      "reported_tokens": {
+        "prompt_tokens": 5325,
+        "completion_tokens": 330,
+        "total_tokens": 5655
+      },
+      "records_missing_token_fields": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "batch": 5,
+      "scope": [
+        "org.springframework.samples.petclinic.owner.PetTypeRepository",
+        "org.springframework.samples.petclinic.owner.PetValidator",
+        "org.springframework.samples.petclinic.owner.Visit"
+      ],
+      "stop": "basic_checks_passed",
+      "last_candidate": [
+        {
+          "class": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E25",
+            "E26"
+          ]
+        },
+        {
+          "class": "org.springframework.samples.petclinic.owner.PetValidator",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E27",
+            "E28"
+          ]
+        },
+        {
+          "class": "org.springframework.samples.petclinic.owner.Visit",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E29",
+            "E30"
+          ]
+        }
+      ],
+      "findings": [],
+      "errors": [],
+      "transport_attempts": 1,
+      "provider_request_records": 1,
+      "wait_seconds": 59.96799999999348,
+      "elapsed_seconds": 61.34299999999348,
+      "reported_tokens": {
+        "prompt_tokens": 5243,
+        "completion_tokens": 326,
+        "total_tokens": 5569
+      },
+      "records_missing_token_fields": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "batch": 6,
+      "scope": [
+        "org.springframework.samples.petclinic.owner.VisitController",
+        "org.springframework.samples.petclinic.system.CacheConfiguration",
+        "org.springframework.samples.petclinic.system.CrashController"
+      ],
+      "stop": "basic_checks_passed",
+      "last_candidate": [
+        {
+          "class": "org.springframework.samples.petclinic.owner.VisitController",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E31",
+            "E32"
+          ]
+        },
+        {
+          "class": "org.springframework.samples.petclinic.system.CacheConfiguration",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E33",
+            "E34"
+          ]
+        },
+        {
+          "class": "org.springframework.samples.petclinic.system.CrashController",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E35",
+            "E36"
+          ]
+        }
+      ],
+      "findings": [],
+      "errors": [],
+      "transport_attempts": 1,
+      "provider_request_records": 1,
+      "wait_seconds": 59.98499999998603,
+      "elapsed_seconds": 61.438000000081956,
+      "reported_tokens": {
+        "prompt_tokens": 5146,
+        "completion_tokens": 492,
+        "total_tokens": 5638
+      },
+      "records_missing_token_fields": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "batch": 7,
+      "scope": [
+        "org.springframework.samples.petclinic.system.WebConfiguration",
+        "org.springframework.samples.petclinic.system.WelcomeController",
+        "org.springframework.samples.petclinic.vet.Specialty"
+      ],
+      "stop": "basic_checks_passed",
+      "last_candidate": [
+        {
+          "class": "org.springframework.samples.petclinic.system.WebConfiguration",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E37",
+            "E38"
+          ]
+        },
+        {
+          "class": "org.springframework.samples.petclinic.system.WelcomeController",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E39",
+            "E40"
+          ]
+        },
+        {
+          "class": "org.springframework.samples.petclinic.vet.Specialty",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E41",
+            "E42"
+          ]
+        }
+      ],
+      "findings": [],
+      "errors": [],
+      "transport_attempts": 1,
+      "provider_request_records": 1,
+      "wait_seconds": 59.96899999992456,
+      "elapsed_seconds": 61.15599999995902,
+      "reported_tokens": {
+        "prompt_tokens": 4257,
+        "completion_tokens": 407,
+        "total_tokens": 4664
+      },
+      "records_missing_token_fields": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "batch": 8,
+      "scope": [
+        "org.springframework.samples.petclinic.vet.Vet",
+        "org.springframework.samples.petclinic.vet.VetController",
+        "org.springframework.samples.petclinic.vet.VetRepository"
+      ],
+      "stop": "basic_checks_passed",
+      "last_candidate": [
+        {
+          "class": "org.springframework.samples.petclinic.vet.Vet",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E43",
+            "E44"
+          ]
+        },
+        {
+          "class": "org.springframework.samples.petclinic.vet.VetController",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E45",
+            "E46"
+          ]
+        },
+        {
+          "class": "org.springframework.samples.petclinic.vet.VetRepository",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E47",
+            "E48"
+          ]
+        }
+      ],
+      "findings": [],
+      "errors": [],
+      "transport_attempts": 1,
+      "provider_request_records": 1,
+      "wait_seconds": 59.96900000004098,
+      "elapsed_seconds": 61.53099999995902,
+      "reported_tokens": {
+        "prompt_tokens": 6196,
+        "completion_tokens": 580,
+        "total_tokens": 6776
+      },
+      "records_missing_token_fields": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "batch": 9,
+      "scope": [
+        "org.springframework.samples.petclinic.vet.Vets"
+      ],
+      "stop": "basic_checks_passed",
+      "last_candidate": [
+        {
+          "class": "org.springframework.samples.petclinic.vet.Vets",
+          "services": [
+            "candidate_1"
+          ],
+          "shared": false,
+          "evidence": [
+            "E49",
+            "E50"
+          ]
+        }
+      ],
+      "findings": [],
+      "errors": [],
+      "transport_attempts": 1,
+      "provider_request_records": 1,
+      "wait_seconds": 59.96899999992456,
+      "elapsed_seconds": 61.0,
+      "reported_tokens": {
+        "prompt_tokens": 2660,
+        "completion_tokens": 304,
+        "total_tokens": 2964
+      },
+      "records_missing_token_fields": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    }
+  ],
+  "accepted_assignments": [
+    {
+      "class": "org.springframework.samples.petclinic.PetClinicApplication",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E1",
+        "E2"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E3",
+        "E4"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.model.BaseEntity",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E5",
+        "E6"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.model.NamedEntity",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E7",
+        "E8"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.model.Person",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E9",
+        "E10"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.Owner",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E11",
+        "E12"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.OwnerController",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E13",
+        "E14"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.OwnerRepository",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E15",
+        "E16"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.Pet",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E17",
+        "E18"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.PetController",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E19",
+        "E20"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.PetType",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E21",
+        "E22"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E23",
+        "E24"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E25",
+        "E26"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.PetValidator",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E27",
+        "E28"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.Visit",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E29",
+        "E30"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.owner.VisitController",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E31",
+        "E32"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.system.CacheConfiguration",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E33",
+        "E34"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.system.CrashController",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E35",
+        "E36"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.system.WebConfiguration",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E37",
+        "E38"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.system.WelcomeController",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E39",
+        "E40"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.vet.Specialty",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E41",
+        "E42"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.vet.Vet",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E43",
+        "E44"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.vet.VetController",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E45",
+        "E46"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.vet.VetRepository",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E47",
+        "E48"
+      ]
+    },
+    {
+      "class": "org.springframework.samples.petclinic.vet.Vets",
+      "services": [
+        "candidate_1"
+      ],
+      "shared": false,
+      "evidence": [
+        "E49",
+        "E50"
+      ]
+    }
+  ],
+  "combined_findings": [],
+  "global_transport_attempts": 9,
+  "global_wait_seconds": 479.79899999988265,
+  "session_transport_attempts": 9,
+  "session_wait_seconds": 479.79899999988265,
+  "provider_request_records": 9,
+  "reported_tokens": {
+    "prompt_tokens": 44014,
+    "completion_tokens": 3823,
+    "total_tokens": 47837
+  },
+  "records_missing_token_fields": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "live_model_run": true,
+  "total_elapsed_seconds": 491.155999999959
+}

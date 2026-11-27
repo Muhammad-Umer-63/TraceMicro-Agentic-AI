@@ -1,0 +1,31 @@
+\documentclass[sigconf,nonacm]{acmart}
+\usepackage{tikz}
+\usepackage{tabularx}
+\settopmatter{printacmref=false,printccs=false,printfolios=true}
+\citestyle{acmnumeric}
+\input{shared/metadata}
+\title{\PaperTitle}
+\PaperACMAuthors
+\renewcommand{\shortauthors}{\PaperLeadAuthor\ et al.}
+
+% Course-copy text goes in acmart's full-width title box before it is printed.
+% The class has already built the author boxes when it calls this command.
+\makeatletter
+\AddToHook{cmd/@mkteasers/before}[tracemicro/instructor]{%
+  \global\setbox\mktitle@bx=\vbox{%
+    \hsize=\textwidth
+    \unvbox\mktitle@bx\relax
+    \PaperInstructorNote
+  }%
+}
+\makeatother
+\begin{document}
+\begin{abstract}
+\input{shared/abstract}
+\end{abstract}
+\keywords{\PaperKeywords}
+\maketitle
+\input{shared/body}
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+\end{document}

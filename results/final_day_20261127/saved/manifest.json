@@ -1,0 +1,230 @@
+{
+  "original_1/batch_01.json": {
+    "source": "results/submit_only_live_20261122_1827/attempt_1/batch_01.json",
+    "sha256": "8cb304a004fa58b68cfa5356de23796bdce3c7c37322d8fd161a1e74505fdfd1"
+  },
+  "original_1/batch_02.json": {
+    "source": "results/submit_only_live_20261122_1827/attempt_1/batch_02.json",
+    "sha256": "fce01b56dc76abf4930f220fd791d4ffbfca9c2fd4fba033aad18ced72a78ffe"
+  },
+  "original_1/batch_03.json": {
+    "source": "results/submit_only_live_20261122_1827/attempt_1/batch_03.json",
+    "sha256": "9d2e2917e08ed8a77907c9a20d026494cb770ac6b27eb40f2b826d3af016bdce"
+  },
+  "original_1/batch_04.json": {
+    "source": "results/submit_only_live_20261122_1827/attempt_1/batch_04.json",
+    "sha256": "66b3631f8282d942f490e0e49759130da19c86ca707d123b97638e67010ca63c"
+  },
+  "original_1/batch_05.json": {
+    "source": "results/submit_only_live_20261122_1827/attempt_1/batch_05.json",
+    "sha256": "c42b7e418667feed07500095809a68430ebcf57f37bc21ee81f034292b3df554"
+  },
+  "original_1/batch_06.json": {
+    "source": "results/submit_only_live_20261122_1827/attempt_1/batch_06.json",
+    "sha256": "9811dd1e60aa6aca023bc41eaba37ba4eed490c1d8c8e289958a5abad3068aac"
+  },
+  "original_1/batch_07.json": {
+    "source": "results/submit_only_live_20261122_1827/attempt_1/batch_07.json",
+    "sha256": "869f787249a3fcf1b50b1dd350e459388dc96a201f01115ec4a8fbe815aaa01a"
+  },
+  "original_1/batch_08.json": {
+    "source": "results/submit_only_live_20261122_1827/attempt_1/batch_08.json",
+    "sha256": "bd02b900eceee4e1330109e6598ada73ba1e262fb12a2e210a7df8d4c3005b0f"
+  },
+  "original_1/batch_09.json": {
+    "source": "results/submit_only_live_20261122_1827/attempt_1/batch_09.json",
+    "sha256": "95b8835b1008a60d1833e7911c84fbcb596e6e00617bc167a7bdc7d01d9d7a43"
+  },
+  "original_1/precollection.json": {
+    "source": "results/submit_only_live_20261122_1827/attempt_1/precollection.json",
+    "sha256": "2ab63b695edfb6c8d00315495b16a9e760cf37600e0ae2740689141e2cd9d57c"
+  },
+  "original_1/summary.json": {
+    "source": "results/submit_only_live_20261122_1827/attempt_1/summary.json",
+    "sha256": "8a6651d79cc180e61c8599bfbf77def5c0300a08b2ec578f58f2d84e6fcb9084"
+  },
+  "original_2/batch_01.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_1/batch_01.json",
+    "sha256": "19cf4d2040f6b7bc813181ee553378aafccd8280067e5e1f7ad7570a3e9fe49f"
+  },
+  "original_2/batch_02.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_1/batch_02.json",
+    "sha256": "162c2316ab8eb20ac979cfb282352c1d0aaa38b7eb12fc6b6455c4313b804cd0"
+  },
+  "original_2/batch_03.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_1/batch_03.json",
+    "sha256": "6ccef16072093684d01969e1b0356abe39bef3e6aedddf7ed770359a458c8e35"
+  },
+  "original_2/batch_04.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_1/batch_04.json",
+    "sha256": "8a0b7aebf33e241e5f97904741a71a82e76a6fb4d74dbc813100c7db0325375b"
+  },
+  "original_2/batch_05.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_1/batch_05.json",
+    "sha256": "09dfd30d3bd068749811cadfd02a5d7ebd4ff31eb76cb9e6c96aed38d022e043"
+  },
+  "original_2/batch_06.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_1/batch_06.json",
+    "sha256": "f1d0068e3a6cc384ce85aad7c876912c599b4730b1b02bff0db13a75608b72dd"
+  },
+  "original_2/batch_07.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_1/batch_07.json",
+    "sha256": "0f3676543109a6103e2a16238ceed2b66661a95ba8b26dac2ac7e42cf3498d1c"
+  },
+  "original_2/batch_08.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_1/batch_08.json",
+    "sha256": "a91b29ccd3a3beb8d17a6d11d6a860cbb978361378f0d438f5a52b518b982edd"
+  },
+  "original_2/batch_09.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_1/batch_09.json",
+    "sha256": "079fff5e7b0511a74733d1d0fd916abe39e14c45d5160897355248b142c66fa7"
+  },
+  "original_2/precollection.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_1/precollection.json",
+    "sha256": "2ab63b695edfb6c8d00315495b16a9e760cf37600e0ae2740689141e2cd9d57c"
+  },
+  "original_2/summary.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_1/summary.json",
+    "sha256": "249129337d11140d2bcd1e370d6812bebef0b53b7eeec4cc0a88ef19bb2b10e3"
+  },
+  "original_3/batch_01.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_2/batch_01.json",
+    "sha256": "94c0a46826976570125f577ac005d96453828713e58468e946c98097a9aa0baf"
+  },
+  "original_3/batch_02.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_2/batch_02.json",
+    "sha256": "7d751e5698125b2732f73080d847bf0df62fa9b52bbb3cc6d1f35a6f4ee06020"
+  },
+  "original_3/batch_03.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_2/batch_03.json",
+    "sha256": "29b2de1f2ccd6b833c3ce6951c1f865c3c51be8f9d4a5a88c61a233617242613"
+  },
+  "original_3/batch_04.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_2/batch_04.json",
+    "sha256": "bee788d8a83041fec745beb6afe347f28db2fde9bf14b4f3a1b4495a4fbce764"
+  },
+  "original_3/batch_05.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_2/batch_05.json",
+    "sha256": "7d34375591fada7f25e623bf4c1745418d089b3490a3a0348f7efc1276031f1d"
+  },
+  "original_3/batch_06.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_2/batch_06.json",
+    "sha256": "557c45029e2f24da104a42a859966d0f5f19028ffb3ffeeec8945fb3761c2483"
+  },
+  "original_3/batch_07.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_2/batch_07.json",
+    "sha256": "f2a89f2a2721cf81d2da57b0c47eafb9e69ba753587afeaf98c33fd61f69ae36"
+  },
+  "original_3/batch_08.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_2/batch_08.json",
+    "sha256": "dbe0d2a12e58c10c5c8e4fc7a27b2a66cd365235dbb3f4d8345d82bbcb45ad7a"
+  },
+  "original_3/batch_09.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_2/batch_09.json",
+    "sha256": "fdca5461c438fa65b2f63691b1c62e329aab08ed244b6423c02fbf7f88b1d407"
+  },
+  "original_3/precollection.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_2/precollection.json",
+    "sha256": "2ab63b695edfb6c8d00315495b16a9e760cf37600e0ae2740689141e2cd9d57c"
+  },
+  "original_3/summary.json": {
+    "source": "results/reproducibility_live_20261122_1847/run_2/summary.json",
+    "sha256": "3a7e811b85998fd1712d2966131bf29cf3c6bec133490d05ad4f58e0e0e23161"
+  },
+  "planner_v1/experiment.json": {
+    "source": "results/global_plan_live_v1_20261123/run_1/experiment.json",
+    "sha256": "8ad73d37ce3cd15fe6f41bffbf47909597a5704f7bda76b9ae9629d8af9a99cf"
+  },
+  "planner_v1/planning.json": {
+    "source": "results/global_plan_live_v1_20261123/run_1/planning.json",
+    "sha256": "45ec2aef76a1df57d860e014a3718839ef0070049d85d7a0dea086687ebef96c"
+  },
+  "planner_v1/precollection.json": {
+    "source": "results/global_plan_live_v1_20261123/run_1/precollection.json",
+    "sha256": "de6886d0b740931c504d98f039971e5de81fdd141e219ded1730426cae9e3570"
+  },
+  "planner_v1/summary.json": {
+    "source": "results/global_plan_live_v1_20261123/run_1/summary.json",
+    "sha256": "c863d36abf760f0982422dc0b045cfbcd301679909f1329dfd8e7bb4875943ee"
+  },
+  "compact_v2/experiment.json": {
+    "source": "results/course_live_20261123_2201/compact_run_1/experiment.json",
+    "sha256": "dbaf19dda7309547420c46a94861215f4a2d02fb369000501a9e3119f80bdbda"
+  },
+  "compact_v2/planning.json": {
+    "source": "results/course_live_20261123_2201/compact_run_1/planning.json",
+    "sha256": "c6694e210a85cd195ad8409553d02e91e1b786490f60dd3881fb3b0886f3779f"
+  },
+  "compact_v2/planning_provenance.json": {
+    "source": "results/course_live_20261123_2201/compact_run_1/planning_provenance.json",
+    "sha256": "bb7f8205ed73934fa3cc612f2188c1791f59ceb69c81dc354f2fb30ac8c74707"
+  },
+  "compact_v2/precollection.json": {
+    "source": "results/course_live_20261123_2201/compact_run_1/precollection.json",
+    "sha256": "de6886d0b740931c504d98f039971e5de81fdd141e219ded1730426cae9e3570"
+  },
+  "compact_v2/summary.json": {
+    "source": "results/course_live_20261123_2201/compact_run_1/summary.json",
+    "sha256": "3ac822a0e2dc1b3e3cee95712d29432fd3ff8218f3f69535513caf56d903d608"
+  },
+  "reduced_probe/probe.json": {
+    "source": "results/course_live_20261123_2201/planning_probe_1/probe.json",
+    "sha256": "577352d033d0821bba99c344023f7c9a6dd6027d6168b6f7a22e9352d256bcb5"
+  },
+  "synthetic_v3/batch_01.json": {
+    "source": "results/restart_readiness_20261124_0715/simulated_single/batch_01.json",
+    "sha256": "cd2cfb1787dbde5f4fed3d6fab2120a56215817636d5ed1b3f15f26f321e0173"
+  },
+  "synthetic_v3/batch_02.json": {
+    "source": "results/restart_readiness_20261124_0715/simulated_single/batch_02.json",
+    "sha256": "2bff4fe018999435b17b26bed284ed3343412c7f06f98cd4d83ed734bebdcd7a"
+  },
+  "synthetic_v3/batch_03.json": {
+    "source": "results/restart_readiness_20261124_0715/simulated_single/batch_03.json",
+    "sha256": "e9a8c18ad9106196d7a1fe28dc27fd5036ff9464000adda44c2cfd66b10ec248"
+  },
+  "synthetic_v3/batch_04.json": {
+    "source": "results/restart_readiness_20261124_0715/simulated_single/batch_04.json",
+    "sha256": "ca0eecc324800e814f2e74ad72f89095e939e31e8743a800c42c33037750f4dc"
+  },
+  "synthetic_v3/batch_05.json": {
+    "source": "results/restart_readiness_20261124_0715/simulated_single/batch_05.json",
+    "sha256": "b43c58ebaf55666204933ada59ec6543921143ef7ed293268229e586ee98638d"
+  },
+  "synthetic_v3/batch_06.json": {
+    "source": "results/restart_readiness_20261124_0715/simulated_single/batch_06.json",
+    "sha256": "996b780d74f23f440852ae8c07ec38e7ab399eed5c524495ad891d059ef98abb"
+  },
+  "synthetic_v3/batch_07.json": {
+    "source": "results/restart_readiness_20261124_0715/simulated_single/batch_07.json",
+    "sha256": "6bad30a55e1511bb048f9665ed341a81d0503e3fcbf319c4426a935175c17c4c"
+  },
+  "synthetic_v3/batch_08.json": {
+    "source": "results/restart_readiness_20261124_0715/simulated_single/batch_08.json",
+    "sha256": "4165eedcfc6aa3e07a782656f4e5195c309f314b9eac073f0e7a6b2b46366680"
+  },
+  "synthetic_v3/batch_09.json": {
+    "source": "results/restart_readiness_20261124_0715/simulated_single/batch_09.json",
+    "sha256": "25bff398d90f044b84b4aba8685f4a912d0eae4315e343d2741e3e101150edee"
+  },
+  "synthetic_v3/experiment.json": {
+    "source": "results/restart_readiness_20261124_0715/simulated_single/experiment.json",
+    "sha256": "b1c0fa9abd7525ff46a84386c77d5656e75311646935eda0f373b39399e2849a"
+  },
+  "synthetic_v3/planning.json": {
+    "source": "results/restart_readiness_20261124_0715/simulated_single/planning.json",
+    "sha256": "622efec29f968969c90bd46b254ede9912111ed665ba7c3f9ff1f8539997ae68"
+  },
+  "synthetic_v3/planning_provenance.json": {
+    "source": "results/restart_readiness_20261124_0715/simulated_single/planning_provenance.json",
+    "sha256": "bb7f8205ed73934fa3cc612f2188c1791f59ceb69c81dc354f2fb30ac8c74707"
+  },
+  "synthetic_v3/precollection.json": {
+    "source": "results/restart_readiness_20261124_0715/simulated_single/precollection.json",
+    "sha256": "de6886d0b740931c504d98f039971e5de81fdd141e219ded1730426cae9e3570"
+  },
+  "synthetic_v3/summary.json": {
+    "source": "results/restart_readiness_20261124_0715/simulated_single/summary.json",
+    "sha256": "7b6a319cf56d75e92dac4b9edf0af5502dc76a2022d0132210c11ff22b8771f6"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "max_requests": 15,
+  "interval": 60,
+  "max_wait": 840,
+  "requests": 2,
+  "wait_total": 59.43800000002375,
+  "last_finished": 366750.843,
+  "deadline_monotonic": 368187.312
+}

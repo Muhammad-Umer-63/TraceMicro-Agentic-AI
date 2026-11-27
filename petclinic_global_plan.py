@@ -20,6 +20,11 @@ from tracemicro.providers import GroqConfig, ProviderError
 from tracemicro.workflow import Budget, validate_output
 
 VERSION = 'global_plan_compact_v3_bounded_output'
+CAP2048_VERSION = 'global_plan_compact_v3_planning_cap2048'
+EXPERIMENTS = {
+    VERSION: 'petclinic_global_plan_compact_v3.json',
+    CAP2048_VERSION: 'petclinic_global_plan_compact_v3_cap2048.json',
+}
 PLANNING_INPUT_CAP = 12000
 PLAN_RESPONSIBILITY_CHARACTERS = 160
 PLAN_CITATIONS_PER_SERVICE = 2
@@ -171,9 +176,12 @@ class PlannedBatchWorkflow(PreparedBatchWorkflow):
         return context
 
 
-def run(output_dir, budget, *, allow_live=False, transport=None):
+def run(output_dir, budget, *, allow_live=False, transport=None, condition=VERSION):
     if not allow_live and transport is None:
         raise ValueError('Explicit live authorization required')
+    experiment_path = ROOT/'configs'/EXPERIMENTS[condition]
+    experiment = json.loads(experiment_path.read_text(encoding='utf-8'))
+    planning_tokens = experiment.get('planning_max_completion_tokens', 1024)
     folder = (ROOT / output_dir).resolve()
     folder.relative_to(ROOT)
     folder.mkdir(parents=True, exist_ok=False)
@@ -189,12 +197,10 @@ def run(output_dir, budget, *, allow_live=False, transport=None):
     save(folder/'precollection.json', {'evidence': evidence, 'ledger': ledger, 'tool_reads': len(evidence)})
     config = GroqConfig('openai/gpt-oss-20b', max_requests=2, max_output_tokens=1024,
                        timeout_seconds=15, max_input_bytes=64000, structured_outputs=True)
-    planning_config = GroqConfig('openai/gpt-oss-20b', max_requests=1, max_output_tokens=1024,
+    planning_config = GroqConfig('openai/gpt-oss-20b', max_requests=1, max_output_tokens=planning_tokens,
                        timeout_seconds=15, max_input_bytes=PLANNING_INPUT_CAP, structured_outputs=True)
-    experiment_path = ROOT/'configs/petclinic_global_plan_compact_v3.json'
-    experiment = json.loads(experiment_path.read_text(encoding='utf-8'))
     save(folder/'experiment.json', experiment)
-    summary = {'version': VERSION, 'run_kind': 'groq_live' if transport is None else 'groq_simulated_http',
+    summary = {'version': condition, 'run_kind': 'groq_live' if transport is None else 'groq_simulated_http',
         'runtime_versions': {'python': sys.version, 'langgraph': version('langgraph')},
         'experiment_sha256': hashlib.sha256(experiment_path.read_bytes()).hexdigest(),
         'created_utc': datetime.now(timezone.utc).isoformat(), 'source_fingerprint': store.snapshot['eligible_java_files_sha256'],
@@ -255,7 +261,7 @@ def run(output_dir, budget, *, allow_live=False, transport=None):
         core = PlannedBatchWorkflow(store, provider, scope, labels, Budget(2, 0, 1),
             service_plan=plan, required_evidence_tools=TOOLS,
             excerpt_ledger=[r for r in ledger if r['class'] in scope], previous_assignments=copy.deepcopy(accepted),
-            run_metadata={'version': VERSION, 'batch': index+1, 'service_plan': plan,
+            run_metadata={'version': condition, 'batch': index+1, 'service_plan': plan,
                           'source_policy': 'first80lines plus saved full-graph dependencies'})
         core.state.evidence = {eid: record for eid, record in evidence.items() if record['class'] in scope}
         item = {'batch': index+1, 'scope': scope}

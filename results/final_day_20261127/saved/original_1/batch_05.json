@@ -1,0 +1,2528 @@
+{
+  "run_kind": "groq_live",
+  "live_model_run": true,
+  "execution_engine": "langgraph",
+  "langgraph_version": "0.6.11",
+  "provenance": {
+    "source_snapshot": {
+      "upstream_commit": null,
+      "provenance": "User-supplied ZIP snapshot; upstream commit not established.",
+      "eligible_java_files_sha256": "c66415bfe029129bc8229a36216547dd41c3ba32d7aad5b8590dd00ac4622e29",
+      "fingerprint_scope": "Eligible production Java files only, not whole repository.",
+      "files": [
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java",
+          "sha256": "2c8f47a328f8bc4ad0ed887890dcf731469ec8f1032b5420d173c7aa5a352600"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java",
+          "sha256": "6695dafa9b8d4cc67c0cf9305b17b897c58103ca33c12dd0f9375edcfe815b32"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/model/Person.java",
+          "sha256": "a872c368cd5b09a7cb8a3f42e1baff1f6b0adc7cfc5bccf5f426374292ba4244"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/Owner.java",
+          "sha256": "a5273cbccaf4993c92cc204c4481d52ebc611b731862f078b203b2a7eefa5f8a"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java",
+          "sha256": "611115841f671065ca2796fbb096102d56ce6aafd20bfe9a264f0a6968cca3ff"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/OwnerRepository.java",
+          "sha256": "654cc5a38b2806748116caf4fbd6a99010a35605db32a12707078c34ccec2cd9"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/Pet.java",
+          "sha256": "ec77c2d70ae043c6eb441e47ebc93a3d848d8ae9729068e8f4e997aedfa0bbd7"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/PetController.java",
+          "sha256": "1a8a8097ff334b85d3a62c4df79ec52c2dbee8777925970e140081cff7e7c25e"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/PetType.java",
+          "sha256": "9e64329633ce98a96f18cecf7426338d57b753fd24b7b47f7af483467a3df92e"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/PetTypeFormatter.java",
+          "sha256": "af232944dba211094ee5f6b5b3e2bc9696e46ba8f40cad0e5bf7e0b283aacac7"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/PetTypeRepository.java",
+          "sha256": "696705e51ab5835ac28630397de2d3f3541d3f419f19461e11755a9aac2afa04"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/PetValidator.java",
+          "sha256": "1cee4c2a57afd7edb3521fa7a19c4b643f23c2f5b91406ecd638319c6cce9f7f"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/Visit.java",
+          "sha256": "587191bc74fbbb696e90114366db6988cd6f07c25cd2e991c038d6bda52df123"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/VisitController.java",
+          "sha256": "b7c8f9cb7b2b2b5827d85787d1f18c95762a0213760013cef9d0a9e1c2c0f8d8"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java",
+          "sha256": "9d99b4b59cc6e185e9a27964b24ede04180ca34211a7e19f968249ee3dac9df3"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/PetClinicRuntimeHints.java",
+          "sha256": "2a365e4c85ec16300ccc6101e2543980a30ea72c34c6a0c51d5e56c0d5ad6633"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration.java",
+          "sha256": "1375dfc554a1efa859d2e54cf6fe82724aecea8b46d0c2ab06aabd1aa14ef9da"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/system/CrashController.java",
+          "sha256": "d7c003dc6357596eefa345eff63ecf3909a50238e030e3c93f09426e537ba517"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/system/WebConfiguration.java",
+          "sha256": "d9eb227f4ffcd434b2000ac30fce9b5e341f85e893c4b3536b50fbbc15384b92"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/system/WelcomeController.java",
+          "sha256": "cfdffa794c8ec7a0c634a7d39d39f9abc1dd2ddc4b4d7a591b341136015a6f66"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/vet/Specialty.java",
+          "sha256": "0fa07bcb3b7b4ddb380a278d98dcfe03bec5e3a1e42b9f08c555d75a6be256d0"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/vet/Vet.java",
+          "sha256": "8548e47aaf310b276d5cc9f58976756339b16a02ac47944f778260f2ed121b78"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/vet/VetController.java",
+          "sha256": "8fb67351a3d4b28c220a870178cb72998ef6dfaa303dd65f2e8c242eb2ddbbfa"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/vet/VetRepository.java",
+          "sha256": "732888e66084f9f94dd79c181e29dbbe2c752959c10ebf82b0940700f61c0dde"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/vet/Vets.java",
+          "sha256": "8a9b86de5dd337047eacd492f03526974d82e3765e0a628341a190ffb1bb1707"
+        }
+      ]
+    },
+    "dependency_json_sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+    "identity_limit": "filename/package mapping, not compiler resolution"
+  },
+  "state": {
+    "scope": [
+      "org.springframework.samples.petclinic.owner.PetTypeRepository",
+      "org.springframework.samples.petclinic.owner.PetValidator",
+      "org.springframework.samples.petclinic.owner.Visit"
+    ],
+    "services": [
+      "candidate_1",
+      "candidate_2",
+      "candidate_3",
+      "candidate_4",
+      "candidate_5"
+    ],
+    "budget": {
+      "decisions": 1,
+      "tool_calls": 0,
+      "revisions": 1
+    },
+    "candidate_assignments": [
+      {
+        "class": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+        "services": [
+          "candidate_1"
+        ],
+        "shared": false,
+        "evidence": [
+          "E25",
+          "E26"
+        ]
+      },
+      {
+        "class": "org.springframework.samples.petclinic.owner.PetValidator",
+        "services": [
+          "candidate_1"
+        ],
+        "shared": false,
+        "evidence": [
+          "E27",
+          "E28"
+        ]
+      },
+      {
+        "class": "org.springframework.samples.petclinic.owner.Visit",
+        "services": [
+          "candidate_1"
+        ],
+        "shared": false,
+        "evidence": [
+          "E29",
+          "E30"
+        ]
+      }
+    ],
+    "evidence": {
+      "E25": {
+        "tool": "inspect_source",
+        "class": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+        "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/owner/PetTypeRepository.java",
+        "sha256": "696705e51ab5835ac28630397de2d3f3541d3f419f19461e11755a9aac2afa04",
+        "start_line": 1,
+        "end_line": 39,
+        "lines": [
+          {
+            "line": 1,
+            "text": "/*"
+          },
+          {
+            "line": 2,
+            "text": " * Copyright 2012-2025 the original author or authors."
+          },
+          {
+            "line": 3,
+            "text": " *"
+          },
+          {
+            "line": 4,
+            "text": " * Licensed under the Apache License, Version 2.0 (the \"License\");"
+          },
+          {
+            "line": 5,
+            "text": " * you may not use this file except in compliance with the License."
+          },
+          {
+            "line": 6,
+            "text": " * You may obtain a copy of the License at"
+          },
+          {
+            "line": 7,
+            "text": " *"
+          },
+          {
+            "line": 8,
+            "text": " *      https://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "line": 9,
+            "text": " *"
+          },
+          {
+            "line": 10,
+            "text": " * Unless required by applicable law or agreed to in writing, software"
+          },
+          {
+            "line": 11,
+            "text": " * distributed under the License is distributed on an \"AS IS\" BASIS,"
+          },
+          {
+            "line": 12,
+            "text": " * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
+          },
+          {
+            "line": 13,
+            "text": " * See the License for the specific language governing permissions and"
+          },
+          {
+            "line": 14,
+            "text": " * limitations under the License."
+          },
+          {
+            "line": 15,
+            "text": " */"
+          },
+          {
+            "line": 16,
+            "text": ""
+          },
+          {
+            "line": 17,
+            "text": "package org.springframework.samples.petclinic.owner;"
+          },
+          {
+            "line": 18,
+            "text": ""
+          },
+          {
+            "line": 19,
+            "text": "import java.util.List;"
+          },
+          {
+            "line": 20,
+            "text": ""
+          },
+          {
+            "line": 21,
+            "text": "import org.springframework.data.jpa.repository.JpaRepository;"
+          },
+          {
+            "line": 22,
+            "text": "import org.springframework.data.jpa.repository.Query;"
+          },
+          {
+            "line": 23,
+            "text": ""
+          },
+          {
+            "line": 24,
+            "text": "/**"
+          },
+          {
+            "line": 25,
+            "text": " * Repository class for <code>PetType</code> domain objects."
+          },
+          {
+            "line": 26,
+            "text": " *"
+          },
+          {
+            "line": 27,
+            "text": " * @author Patrick Baumgartner"
+          },
+          {
+            "line": 28,
+            "text": " */"
+          },
+          {
+            "line": 29,
+            "text": ""
+          },
+          {
+            "line": 30,
+            "text": "public interface PetTypeRepository extends JpaRepository<PetType, Integer> {"
+          },
+          {
+            "line": 31,
+            "text": ""
+          },
+          {
+            "line": 32,
+            "text": "\t/**"
+          },
+          {
+            "line": 33,
+            "text": "\t * Retrieve all {@link PetType}s from the data store."
+          },
+          {
+            "line": 34,
+            "text": "\t * @return a Collection of {@link PetType}s."
+          },
+          {
+            "line": 35,
+            "text": "\t */"
+          },
+          {
+            "line": 36,
+            "text": "\t@Query(\"SELECT ptype FROM PetType ptype ORDER BY ptype.name\")"
+          },
+          {
+            "line": 37,
+            "text": "\tList<PetType> findPetTypes();"
+          },
+          {
+            "line": 38,
+            "text": ""
+          },
+          {
+            "line": 39,
+            "text": "}"
+          }
+        ],
+        "source_total_lines": 39,
+        "source_excerpt_is_partial": false
+      },
+      "E26": {
+        "tool": "inspect_dependencies",
+        "class": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+        "path": "results/dependency_baseline/petclinic_raw.json",
+        "sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+        "json_pointer": "/classes/org.springframework.samples.petclinic.owner.PetTypeRepository/relationships",
+        "outgoing": [
+          {
+            "source": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+            "target": "org.springframework.samples.petclinic.owner.PetType",
+            "type": "PERSISTS",
+            "occurrences": 1
+          }
+        ],
+        "incoming": [
+          {
+            "source": "org.springframework.samples.petclinic.owner.PetController",
+            "target": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+            "type": "USES",
+            "occurrences": 2
+          },
+          {
+            "source": "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+            "target": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+            "type": "USES",
+            "occurrences": 2
+          }
+        ],
+        "source_edge_line_references": null,
+        "limitation": "Official export has no source line per edge; incoming edges derive from other classes, not this JSON pointer. Parse/resolution diagnostics incomplete."
+      },
+      "E27": {
+        "tool": "inspect_source",
+        "class": "org.springframework.samples.petclinic.owner.PetValidator",
+        "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/owner/PetValidator.java",
+        "sha256": "1cee4c2a57afd7edb3521fa7a19c4b643f23c2f5b91406ecd638319c6cce9f7f",
+        "start_line": 1,
+        "end_line": 69,
+        "lines": [
+          {
+            "line": 1,
+            "text": "/*"
+          },
+          {
+            "line": 2,
+            "text": " * Copyright 2012-2025 the original author or authors."
+          },
+          {
+            "line": 3,
+            "text": " *"
+          },
+          {
+            "line": 4,
+            "text": " * Licensed under the Apache License, Version 2.0 (the \"License\");"
+          },
+          {
+            "line": 5,
+            "text": " * you may not use this file except in compliance with the License."
+          },
+          {
+            "line": 6,
+            "text": " * You may obtain a copy of the License at"
+          },
+          {
+            "line": 7,
+            "text": " *"
+          },
+          {
+            "line": 8,
+            "text": " *      https://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "line": 9,
+            "text": " *"
+          },
+          {
+            "line": 10,
+            "text": " * Unless required by applicable law or agreed to in writing, software"
+          },
+          {
+            "line": 11,
+            "text": " * distributed under the License is distributed on an \"AS IS\" BASIS,"
+          },
+          {
+            "line": 12,
+            "text": " * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
+          },
+          {
+            "line": 13,
+            "text": " * See the License for the specific language governing permissions and"
+          },
+          {
+            "line": 14,
+            "text": " * limitations under the License."
+          },
+          {
+            "line": 15,
+            "text": " */"
+          },
+          {
+            "line": 16,
+            "text": "package org.springframework.samples.petclinic.owner;"
+          },
+          {
+            "line": 17,
+            "text": ""
+          },
+          {
+            "line": 18,
+            "text": "import org.springframework.util.StringUtils;"
+          },
+          {
+            "line": 19,
+            "text": "import org.springframework.validation.Errors;"
+          },
+          {
+            "line": 20,
+            "text": "import org.springframework.validation.Validator;"
+          },
+          {
+            "line": 21,
+            "text": ""
+          },
+          {
+            "line": 22,
+            "text": "/**"
+          },
+          {
+            "line": 23,
+            "text": " * <code>Validator</code> for <code>Pet</code> forms."
+          },
+          {
+            "line": 24,
+            "text": " * <p>"
+          },
+          {
+            "line": 25,
+            "text": " * We're not using Bean Validation annotations here because it is easier to define such"
+          },
+          {
+            "line": 26,
+            "text": " * validation rule in Java."
+          },
+          {
+            "line": 27,
+            "text": " * </p>"
+          },
+          {
+            "line": 28,
+            "text": " *"
+          },
+          {
+            "line": 29,
+            "text": " * @author Ken Krebs"
+          },
+          {
+            "line": 30,
+            "text": " * @author Juergen Hoeller"
+          },
+          {
+            "line": 31,
+            "text": " */"
+          },
+          {
+            "line": 32,
+            "text": "public class PetValidator implements Validator {"
+          },
+          {
+            "line": 33,
+            "text": ""
+          },
+          {
+            "line": 34,
+            "text": "\tprivate static final String REQUIRED = \"required\";"
+          },
+          {
+            "line": 35,
+            "text": ""
+          },
+          {
+            "line": 36,
+            "text": "\tprivate static final int MAX_NAME_LENGTH = 30;"
+          },
+          {
+            "line": 37,
+            "text": ""
+          },
+          {
+            "line": 38,
+            "text": "\t@Override"
+          },
+          {
+            "line": 39,
+            "text": "\tpublic void validate(Object obj, Errors errors) {"
+          },
+          {
+            "line": 40,
+            "text": "\t\tPet pet = (Pet) obj;"
+          },
+          {
+            "line": 41,
+            "text": "\t\tString name = pet.getName();"
+          },
+          {
+            "line": 42,
+            "text": "\t\t// name validation"
+          },
+          {
+            "line": 43,
+            "text": "\t\tif (!StringUtils.hasText(name)) {"
+          },
+          {
+            "line": 44,
+            "text": "\t\t\terrors.rejectValue(\"name\", REQUIRED, REQUIRED);"
+          },
+          {
+            "line": 45,
+            "text": "\t\t}"
+          },
+          {
+            "line": 46,
+            "text": "\t\telse if (name.length() > MAX_NAME_LENGTH) {"
+          },
+          {
+            "line": 47,
+            "text": "\t\t\terrors.rejectValue(\"name\", \"size\", \"Name must be no more than 30 characters\");"
+          },
+          {
+            "line": 48,
+            "text": "\t\t}"
+          },
+          {
+            "line": 49,
+            "text": ""
+          },
+          {
+            "line": 50,
+            "text": "\t\t// type validation"
+          },
+          {
+            "line": 51,
+            "text": "\t\tif (pet.isNew() && pet.getType() == null) {"
+          },
+          {
+            "line": 52,
+            "text": "\t\t\terrors.rejectValue(\"type\", REQUIRED, REQUIRED);"
+          },
+          {
+            "line": 53,
+            "text": "\t\t}"
+          },
+          {
+            "line": 54,
+            "text": ""
+          },
+          {
+            "line": 55,
+            "text": "\t\t// birth date validation"
+          },
+          {
+            "line": 56,
+            "text": "\t\tif (pet.getBirthDate() == null) {"
+          },
+          {
+            "line": 57,
+            "text": "\t\t\terrors.rejectValue(\"birthDate\", REQUIRED, REQUIRED);"
+          },
+          {
+            "line": 58,
+            "text": "\t\t}"
+          },
+          {
+            "line": 59,
+            "text": "\t}"
+          },
+          {
+            "line": 60,
+            "text": ""
+          },
+          {
+            "line": 61,
+            "text": "\t/**"
+          },
+          {
+            "line": 62,
+            "text": "\t * This Validator validates *just* Pet instances"
+          },
+          {
+            "line": 63,
+            "text": "\t */"
+          },
+          {
+            "line": 64,
+            "text": "\t@Override"
+          },
+          {
+            "line": 65,
+            "text": "\tpublic boolean supports(Class<?> clazz) {"
+          },
+          {
+            "line": 66,
+            "text": "\t\treturn Pet.class.isAssignableFrom(clazz);"
+          },
+          {
+            "line": 67,
+            "text": "\t}"
+          },
+          {
+            "line": 68,
+            "text": ""
+          },
+          {
+            "line": 69,
+            "text": "}"
+          }
+        ],
+        "source_total_lines": 69,
+        "source_excerpt_is_partial": false
+      },
+      "E28": {
+        "tool": "inspect_dependencies",
+        "class": "org.springframework.samples.petclinic.owner.PetValidator",
+        "path": "results/dependency_baseline/petclinic_raw.json",
+        "sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+        "json_pointer": "/classes/org.springframework.samples.petclinic.owner.PetValidator/relationships",
+        "outgoing": [
+          {
+            "source": "org.springframework.samples.petclinic.owner.PetValidator",
+            "target": "org.springframework.samples.petclinic.model.BaseEntity",
+            "type": "CALLS",
+            "occurrences": 1
+          },
+          {
+            "source": "org.springframework.samples.petclinic.owner.PetValidator",
+            "target": "org.springframework.samples.petclinic.model.NamedEntity",
+            "type": "CALLS",
+            "occurrences": 1
+          },
+          {
+            "source": "org.springframework.samples.petclinic.owner.PetValidator",
+            "target": "org.springframework.samples.petclinic.owner.Pet",
+            "type": "CALLS",
+            "occurrences": 2
+          },
+          {
+            "source": "org.springframework.samples.petclinic.owner.PetValidator",
+            "target": "org.springframework.samples.petclinic.owner.Pet",
+            "type": "USES",
+            "occurrences": 2
+          }
+        ],
+        "incoming": [
+          {
+            "source": "org.springframework.samples.petclinic.owner.PetController",
+            "target": "org.springframework.samples.petclinic.owner.PetValidator",
+            "type": "CREATES",
+            "occurrences": 1
+          },
+          {
+            "source": "org.springframework.samples.petclinic.owner.PetController",
+            "target": "org.springframework.samples.petclinic.owner.PetValidator",
+            "type": "USES",
+            "occurrences": 1
+          }
+        ],
+        "source_edge_line_references": null,
+        "limitation": "Official export has no source line per edge; incoming edges derive from other classes, not this JSON pointer. Parse/resolution diagnostics incomplete."
+      },
+      "E29": {
+        "tool": "inspect_source",
+        "class": "org.springframework.samples.petclinic.owner.Visit",
+        "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/owner/Visit.java",
+        "sha256": "587191bc74fbbb696e90114366db6988cd6f07c25cd2e991c038d6bda52df123",
+        "start_line": 1,
+        "end_line": 70,
+        "lines": [
+          {
+            "line": 1,
+            "text": "/*"
+          },
+          {
+            "line": 2,
+            "text": " * Copyright 2012-2025 the original author or authors."
+          },
+          {
+            "line": 3,
+            "text": " *"
+          },
+          {
+            "line": 4,
+            "text": " * Licensed under the Apache License, Version 2.0 (the \"License\");"
+          },
+          {
+            "line": 5,
+            "text": " * you may not use this file except in compliance with the License."
+          },
+          {
+            "line": 6,
+            "text": " * You may obtain a copy of the License at"
+          },
+          {
+            "line": 7,
+            "text": " *"
+          },
+          {
+            "line": 8,
+            "text": " *      https://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "line": 9,
+            "text": " *"
+          },
+          {
+            "line": 10,
+            "text": " * Unless required by applicable law or agreed to in writing, software"
+          },
+          {
+            "line": 11,
+            "text": " * distributed under the License is distributed on an \"AS IS\" BASIS,"
+          },
+          {
+            "line": 12,
+            "text": " * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
+          },
+          {
+            "line": 13,
+            "text": " * See the License for the specific language governing permissions and"
+          },
+          {
+            "line": 14,
+            "text": " * limitations under the License."
+          },
+          {
+            "line": 15,
+            "text": " */"
+          },
+          {
+            "line": 16,
+            "text": "package org.springframework.samples.petclinic.owner;"
+          },
+          {
+            "line": 17,
+            "text": ""
+          },
+          {
+            "line": 18,
+            "text": "import java.time.LocalDate;"
+          },
+          {
+            "line": 19,
+            "text": ""
+          },
+          {
+            "line": 20,
+            "text": "import org.springframework.format.annotation.DateTimeFormat;"
+          },
+          {
+            "line": 21,
+            "text": "import org.springframework.samples.petclinic.model.BaseEntity;"
+          },
+          {
+            "line": 22,
+            "text": ""
+          },
+          {
+            "line": 23,
+            "text": "import jakarta.persistence.Column;"
+          },
+          {
+            "line": 24,
+            "text": "import jakarta.persistence.Entity;"
+          },
+          {
+            "line": 25,
+            "text": "import jakarta.persistence.Table;"
+          },
+          {
+            "line": 26,
+            "text": "import jakarta.validation.constraints.NotBlank;"
+          },
+          {
+            "line": 27,
+            "text": "import jakarta.validation.constraints.Size;"
+          },
+          {
+            "line": 28,
+            "text": ""
+          },
+          {
+            "line": 29,
+            "text": "/**"
+          },
+          {
+            "line": 30,
+            "text": " * Simple JavaBean domain object representing a visit."
+          },
+          {
+            "line": 31,
+            "text": " *"
+          },
+          {
+            "line": 32,
+            "text": " * @author Ken Krebs"
+          },
+          {
+            "line": 33,
+            "text": " * @author Dave Syer"
+          },
+          {
+            "line": 34,
+            "text": " */"
+          },
+          {
+            "line": 35,
+            "text": "@Entity"
+          },
+          {
+            "line": 36,
+            "text": "@Table(name = \"visits\")"
+          },
+          {
+            "line": 37,
+            "text": "public class Visit extends BaseEntity {"
+          },
+          {
+            "line": 38,
+            "text": ""
+          },
+          {
+            "line": 39,
+            "text": "\t@Column(name = \"visit_date\")"
+          },
+          {
+            "line": 40,
+            "text": "\t@DateTimeFormat(pattern = \"yyyy-MM-dd\")"
+          },
+          {
+            "line": 41,
+            "text": "\tprivate LocalDate date;"
+          },
+          {
+            "line": 42,
+            "text": ""
+          },
+          {
+            "line": 43,
+            "text": "\t@NotBlank"
+          },
+          {
+            "line": 44,
+            "text": "\t@Size(max = 255)"
+          },
+          {
+            "line": 45,
+            "text": "\tprivate String description;"
+          },
+          {
+            "line": 46,
+            "text": ""
+          },
+          {
+            "line": 47,
+            "text": "\t/**"
+          },
+          {
+            "line": 48,
+            "text": "\t * Creates a new instance of Visit for tomorrow"
+          },
+          {
+            "line": 49,
+            "text": "\t */"
+          },
+          {
+            "line": 50,
+            "text": "\tpublic Visit() {"
+          },
+          {
+            "line": 51,
+            "text": "\t\tthis.date = LocalDate.now().plusDays(1);"
+          },
+          {
+            "line": 52,
+            "text": "\t}"
+          },
+          {
+            "line": 53,
+            "text": ""
+          },
+          {
+            "line": 54,
+            "text": "\tpublic LocalDate getDate() {"
+          },
+          {
+            "line": 55,
+            "text": "\t\treturn this.date;"
+          },
+          {
+            "line": 56,
+            "text": "\t}"
+          },
+          {
+            "line": 57,
+            "text": ""
+          },
+          {
+            "line": 58,
+            "text": "\tpublic void setDate(LocalDate date) {"
+          },
+          {
+            "line": 59,
+            "text": "\t\tthis.date = date;"
+          },
+          {
+            "line": 60,
+            "text": "\t}"
+          },
+          {
+            "line": 61,
+            "text": ""
+          },
+          {
+            "line": 62,
+            "text": "\tpublic String getDescription() {"
+          },
+          {
+            "line": 63,
+            "text": "\t\treturn this.description;"
+          },
+          {
+            "line": 64,
+            "text": "\t}"
+          },
+          {
+            "line": 65,
+            "text": ""
+          },
+          {
+            "line": 66,
+            "text": "\tpublic void setDescription(String description) {"
+          },
+          {
+            "line": 67,
+            "text": "\t\tthis.description = description;"
+          },
+          {
+            "line": 68,
+            "text": "\t}"
+          },
+          {
+            "line": 69,
+            "text": ""
+          },
+          {
+            "line": 70,
+            "text": "}"
+          }
+        ],
+        "source_total_lines": 70,
+        "source_excerpt_is_partial": false
+      },
+      "E30": {
+        "tool": "inspect_dependencies",
+        "class": "org.springframework.samples.petclinic.owner.Visit",
+        "path": "results/dependency_baseline/petclinic_raw.json",
+        "sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+        "json_pointer": "/classes/org.springframework.samples.petclinic.owner.Visit/relationships",
+        "outgoing": [
+          {
+            "source": "org.springframework.samples.petclinic.owner.Visit",
+            "target": "org.springframework.samples.petclinic.model.BaseEntity",
+            "type": "EXTENDS",
+            "occurrences": 1
+          }
+        ],
+        "incoming": [
+          {
+            "source": "org.springframework.samples.petclinic.owner.Owner",
+            "target": "org.springframework.samples.petclinic.owner.Visit",
+            "type": "USES",
+            "occurrences": 5
+          },
+          {
+            "source": "org.springframework.samples.petclinic.owner.Pet",
+            "target": "org.springframework.samples.petclinic.owner.Visit",
+            "type": "ASSOCIATES",
+            "occurrences": 1
+          },
+          {
+            "source": "org.springframework.samples.petclinic.owner.Pet",
+            "target": "org.springframework.samples.petclinic.owner.Visit",
+            "type": "USES",
+            "occurrences": 4
+          },
+          {
+            "source": "org.springframework.samples.petclinic.owner.VisitController",
+            "target": "org.springframework.samples.petclinic.owner.Visit",
+            "type": "CALLS",
+            "occurrences": 2
+          },
+          {
+            "source": "org.springframework.samples.petclinic.owner.VisitController",
+            "target": "org.springframework.samples.petclinic.owner.Visit",
+            "type": "CREATES",
+            "occurrences": 1
+          },
+          {
+            "source": "org.springframework.samples.petclinic.owner.VisitController",
+            "target": "org.springframework.samples.petclinic.owner.Visit",
+            "type": "USES",
+            "occurrences": 9
+          }
+        ],
+        "source_edge_line_references": null,
+        "limitation": "Official export has no source line per edge; incoming edges derive from other classes, not this JSON pointer. Parse/resolution diagnostics incomplete."
+      }
+    },
+    "verification_findings": [],
+    "revisions": [],
+    "status": "stopped",
+    "termination_reason": "basic_checks_passed"
+  },
+  "events": [
+    {
+      "sequence": 1,
+      "kind": "graph_node",
+      "timestamp_utc": "2026-11-22T18:37:45.208445+00:00",
+      "node": "decide_action"
+    },
+    {
+      "sequence": 2,
+      "kind": "started",
+      "timestamp_utc": "2026-11-22T18:37:45.208445+00:00",
+      "mode": "groq_live",
+      "scope": [
+        "org.springframework.samples.petclinic.owner.PetTypeRepository",
+        "org.springframework.samples.petclinic.owner.PetValidator",
+        "org.springframework.samples.petclinic.owner.Visit"
+      ],
+      "budget": {
+        "decisions": 2,
+        "tool_calls": 0,
+        "revisions": 1
+      }
+    },
+    {
+      "sequence": 3,
+      "kind": "decision_requested",
+      "timestamp_utc": "2026-11-22T18:37:45.209807+00:00",
+      "context": {
+        "instruction": "Precollected batch: submit is the only supported action; follow batch_guidance and the submit schema.",
+        "action_schema": {
+          "submit": {
+            "type": "submit",
+            "output": {
+              "assignments": [
+                {
+                  "class": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+                  "services": [
+                    "candidate_1"
+                  ],
+                  "shared": false,
+                  "evidence": [
+                    "E25",
+                    "E26"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "allowed_service_labels": [
+          "candidate_1",
+          "candidate_2",
+          "candidate_3",
+          "candidate_4",
+          "candidate_5"
+        ],
+        "service_label_rule": "Every services value must exactly match an allowed_service_labels entry. Multiple distinct allowed labels require shared=true. Examples are shapes, not class assignments.",
+        "required_evidence_tools_per_assignment": [
+          "inspect_dependencies",
+          "inspect_source"
+        ],
+        "per_class_progress": [
+          {
+            "class": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+            "available_evidence_ids_by_tool": {
+              "inspect_source": [
+                "E25"
+              ],
+              "inspect_dependencies": [
+                "E26"
+              ]
+            },
+            "pending_evidence_tools": [],
+            "candidate_record_present": false,
+            "duplicate_result_ids": []
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.PetValidator",
+            "available_evidence_ids_by_tool": {
+              "inspect_source": [
+                "E27"
+              ],
+              "inspect_dependencies": [
+                "E28"
+              ]
+            },
+            "pending_evidence_tools": [],
+            "candidate_record_present": false,
+            "duplicate_result_ids": []
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.Visit",
+            "available_evidence_ids_by_tool": {
+              "inspect_source": [
+                "E29"
+              ],
+              "inspect_dependencies": [
+                "E30"
+              ]
+            },
+            "pending_evidence_tools": [],
+            "candidate_record_present": false,
+            "duplicate_result_ids": []
+          }
+        ],
+        "current_candidate_findings": [
+          {
+            "code": "missing_class",
+            "class_name": "org.springframework.samples.petclinic.owner.PetTypeRepository"
+          },
+          {
+            "code": "missing_class",
+            "class_name": "org.springframework.samples.petclinic.owner.PetValidator"
+          },
+          {
+            "code": "missing_class",
+            "class_name": "org.springframework.samples.petclinic.owner.Visit"
+          }
+        ],
+        "state": {
+          "scope": [
+            "org.springframework.samples.petclinic.owner.PetTypeRepository",
+            "org.springframework.samples.petclinic.owner.PetValidator",
+            "org.springframework.samples.petclinic.owner.Visit"
+          ],
+          "services": [
+            "candidate_1",
+            "candidate_2",
+            "candidate_3",
+            "candidate_4",
+            "candidate_5"
+          ],
+          "budget": {
+            "decisions": 1,
+            "tool_calls": 0,
+            "revisions": 1
+          },
+          "candidate_assignments": [],
+          "evidence": {
+            "E25": {
+              "tool": "inspect_source",
+              "class": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+              "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/owner/PetTypeRepository.java",
+              "sha256": "696705e51ab5835ac28630397de2d3f3541d3f419f19461e11755a9aac2afa04",
+              "start_line": 1,
+              "end_line": 39,
+              "lines": [
+                {
+                  "line": 1,
+                  "text": "/*"
+                },
+                {
+                  "line": 2,
+                  "text": " * Copyright 2012-2025 the original author or authors."
+                },
+                {
+                  "line": 3,
+                  "text": " *"
+                },
+                {
+                  "line": 4,
+                  "text": " * Licensed under the Apache License, Version 2.0 (the \"License\");"
+                },
+                {
+                  "line": 5,
+                  "text": " * you may not use this file except in compliance with the License."
+                },
+                {
+                  "line": 6,
+                  "text": " * You may obtain a copy of the License at"
+                },
+                {
+                  "line": 7,
+                  "text": " *"
+                },
+                {
+                  "line": 8,
+                  "text": " *      https://www.apache.org/licenses/LICENSE-2.0"
+                },
+                {
+                  "line": 9,
+                  "text": " *"
+                },
+                {
+                  "line": 10,
+                  "text": " * Unless required by applicable law or agreed to in writing, software"
+                },
+                {
+                  "line": 11,
+                  "text": " * distributed under the License is distributed on an \"AS IS\" BASIS,"
+                },
+                {
+                  "line": 12,
+                  "text": " * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
+                },
+                {
+                  "line": 13,
+                  "text": " * See the License for the specific language governing permissions and"
+                },
+                {
+                  "line": 14,
+                  "text": " * limitations under the License."
+                },
+                {
+                  "line": 15,
+                  "text": " */"
+                },
+                {
+                  "line": 16,
+                  "text": ""
+                },
+                {
+                  "line": 17,
+                  "text": "package org.springframework.samples.petclinic.owner;"
+                },
+                {
+                  "line": 18,
+                  "text": ""
+                },
+                {
+                  "line": 19,
+                  "text": "import java.util.List;"
+                },
+                {
+                  "line": 20,
+                  "text": ""
+                },
+                {
+                  "line": 21,
+                  "text": "import org.springframework.data.jpa.repository.JpaRepository;"
+                },
+                {
+                  "line": 22,
+                  "text": "import org.springframework.data.jpa.repository.Query;"
+                },
+                {
+                  "line": 23,
+                  "text": ""
+                },
+                {
+                  "line": 24,
+                  "text": "/**"
+                },
+                {
+                  "line": 25,
+                  "text": " * Repository class for <code>PetType</code> domain objects."
+                },
+                {
+                  "line": 26,
+                  "text": " *"
+                },
+                {
+                  "line": 27,
+                  "text": " * @author Patrick Baumgartner"
+                },
+                {
+                  "line": 28,
+                  "text": " */"
+                },
+                {
+                  "line": 29,
+                  "text": ""
+                },
+                {
+                  "line": 30,
+                  "text": "public interface PetTypeRepository extends JpaRepository<PetType, Integer> {"
+                },
+                {
+                  "line": 31,
+                  "text": ""
+                },
+                {
+                  "line": 32,
+                  "text": "\t/**"
+                },
+                {
+                  "line": 33,
+                  "text": "\t * Retrieve all {@link PetType}s from the data store."
+                },
+                {
+                  "line": 34,
+                  "text": "\t * @return a Collection of {@link PetType}s."
+                },
+                {
+                  "line": 35,
+                  "text": "\t */"
+                },
+                {
+                  "line": 36,
+                  "text": "\t@Query(\"SELECT ptype FROM PetType ptype ORDER BY ptype.name\")"
+                },
+                {
+                  "line": 37,
+                  "text": "\tList<PetType> findPetTypes();"
+                },
+                {
+                  "line": 38,
+                  "text": ""
+                },
+                {
+                  "line": 39,
+                  "text": "}"
+                }
+              ],
+              "source_total_lines": 39,
+              "source_excerpt_is_partial": false
+            },
+            "E26": {
+              "tool": "inspect_dependencies",
+              "class": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+              "path": "results/dependency_baseline/petclinic_raw.json",
+              "sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+              "json_pointer": "/classes/org.springframework.samples.petclinic.owner.PetTypeRepository/relationships",
+              "outgoing": [
+                {
+                  "source": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+                  "target": "org.springframework.samples.petclinic.owner.PetType",
+                  "type": "PERSISTS",
+                  "occurrences": 1
+                }
+              ],
+              "incoming": [
+                {
+                  "source": "org.springframework.samples.petclinic.owner.PetController",
+                  "target": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+                  "type": "USES",
+                  "occurrences": 2
+                },
+                {
+                  "source": "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+                  "target": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+                  "type": "USES",
+                  "occurrences": 2
+                }
+              ],
+              "source_edge_line_references": null,
+              "limitation": "Official export has no source line per edge; incoming edges derive from other classes, not this JSON pointer. Parse/resolution diagnostics incomplete."
+            },
+            "E27": {
+              "tool": "inspect_source",
+              "class": "org.springframework.samples.petclinic.owner.PetValidator",
+              "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/owner/PetValidator.java",
+              "sha256": "1cee4c2a57afd7edb3521fa7a19c4b643f23c2f5b91406ecd638319c6cce9f7f",
+              "start_line": 1,
+              "end_line": 69,
+              "lines": [
+                {
+                  "line": 1,
+                  "text": "/*"
+                },
+                {
+                  "line": 2,
+                  "text": " * Copyright 2012-2025 the original author or authors."
+                },
+                {
+                  "line": 3,
+                  "text": " *"
+                },
+                {
+                  "line": 4,
+                  "text": " * Licensed under the Apache License, Version 2.0 (the \"License\");"
+                },
+                {
+                  "line": 5,
+                  "text": " * you may not use this file except in compliance with the License."
+                },
+                {
+                  "line": 6,
+                  "text": " * You may obtain a copy of the License at"
+                },
+                {
+                  "line": 7,
+                  "text": " *"
+                },
+                {
+                  "line": 8,
+                  "text": " *      https://www.apache.org/licenses/LICENSE-2.0"
+                },
+                {
+                  "line": 9,
+                  "text": " *"
+                },
+                {
+                  "line": 10,
+                  "text": " * Unless required by applicable law or agreed to in writing, software"
+                },
+                {
+                  "line": 11,
+                  "text": " * distributed under the License is distributed on an \"AS IS\" BASIS,"
+                },
+                {
+                  "line": 12,
+                  "text": " * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
+                },
+                {
+                  "line": 13,
+                  "text": " * See the License for the specific language governing permissions and"
+                },
+                {
+                  "line": 14,
+                  "text": " * limitations under the License."
+                },
+                {
+                  "line": 15,
+                  "text": " */"
+                },
+                {
+                  "line": 16,
+                  "text": "package org.springframework.samples.petclinic.owner;"
+                },
+                {
+                  "line": 17,
+                  "text": ""
+                },
+                {
+                  "line": 18,
+                  "text": "import org.springframework.util.StringUtils;"
+                },
+                {
+                  "line": 19,
+                  "text": "import org.springframework.validation.Errors;"
+                },
+                {
+                  "line": 20,
+                  "text": "import org.springframework.validation.Validator;"
+                },
+                {
+                  "line": 21,
+                  "text": ""
+                },
+                {
+                  "line": 22,
+                  "text": "/**"
+                },
+                {
+                  "line": 23,
+                  "text": " * <code>Validator</code> for <code>Pet</code> forms."
+                },
+                {
+                  "line": 24,
+                  "text": " * <p>"
+                },
+                {
+                  "line": 25,
+                  "text": " * We're not using Bean Validation annotations here because it is easier to define such"
+                },
+                {
+                  "line": 26,
+                  "text": " * validation rule in Java."
+                },
+                {
+                  "line": 27,
+                  "text": " * </p>"
+                },
+                {
+                  "line": 28,
+                  "text": " *"
+                },
+                {
+                  "line": 29,
+                  "text": " * @author Ken Krebs"
+                },
+                {
+                  "line": 30,
+                  "text": " * @author Juergen Hoeller"
+                },
+                {
+                  "line": 31,
+                  "text": " */"
+                },
+                {
+                  "line": 32,
+                  "text": "public class PetValidator implements Validator {"
+                },
+                {
+                  "line": 33,
+                  "text": ""
+                },
+                {
+                  "line": 34,
+                  "text": "\tprivate static final String REQUIRED = \"required\";"
+                },
+                {
+                  "line": 35,
+                  "text": ""
+                },
+                {
+                  "line": 36,
+                  "text": "\tprivate static final int MAX_NAME_LENGTH = 30;"
+                },
+                {
+                  "line": 37,
+                  "text": ""
+                },
+                {
+                  "line": 38,
+                  "text": "\t@Override"
+                },
+                {
+                  "line": 39,
+                  "text": "\tpublic void validate(Object obj, Errors errors) {"
+                },
+                {
+                  "line": 40,
+                  "text": "\t\tPet pet = (Pet) obj;"
+                },
+                {
+                  "line": 41,
+                  "text": "\t\tString name = pet.getName();"
+                },
+                {
+                  "line": 42,
+                  "text": "\t\t// name validation"
+                },
+                {
+                  "line": 43,
+                  "text": "\t\tif (!StringUtils.hasText(name)) {"
+                },
+                {
+                  "line": 44,
+                  "text": "\t\t\terrors.rejectValue(\"name\", REQUIRED, REQUIRED);"
+                },
+                {
+                  "line": 45,
+                  "text": "\t\t}"
+                },
+                {
+                  "line": 46,
+                  "text": "\t\telse if (name.length() > MAX_NAME_LENGTH) {"
+                },
+                {
+                  "line": 47,
+                  "text": "\t\t\terrors.rejectValue(\"name\", \"size\", \"Name must be no more than 30 characters\");"
+                },
+                {
+                  "line": 48,
+                  "text": "\t\t}"
+                },
+                {
+                  "line": 49,
+                  "text": ""
+                },
+                {
+                  "line": 50,
+                  "text": "\t\t// type validation"
+                },
+                {
+                  "line": 51,
+                  "text": "\t\tif (pet.isNew() && pet.getType() == null) {"
+                },
+                {
+                  "line": 52,
+                  "text": "\t\t\terrors.rejectValue(\"type\", REQUIRED, REQUIRED);"
+                },
+                {
+                  "line": 53,
+                  "text": "\t\t}"
+                },
+                {
+                  "line": 54,
+                  "text": ""
+                },
+                {
+                  "line": 55,
+                  "text": "\t\t// birth date validation"
+                },
+                {
+                  "line": 56,
+                  "text": "\t\tif (pet.getBirthDate() == null) {"
+                },
+                {
+                  "line": 57,
+                  "text": "\t\t\terrors.rejectValue(\"birthDate\", REQUIRED, REQUIRED);"
+                },
+                {
+                  "line": 58,
+                  "text": "\t\t}"
+                },
+                {
+                  "line": 59,
+                  "text": "\t}"
+                },
+                {
+                  "line": 60,
+                  "text": ""
+                },
+                {
+                  "line": 61,
+                  "text": "\t/**"
+                },
+                {
+                  "line": 62,
+                  "text": "\t * This Validator validates *just* Pet instances"
+                },
+                {
+                  "line": 63,
+                  "text": "\t */"
+                },
+                {
+                  "line": 64,
+                  "text": "\t@Override"
+                },
+                {
+                  "line": 65,
+                  "text": "\tpublic boolean supports(Class<?> clazz) {"
+                },
+                {
+                  "line": 66,
+                  "text": "\t\treturn Pet.class.isAssignableFrom(clazz);"
+                },
+                {
+                  "line": 67,
+                  "text": "\t}"
+                },
+                {
+                  "line": 68,
+                  "text": ""
+                },
+                {
+                  "line": 69,
+                  "text": "}"
+                }
+              ],
+              "source_total_lines": 69,
+              "source_excerpt_is_partial": false
+            },
+            "E28": {
+              "tool": "inspect_dependencies",
+              "class": "org.springframework.samples.petclinic.owner.PetValidator",
+              "path": "results/dependency_baseline/petclinic_raw.json",
+              "sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+              "json_pointer": "/classes/org.springframework.samples.petclinic.owner.PetValidator/relationships",
+              "outgoing": [
+                {
+                  "source": "org.springframework.samples.petclinic.owner.PetValidator",
+                  "target": "org.springframework.samples.petclinic.model.BaseEntity",
+                  "type": "CALLS",
+                  "occurrences": 1
+                },
+                {
+                  "source": "org.springframework.samples.petclinic.owner.PetValidator",
+                  "target": "org.springframework.samples.petclinic.model.NamedEntity",
+                  "type": "CALLS",
+                  "occurrences": 1
+                },
+                {
+                  "source": "org.springframework.samples.petclinic.owner.PetValidator",
+                  "target": "org.springframework.samples.petclinic.owner.Pet",
+                  "type": "CALLS",
+                  "occurrences": 2
+                },
+                {
+                  "source": "org.springframework.samples.petclinic.owner.PetValidator",
+                  "target": "org.springframework.samples.petclinic.owner.Pet",
+                  "type": "USES",
+                  "occurrences": 2
+                }
+              ],
+              "incoming": [
+                {
+                  "source": "org.springframework.samples.petclinic.owner.PetController",
+                  "target": "org.springframework.samples.petclinic.owner.PetValidator",
+                  "type": "CREATES",
+                  "occurrences": 1
+                },
+                {
+                  "source": "org.springframework.samples.petclinic.owner.PetController",
+                  "target": "org.springframework.samples.petclinic.owner.PetValidator",
+                  "type": "USES",
+                  "occurrences": 1
+                }
+              ],
+              "source_edge_line_references": null,
+              "limitation": "Official export has no source line per edge; incoming edges derive from other classes, not this JSON pointer. Parse/resolution diagnostics incomplete."
+            },
+            "E29": {
+              "tool": "inspect_source",
+              "class": "org.springframework.samples.petclinic.owner.Visit",
+              "path": "sample_petclinic/src/main/java/org/springframework/samples/petclinic/owner/Visit.java",
+              "sha256": "587191bc74fbbb696e90114366db6988cd6f07c25cd2e991c038d6bda52df123",
+              "start_line": 1,
+              "end_line": 70,
+              "lines": [
+                {
+                  "line": 1,
+                  "text": "/*"
+                },
+                {
+                  "line": 2,
+                  "text": " * Copyright 2012-2025 the original author or authors."
+                },
+                {
+                  "line": 3,
+                  "text": " *"
+                },
+                {
+                  "line": 4,
+                  "text": " * Licensed under the Apache License, Version 2.0 (the \"License\");"
+                },
+                {
+                  "line": 5,
+                  "text": " * you may not use this file except in compliance with the License."
+                },
+                {
+                  "line": 6,
+                  "text": " * You may obtain a copy of the License at"
+                },
+                {
+                  "line": 7,
+                  "text": " *"
+                },
+                {
+                  "line": 8,
+                  "text": " *      https://www.apache.org/licenses/LICENSE-2.0"
+                },
+                {
+                  "line": 9,
+                  "text": " *"
+                },
+                {
+                  "line": 10,
+                  "text": " * Unless required by applicable law or agreed to in writing, software"
+                },
+                {
+                  "line": 11,
+                  "text": " * distributed under the License is distributed on an \"AS IS\" BASIS,"
+                },
+                {
+                  "line": 12,
+                  "text": " * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
+                },
+                {
+                  "line": 13,
+                  "text": " * See the License for the specific language governing permissions and"
+                },
+                {
+                  "line": 14,
+                  "text": " * limitations under the License."
+                },
+                {
+                  "line": 15,
+                  "text": " */"
+                },
+                {
+                  "line": 16,
+                  "text": "package org.springframework.samples.petclinic.owner;"
+                },
+                {
+                  "line": 17,
+                  "text": ""
+                },
+                {
+                  "line": 18,
+                  "text": "import java.time.LocalDate;"
+                },
+                {
+                  "line": 19,
+                  "text": ""
+                },
+                {
+                  "line": 20,
+                  "text": "import org.springframework.format.annotation.DateTimeFormat;"
+                },
+                {
+                  "line": 21,
+                  "text": "import org.springframework.samples.petclinic.model.BaseEntity;"
+                },
+                {
+                  "line": 22,
+                  "text": ""
+                },
+                {
+                  "line": 23,
+                  "text": "import jakarta.persistence.Column;"
+                },
+                {
+                  "line": 24,
+                  "text": "import jakarta.persistence.Entity;"
+                },
+                {
+                  "line": 25,
+                  "text": "import jakarta.persistence.Table;"
+                },
+                {
+                  "line": 26,
+                  "text": "import jakarta.validation.constraints.NotBlank;"
+                },
+                {
+                  "line": 27,
+                  "text": "import jakarta.validation.constraints.Size;"
+                },
+                {
+                  "line": 28,
+                  "text": ""
+                },
+                {
+                  "line": 29,
+                  "text": "/**"
+                },
+                {
+                  "line": 30,
+                  "text": " * Simple JavaBean domain object representing a visit."
+                },
+                {
+                  "line": 31,
+                  "text": " *"
+                },
+                {
+                  "line": 32,
+                  "text": " * @author Ken Krebs"
+                },
+                {
+                  "line": 33,
+                  "text": " * @author Dave Syer"
+                },
+                {
+                  "line": 34,
+                  "text": " */"
+                },
+                {
+                  "line": 35,
+                  "text": "@Entity"
+                },
+                {
+                  "line": 36,
+                  "text": "@Table(name = \"visits\")"
+                },
+                {
+                  "line": 37,
+                  "text": "public class Visit extends BaseEntity {"
+                },
+                {
+                  "line": 38,
+                  "text": ""
+                },
+                {
+                  "line": 39,
+                  "text": "\t@Column(name = \"visit_date\")"
+                },
+                {
+                  "line": 40,
+                  "text": "\t@DateTimeFormat(pattern = \"yyyy-MM-dd\")"
+                },
+                {
+                  "line": 41,
+                  "text": "\tprivate LocalDate date;"
+                },
+                {
+                  "line": 42,
+                  "text": ""
+                },
+                {
+                  "line": 43,
+                  "text": "\t@NotBlank"
+                },
+                {
+                  "line": 44,
+                  "text": "\t@Size(max = 255)"
+                },
+                {
+                  "line": 45,
+                  "text": "\tprivate String description;"
+                },
+                {
+                  "line": 46,
+                  "text": ""
+                },
+                {
+                  "line": 47,
+                  "text": "\t/**"
+                },
+                {
+                  "line": 48,
+                  "text": "\t * Creates a new instance of Visit for tomorrow"
+                },
+                {
+                  "line": 49,
+                  "text": "\t */"
+                },
+                {
+                  "line": 50,
+                  "text": "\tpublic Visit() {"
+                },
+                {
+                  "line": 51,
+                  "text": "\t\tthis.date = LocalDate.now().plusDays(1);"
+                },
+                {
+                  "line": 52,
+                  "text": "\t}"
+                },
+                {
+                  "line": 53,
+                  "text": ""
+                },
+                {
+                  "line": 54,
+                  "text": "\tpublic LocalDate getDate() {"
+                },
+                {
+                  "line": 55,
+                  "text": "\t\treturn this.date;"
+                },
+                {
+                  "line": 56,
+                  "text": "\t}"
+                },
+                {
+                  "line": 57,
+                  "text": ""
+                },
+                {
+                  "line": 58,
+                  "text": "\tpublic void setDate(LocalDate date) {"
+                },
+                {
+                  "line": 59,
+                  "text": "\t\tthis.date = date;"
+                },
+                {
+                  "line": 60,
+                  "text": "\t}"
+                },
+                {
+                  "line": 61,
+                  "text": ""
+                },
+                {
+                  "line": 62,
+                  "text": "\tpublic String getDescription() {"
+                },
+                {
+                  "line": 63,
+                  "text": "\t\treturn this.description;"
+                },
+                {
+                  "line": 64,
+                  "text": "\t}"
+                },
+                {
+                  "line": 65,
+                  "text": ""
+                },
+                {
+                  "line": 66,
+                  "text": "\tpublic void setDescription(String description) {"
+                },
+                {
+                  "line": 67,
+                  "text": "\t\tthis.description = description;"
+                },
+                {
+                  "line": 68,
+                  "text": "\t}"
+                },
+                {
+                  "line": 69,
+                  "text": ""
+                },
+                {
+                  "line": 70,
+                  "text": "}"
+                }
+              ],
+              "source_total_lines": 70,
+              "source_excerpt_is_partial": false
+            },
+            "E30": {
+              "tool": "inspect_dependencies",
+              "class": "org.springframework.samples.petclinic.owner.Visit",
+              "path": "results/dependency_baseline/petclinic_raw.json",
+              "sha256": "c597fc90b251082482cdaf89f0d463251d0c8d9c65db20bbad4948d131cdd8b4",
+              "json_pointer": "/classes/org.springframework.samples.petclinic.owner.Visit/relationships",
+              "outgoing": [
+                {
+                  "source": "org.springframework.samples.petclinic.owner.Visit",
+                  "target": "org.springframework.samples.petclinic.model.BaseEntity",
+                  "type": "EXTENDS",
+                  "occurrences": 1
+                }
+              ],
+              "incoming": [
+                {
+                  "source": "org.springframework.samples.petclinic.owner.Owner",
+                  "target": "org.springframework.samples.petclinic.owner.Visit",
+                  "type": "USES",
+                  "occurrences": 5
+                },
+                {
+                  "source": "org.springframework.samples.petclinic.owner.Pet",
+                  "target": "org.springframework.samples.petclinic.owner.Visit",
+                  "type": "ASSOCIATES",
+                  "occurrences": 1
+                },
+                {
+                  "source": "org.springframework.samples.petclinic.owner.Pet",
+                  "target": "org.springframework.samples.petclinic.owner.Visit",
+                  "type": "USES",
+                  "occurrences": 4
+                },
+                {
+                  "source": "org.springframework.samples.petclinic.owner.VisitController",
+                  "target": "org.springframework.samples.petclinic.owner.Visit",
+                  "type": "CALLS",
+                  "occurrences": 2
+                },
+                {
+                  "source": "org.springframework.samples.petclinic.owner.VisitController",
+                  "target": "org.springframework.samples.petclinic.owner.Visit",
+                  "type": "CREATES",
+                  "occurrences": 1
+                },
+                {
+                  "source": "org.springframework.samples.petclinic.owner.VisitController",
+                  "target": "org.springframework.samples.petclinic.owner.Visit",
+                  "type": "USES",
+                  "occurrences": 9
+                }
+              ],
+              "source_edge_line_references": null,
+              "limitation": "Official export has no source line per edge; incoming edges derive from other classes, not this JSON pointer. Parse/resolution diagnostics incomplete."
+            }
+          },
+          "verification_findings": [],
+          "revisions": [],
+          "status": "investigating",
+          "termination_reason": ""
+        },
+        "source_excerpt_coverage": [
+          {
+            "class": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+            "evidence_ids": [
+              "E25",
+              "E26"
+            ],
+            "source_total_lines": 39,
+            "source_excerpt_end_line": 39,
+            "source_excerpt_is_partial": false
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.PetValidator",
+            "evidence_ids": [
+              "E27",
+              "E28"
+            ],
+            "source_total_lines": 69,
+            "source_excerpt_end_line": 69,
+            "source_excerpt_is_partial": false
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.Visit",
+            "evidence_ids": [
+              "E29",
+              "E30"
+            ],
+            "source_total_lines": 70,
+            "source_excerpt_end_line": 70,
+            "source_excerpt_is_partial": false
+          }
+        ],
+        "previous_accepted_assignments_for_global_label_consistency": [
+          {
+            "class": "org.springframework.samples.petclinic.PetClinicApplication",
+            "services": [
+              "candidate_1"
+            ],
+            "shared": false,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "class": "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+            "services": [
+              "candidate_1"
+            ],
+            "shared": false,
+            "evidence": [
+              "E3",
+              "E4"
+            ]
+          },
+          {
+            "class": "org.springframework.samples.petclinic.model.BaseEntity",
+            "services": [
+              "candidate_1"
+            ],
+            "shared": false,
+            "evidence": [
+              "E5",
+              "E6"
+            ]
+          },
+          {
+            "class": "org.springframework.samples.petclinic.model.NamedEntity",
+            "services": [
+              "candidate_1"
+            ],
+            "shared": false,
+            "evidence": [
+              "E7",
+              "E8"
+            ]
+          },
+          {
+            "class": "org.springframework.samples.petclinic.model.Person",
+            "services": [
+              "candidate_1"
+            ],
+            "shared": false,
+            "evidence": [
+              "E9",
+              "E10"
+            ]
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.Owner",
+            "services": [
+              "candidate_1"
+            ],
+            "shared": false,
+            "evidence": [
+              "E11",
+              "E12"
+            ]
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.OwnerController",
+            "services": [
+              "candidate_1"
+            ],
+            "shared": false,
+            "evidence": [
+              "E13",
+              "E14"
+            ]
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.OwnerRepository",
+            "services": [
+              "candidate_1"
+            ],
+            "shared": false,
+            "evidence": [
+              "E15",
+              "E16"
+            ]
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.Pet",
+            "services": [
+              "candidate_1"
+            ],
+            "shared": false,
+            "evidence": [
+              "E17",
+              "E18"
+            ]
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.PetController",
+            "services": [
+              "candidate_1"
+            ],
+            "shared": false,
+            "evidence": [
+              "E19",
+              "E20"
+            ]
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.PetType",
+            "services": [
+              "candidate_1"
+            ],
+            "shared": false,
+            "evidence": [
+              "E21",
+              "E22"
+            ]
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+            "services": [
+              "candidate_1"
+            ],
+            "shared": false,
+            "evidence": [
+              "E23",
+              "E24"
+            ]
+          }
+        ],
+        "batch_guidance": "Evidence is precollected. Submit all current scoped classes using existing evidence IDs. No further inspections are budgeted. Partial source excerpts are NOT complete files; do not claim unseen code was inspected. Use the SAME global service labels across batches; prior accepted assignments provide context, not reference truth. Shared classes use one row with multiple labels. Allowed literal service labels: [\"candidate_1\", \"candidate_2\", \"candidate_3\", \"candidate_4\", \"candidate_5\"]. On unknown_or_duplicate_service findings, repair invalid or repeated labels using only that list; do not repeat the rejected submission unchanged.",
+        "service_label_feedback": []
+      }
+    },
+    {
+      "sequence": 4,
+      "kind": "decision_received",
+      "timestamp_utc": "2026-11-22T18:38:46.536182+00:00",
+      "action": {
+        "type": "submit",
+        "output": {
+          "assignments": [
+            {
+              "class": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+              "services": [
+                "candidate_1"
+              ],
+              "shared": false,
+              "evidence": [
+                "E25",
+                "E26"
+              ]
+            },
+            {
+              "class": "org.springframework.samples.petclinic.owner.PetValidator",
+              "services": [
+                "candidate_1"
+              ],
+              "shared": false,
+              "evidence": [
+                "E27",
+                "E28"
+              ]
+            },
+            {
+              "class": "org.springframework.samples.petclinic.owner.Visit",
+              "services": [
+                "candidate_1"
+              ],
+              "shared": false,
+              "evidence": [
+                "E29",
+                "E30"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sequence": 5,
+      "kind": "graph_node",
+      "timestamp_utc": "2026-11-22T18:38:46.541219+00:00",
+      "node": "validate_submission"
+    },
+    {
+      "sequence": 6,
+      "kind": "verification",
+      "timestamp_utc": "2026-11-22T18:38:46.541219+00:00",
+      "candidate": {
+        "assignments": [
+          {
+            "class": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+            "services": [
+              "candidate_1"
+            ],
+            "shared": false,
+            "evidence": [
+              "E25",
+              "E26"
+            ]
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.PetValidator",
+            "services": [
+              "candidate_1"
+            ],
+            "shared": false,
+            "evidence": [
+              "E27",
+              "E28"
+            ]
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.Visit",
+            "services": [
+              "candidate_1"
+            ],
+            "shared": false,
+            "evidence": [
+              "E29",
+              "E30"
+            ]
+          }
+        ]
+      },
+      "findings": [],
+      "interpretation": "Basic schema/evidence-reference checks only, not architectural correctness"
+    },
+    {
+      "sequence": 7,
+      "kind": "terminated",
+      "timestamp_utc": "2026-11-22T18:38:46.541219+00:00",
+      "reason": "basic_checks_passed"
+    },
+    {
+      "sequence": 8,
+      "kind": "graph_node",
+      "timestamp_utc": "2026-11-22T18:38:46.544219+00:00",
+      "node": "finish"
+    }
+  ],
+  "run_config": {
+    "batch": 5,
+    "global_limits": {
+      "global_requests": 18,
+      "requests_per_batch": 2,
+      "max_output_tokens": 1024,
+      "global_requested_completion_token_cap": 18432,
+      "interval_seconds": 60.0,
+      "global_wait_seconds": 1020.0,
+      "socket_timeout_seconds": 15,
+      "request_bytes": 64000,
+      "additional_tools_per_batch": 0,
+      "corrections_per_batch": 1
+    },
+    "allowed_service_labels": [
+      "candidate_1",
+      "candidate_2",
+      "candidate_3",
+      "candidate_4",
+      "candidate_5"
+    ],
+    "service_schema_enum_enabled": true,
+    "allowed_actions": [
+      "submit"
+    ],
+    "provider_config": {
+      "model": "openai/gpt-oss-20b",
+      "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+      "temperature": 0.0,
+      "max_output_tokens": 1024,
+      "timeout_seconds": 15,
+      "max_requests": 2,
+      "max_input_bytes": 64000,
+      "min_interval_seconds": 0,
+      "max_pacing_wait_seconds": 0,
+      "structured_outputs": true
+    },
+    "precollected_tool_reads": 6,
+    "fixed_evidence_policy": "first80lines plus saved full-graph dependencies"
+  },
+  "model_usage": [
+    {
+      "request_number": 1,
+      "requested_model": "openai/gpt-oss-20b",
+      "max_completion_tokens": 1024,
+      "input_bytes": 23038,
+      "temperature": 0.0,
+      "timeout_seconds": 15,
+      "system_instruction": "Return only the strict-schema action envelope with type=submit. No tool actions, extra fields, markdown or hidden reasoning. Use exact scoped class names, allowed service labels and real same-class evidence IDs. Preserve shared-class records.",
+      "response_format": {
+        "type": "json_schema",
+        "json_schema": {
+          "name": "tracemicro_action_v1",
+          "strict": true,
+          "schema": {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "submit"
+                    ]
+                  },
+                  "output": {
+                    "type": "object",
+                    "properties": {
+                      "assignments": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "class": {
+                              "type": "string"
+                            },
+                            "services": {
+                              "type": "array",
+                              "items": {
+                                "type": "string",
+                                "enum": [
+                                  "candidate_1",
+                                  "candidate_2",
+                                  "candidate_3",
+                                  "candidate_4",
+                                  "candidate_5"
+                                ]
+                              }
+                            },
+                            "shared": {
+                              "type": "boolean"
+                            },
+                            "evidence": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "required": [
+                            "class",
+                            "services",
+                            "shared",
+                            "evidence"
+                          ],
+                          "additionalProperties": false
+                        }
+                      }
+                    },
+                    "required": [
+                      "assignments"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "type",
+                  "output"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "action"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "wire_instruction": "Return exactly {\"action\":{\"type\":\"submit\",\"output\":{\"assignments\":[...]}}}. Evidence is already collected; submit is the only allowed action. Cover every scoped class, cite its real evidence IDs, and use only allowed_service_labels. Multiple service labels require shared=true.",
+      "usage": {
+        "prompt_tokens": 5243,
+        "completion_tokens": 326,
+        "total_tokens": 5569
+      },
+      "status": "parsed",
+      "response_json_received": true,
+      "action_json_received": true,
+      "returned_model": "openai/gpt-oss-20b",
+      "finish_reason": "stop",
+      "action_shape": {
+        "is_object": true,
+        "has_type": true,
+        "type_is_string": true,
+        "type_allowed": true
+      },
+      "rate_limits": {
+        "x-ratelimit-limit-requests": 1000,
+        "x-ratelimit-remaining-requests": 995,
+        "x-ratelimit-limit-tokens": 8000,
+        "x-ratelimit-remaining-tokens": 2299,
+        "x-ratelimit-reset-requests": "7m12s",
+        "x-ratelimit-reset-tokens": "42.757s"
+      },
+      "pacing_wait_seconds": 59.96799999999348,
+      "pacing_wait_total_seconds": 59.96799999999348,
+      "elapsed_seconds": 61.328
+    }
+  ],
+  "architectural_accuracy": null
+}

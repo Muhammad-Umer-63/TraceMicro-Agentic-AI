@@ -1,0 +1,12 @@
+method,kind,status,attempts,known_input_tokens,known_output_tokens,known_total_tokens,records_missing_input,records_missing_output,records_missing_total,pacing_seconds,elapsed_seconds,failure_stage,http_status,provider_code,error_code,finish_reason,artifact
+package,deterministic_recomputation,complete,0,,,,,,,,,,,,,,
+dependency,deterministic_recomputation,complete,0,,,,,,,,,,,,,,
+original_1,groq_live,basic_checks_passed,9,44014,3823,47837,0,0,0,479.79899999988265,491.155999999959,,,,,,results/final_day_20261127/saved/original_1/summary.json
+original_2,groq_live,basic_checks_passed,9,44014,4063,48077,0,0,0,479.85900000005495,492.7970000000205,,,,,,results/final_day_20261127/saved/original_2/summary.json
+original_3,groq_live,basic_checks_passed,9,44014,4550,48564,0,0,0,539.1090000001714,550.484999999986,,,,,,results/final_day_20261127/saved/original_3/summary.json
+planner_v1,groq_live,failed_plan,1,,,,1,1,1,0,0.375,planning,413,rate_limit_exceeded,http_error,,results/final_day_20261127/saved/planner_v1/summary.json
+compact_v2,groq_live,failed_plan,1,,,,1,1,1,0,1.827999999979511,planning,400,json_validate_failed,bad_request,,results/final_day_20261127/saved/compact_v2/summary.json
+compact_v3_run_1,groq_live,failed_plan,1,2440,1024,3464,0,0,0,0,2.0160000000032596,planning,,,truncated_or_nonstop_response,length,results/final_day_20261127/live_v3/run_1/summary.json
+compact_v3_fresh_run_1_cap2048,groq_live,failed_batch,2,2440,1065,3505,1,1,1,59.43800000002375,63.54700000002049,assignment,400,json_validate_failed,bad_request,,results/final_day_20261127/live_cap2048_25m/run_1_cap2048/summary.json
+synthetic_v3,groq_simulated_http,basic_checks_passed,10,,,100,10,10,0,540.0,0.75,,,,,stop,results/final_day_20261127/saved/synthetic_v3/summary.json
+reduced_probe,diagnostic_groq_live,probe_passed,1,710,648,1358,0,0,0,0,1.375,,,,,,results/final_day_20261127/saved/reduced_probe/probe.json

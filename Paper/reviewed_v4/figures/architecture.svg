@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 429 356" role="img">
+<title>TraceMicro paths and their evidence status</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#172e3b"/></marker></defs>
+<rect x="35" y="4" width="359" height="49" fill="#e3edf2" stroke="#172e3b"/>
+<text x="214.5" y="19" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">Java source + saved static analyzer export</text>
+<text x="214.5" y="38" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">Evidence store with source and relation IDs</text>
+<line x1="108" y1="53" x2="108" y2="79" stroke="#172e3b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="322" y1="53" x2="322" y2="79" stroke="#172e3b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="4" y="79" width="207" height="49" fill="#e3edf2" stroke="#172e3b"/>
+<text x="107.5" y="94" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">Interactive pilot (live)</text>
+<text x="107.5" y="113" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">Model requests local tools</text>
+<rect x="218" y="79" width="207" height="49" fill="#e3edf2" stroke="#172e3b"/>
+<text x="321.5" y="94" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">Full scope (live original)</text>
+<text x="321.5" y="113" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">Precollect, then nine batches</text>
+<line x1="108" y1="128" x2="108" y2="150" stroke="#172e3b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="322" y1="128" x2="322" y2="150" stroke="#172e3b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="35" y="150" width="359" height="49" fill="#e3edf2" stroke="#172e3b"/>
+<text x="214.5" y="165" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">LangGraph routes decisions and validation</text>
+<text x="214.5" y="184" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">Groq responses + deterministic local checks</text>
+<line x1="215" y1="199" x2="215" y2="221" stroke="#172e3b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="35" y="221" width="359" height="49" fill="#e3edf2" stroke="#172e3b"/>
+<text x="214.5" y="236" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">Accepted or incomplete assignments</text>
+<text x="214.5" y="255" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">Saved traces, findings and usage</text>
+<line x1="215" y1="270" x2="215" y2="293" stroke="#172e3b" stroke-width="1.5" stroke-dasharray="4 3"/>
+<rect x="4" y="293" width="421" height="49" fill="#f5f8fa" stroke="#172e3b" stroke-dasharray="4 3"/>
+<text x="214.5" y="308" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">Full v3 planner, critic and runtime masks</text>
+<text x="214.5" y="327" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">Fixture evidence for these paths</text>
+</svg>

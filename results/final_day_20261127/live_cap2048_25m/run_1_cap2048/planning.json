@@ -1,0 +1,756 @@
+{
+  "context": {
+    "state": {
+      "scope": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "C9",
+        "C10",
+        "C11",
+        "C12",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C20",
+        "C21",
+        "C22",
+        "C23",
+        "C24",
+        "C25"
+      ],
+      "services": [
+        "candidate_1",
+        "candidate_2",
+        "candidate_3",
+        "candidate_4",
+        "candidate_5"
+      ],
+      "evidence": {
+        "E1": {
+          "class": "C1",
+          "declaration": "public class PetClinicApplication {",
+          "line": 30
+        },
+        "E2": {
+          "class": "C1",
+          "outgoing": []
+        },
+        "E3": {
+          "class": "C2",
+          "declaration": "public class PetClinicRuntimeHints implements RuntimeHintsRegistrar {",
+          "line": 25
+        },
+        "E4": {
+          "class": "C2",
+          "outgoing": []
+        },
+        "E5": {
+          "class": "C3",
+          "declaration": "public class BaseEntity implements Serializable {",
+          "line": 33
+        },
+        "E6": {
+          "class": "C3",
+          "outgoing": []
+        },
+        "E7": {
+          "class": "C4",
+          "declaration": "public class NamedEntity extends BaseEntity {",
+          "line": 31
+        },
+        "E8": {
+          "class": "C4",
+          "outgoing": [
+            [
+              "C3",
+              "EXTENDS"
+            ]
+          ]
+        },
+        "E9": {
+          "class": "C5",
+          "declaration": "public class Person extends BaseEntity {",
+          "line": 29
+        },
+        "E10": {
+          "class": "C5",
+          "outgoing": [
+            [
+              "C3",
+              "EXTENDS"
+            ]
+          ]
+        },
+        "E11": {
+          "class": "C6",
+          "declaration": "public class Owner extends Person {",
+          "line": 50
+        },
+        "E12": {
+          "class": "C6",
+          "outgoing": [
+            [
+              "C15",
+              "USES"
+            ],
+            [
+              "C3",
+              "CALLS"
+            ],
+            [
+              "C5",
+              "EXTENDS"
+            ],
+            [
+              "C9",
+              "ASSOCIATES"
+            ],
+            [
+              "C9",
+              "CALLS"
+            ],
+            [
+              "C9",
+              "USES"
+            ]
+          ]
+        },
+        "E13": {
+          "class": "C7",
+          "declaration": "class OwnerController {",
+          "line": 49
+        },
+        "E14": {
+          "class": "C7",
+          "outgoing": [
+            [
+              "C3",
+              "CALLS"
+            ],
+            [
+              "C5",
+              "CALLS"
+            ],
+            [
+              "C6",
+              "CREATES"
+            ],
+            [
+              "C6",
+              "USES"
+            ],
+            [
+              "C8",
+              "USES"
+            ]
+          ]
+        },
+        "E15": {
+          "class": "C8",
+          "declaration": "public interface OwnerRepository extends JpaRepository<Owner, Integer> {",
+          "line": 36
+        },
+        "E16": {
+          "class": "C8",
+          "outgoing": [
+            [
+              "C6",
+              "PERSISTS"
+            ]
+          ]
+        },
+        "E17": {
+          "class": "C9",
+          "declaration": "public class Pet extends NamedEntity {",
+          "line": 46
+        },
+        "E18": {
+          "class": "C9",
+          "outgoing": [
+            [
+              "C11",
+              "ASSOCIATES"
+            ],
+            [
+              "C11",
+              "USES"
+            ],
+            [
+              "C15",
+              "ASSOCIATES"
+            ],
+            [
+              "C15",
+              "USES"
+            ],
+            [
+              "C4",
+              "EXTENDS"
+            ]
+          ]
+        },
+        "E19": {
+          "class": "C10",
+          "declaration": "class PetController {",
+          "line": 49
+        },
+        "E20": {
+          "class": "C10",
+          "outgoing": [
+            [
+              "C13",
+              "USES"
+            ],
+            [
+              "C14",
+              "CREATES"
+            ],
+            [
+              "C14",
+              "USES"
+            ],
+            [
+              "C3",
+              "CALLS"
+            ],
+            [
+              "C4",
+              "CALLS"
+            ],
+            [
+              "C6",
+              "CALLS"
+            ],
+            [
+              "C6",
+              "USES"
+            ],
+            [
+              "C8",
+              "USES"
+            ],
+            [
+              "C9",
+              "CALLS"
+            ],
+            [
+              "C9",
+              "CREATES"
+            ],
+            [
+              "C9",
+              "USES"
+            ]
+          ]
+        },
+        "E21": {
+          "class": "C11",
+          "declaration": "public class PetType extends NamedEntity {",
+          "line": 28
+        },
+        "E22": {
+          "class": "C11",
+          "outgoing": [
+            [
+              "C4",
+              "EXTENDS"
+            ]
+          ]
+        },
+        "E23": {
+          "class": "C12",
+          "declaration": "public class PetTypeFormatter implements Formatter<PetType> {",
+          "line": 37
+        },
+        "E24": {
+          "class": "C12",
+          "outgoing": [
+            [
+              "C11",
+              "USES"
+            ],
+            [
+              "C13",
+              "USES"
+            ],
+            [
+              "C4",
+              "CALLS"
+            ]
+          ]
+        },
+        "E25": {
+          "class": "C13",
+          "declaration": "public interface PetTypeRepository extends JpaRepository<PetType, Integer> {",
+          "line": 30
+        },
+        "E26": {
+          "class": "C13",
+          "outgoing": [
+            [
+              "C11",
+              "PERSISTS"
+            ]
+          ]
+        },
+        "E27": {
+          "class": "C14",
+          "declaration": "public class PetValidator implements Validator {",
+          "line": 32
+        },
+        "E28": {
+          "class": "C14",
+          "outgoing": [
+            [
+              "C3",
+              "CALLS"
+            ],
+            [
+              "C4",
+              "CALLS"
+            ],
+            [
+              "C9",
+              "CALLS"
+            ],
+            [
+              "C9",
+              "USES"
+            ]
+          ]
+        },
+        "E29": {
+          "class": "C15",
+          "declaration": "public class Visit extends BaseEntity {",
+          "line": 37
+        },
+        "E30": {
+          "class": "C15",
+          "outgoing": [
+            [
+              "C3",
+              "EXTENDS"
+            ]
+          ]
+        },
+        "E31": {
+          "class": "C16",
+          "declaration": "class VisitController {",
+          "line": 43
+        },
+        "E32": {
+          "class": "C16",
+          "outgoing": [
+            [
+              "C15",
+              "CALLS"
+            ],
+            [
+              "C15",
+              "CREATES"
+            ],
+            [
+              "C15",
+              "USES"
+            ],
+            [
+              "C6",
+              "CALLS"
+            ],
+            [
+              "C6",
+              "USES"
+            ],
+            [
+              "C8",
+              "USES"
+            ],
+            [
+              "C9",
+              "CALLS"
+            ],
+            [
+              "C9",
+              "USES"
+            ]
+          ]
+        },
+        "E33": {
+          "class": "C17",
+          "declaration": "class CacheConfiguration {",
+          "line": 33
+        },
+        "E34": {
+          "class": "C17",
+          "outgoing": []
+        },
+        "E35": {
+          "class": "C18",
+          "declaration": "class CrashController {",
+          "line": 29
+        },
+        "E36": {
+          "class": "C18",
+          "outgoing": []
+        },
+        "E37": {
+          "class": "C19",
+          "declaration": "public class WebConfiguration implements WebMvcConfigurer {",
+          "line": 25
+        },
+        "E38": {
+          "class": "C19",
+          "outgoing": []
+        },
+        "E39": {
+          "class": "C20",
+          "declaration": "class WelcomeController {",
+          "line": 23
+        },
+        "E40": {
+          "class": "C20",
+          "outgoing": []
+        },
+        "E41": {
+          "class": "C21",
+          "declaration": "public class Specialty extends NamedEntity {",
+          "line": 30
+        },
+        "E42": {
+          "class": "C21",
+          "outgoing": [
+            [
+              "C4",
+              "EXTENDS"
+            ]
+          ]
+        },
+        "E43": {
+          "class": "C22",
+          "declaration": "public class Vet extends Person {",
+          "line": 45
+        },
+        "E44": {
+          "class": "C22",
+          "outgoing": [
+            [
+              "C21",
+              "ASSOCIATES"
+            ],
+            [
+              "C21",
+              "USES"
+            ],
+            [
+              "C5",
+              "EXTENDS"
+            ]
+          ]
+        },
+        "E45": {
+          "class": "C23",
+          "declaration": "class VetController {",
+          "line": 37
+        },
+        "E46": {
+          "class": "C23",
+          "outgoing": [
+            [
+              "C22",
+              "USES"
+            ],
+            [
+              "C24",
+              "USES"
+            ],
+            [
+              "C25",
+              "CALLS"
+            ],
+            [
+              "C25",
+              "CREATES"
+            ],
+            [
+              "C25",
+              "USES"
+            ]
+          ]
+        },
+        "E47": {
+          "class": "C24",
+          "declaration": "public interface VetRepository extends Repository<Vet, Integer> {",
+          "line": 38
+        },
+        "E48": {
+          "class": "C24",
+          "outgoing": [
+            [
+              "C22",
+              "PERSISTS"
+            ]
+          ]
+        },
+        "E49": {
+          "class": "C25",
+          "declaration": "public class Vets {",
+          "line": 31
+        },
+        "E50": {
+          "class": "C25",
+          "outgoing": [
+            [
+              "C22",
+              "USES"
+            ]
+          ]
+        }
+      }
+    },
+    "class_names": {
+      "C1": "PetClinicApplication",
+      "C2": "PetClinicRuntimeHints",
+      "C3": "model.BaseEntity",
+      "C4": "model.NamedEntity",
+      "C5": "model.Person",
+      "C6": "owner.Owner",
+      "C7": "owner.OwnerController",
+      "C8": "owner.OwnerRepository",
+      "C9": "owner.Pet",
+      "C10": "owner.PetController",
+      "C11": "owner.PetType",
+      "C12": "owner.PetTypeFormatter",
+      "C13": "owner.PetTypeRepository",
+      "C14": "owner.PetValidator",
+      "C15": "owner.Visit",
+      "C16": "owner.VisitController",
+      "C17": "system.CacheConfiguration",
+      "C18": "system.CrashController",
+      "C19": "system.WebConfiguration",
+      "C20": "system.WelcomeController",
+      "C21": "vet.Specialty",
+      "C22": "vet.Vet",
+      "C23": "vet.VetController",
+      "C24": "vet.VetRepository",
+      "C25": "vet.Vets"
+    },
+    "class_name_prefix": "org.springframework.samples.petclinic.",
+    "source_excerpt_coverage": [
+      {
+        "class": "C6",
+        "source_total_lines": 188,
+        "source_excerpt_end_line": 80,
+        "source_excerpt_is_partial": true
+      },
+      {
+        "class": "C7",
+        "source_total_lines": 188,
+        "source_excerpt_end_line": 80,
+        "source_excerpt_is_partial": true
+      },
+      {
+        "class": "C9",
+        "source_total_lines": 85,
+        "source_excerpt_end_line": 80,
+        "source_excerpt_is_partial": true
+      },
+      {
+        "class": "C10",
+        "source_total_lines": 207,
+        "source_excerpt_end_line": 80,
+        "source_excerpt_is_partial": true
+      },
+      {
+        "class": "C16",
+        "source_total_lines": 114,
+        "source_excerpt_end_line": 80,
+        "source_excerpt_is_partial": true
+      },
+      {
+        "class": "C23",
+        "source_total_lines": 81,
+        "source_excerpt_end_line": 80,
+        "source_excerpt_is_partial": true
+      }
+    ],
+    "coverage_policy": "Only the six partial original excerpts are listed. Planner sees declaration anchors only for ALL classes.",
+    "evidence_legend": "Each source E record quotes at most160 characters of the first declaration-like line in the first80 source lines. It may be incomplete or absent. Dependency E records list all outgoing [target_class_ID,relationship_type] pairs. C IDs map to class_names. E IDs cite original records via a saved provenance map.",
+    "allowed_service_labels": [
+      "candidate_1",
+      "candidate_2",
+      "candidate_3",
+      "candidate_4",
+      "candidate_5"
+    ],
+    "omissions": "No method bodies, fields, imports, annotations, full source excerpts, occurrence weights, edge source lines, runtime/database evidence or held-out mappings. No inferred business-role labels."
+  },
+  "status": "accepted",
+  "model_usage": [
+    {
+      "request_number": 1,
+      "requested_model": "openai/gpt-oss-20b",
+      "max_completion_tokens": 2048,
+      "input_bytes": 9804,
+      "temperature": 0.0,
+      "timeout_seconds": 15,
+      "system_instruction": "Propose one to five candidate services with distinct responsibilities grounded in supplied evidence. Use allowed labels and cite real evidence IDs for each responsibility. No class assignments are requested. Choose a single service if justified by the evidence; no minimum separation is required. Evidence is compressed: declaration anchors and typed dependency summaries, not full source. Partial source warnings apply. Return only the strict action envelope with type submit and output.services. Keep each responsibility to one concise sentence of at most160characters. Cite only one or two distinct strongest evidence IDs per service; do not enumerate every class.",
+      "response_format": {
+        "type": "json_schema",
+        "json_schema": {
+          "name": "tracemicro_plan_v1",
+          "strict": true,
+          "schema": {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "submit"
+                    ]
+                  },
+                  "output": {
+                    "type": "object",
+                    "properties": {
+                      "services": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "label": {
+                              "type": "string",
+                              "enum": [
+                                "candidate_1",
+                                "candidate_2",
+                                "candidate_3",
+                                "candidate_4",
+                                "candidate_5"
+                              ]
+                            },
+                            "responsibility": {
+                              "type": "string"
+                            },
+                            "evidence": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "required": [
+                            "label",
+                            "responsibility",
+                            "evidence"
+                          ],
+                          "additionalProperties": false
+                        }
+                      }
+                    },
+                    "required": [
+                      "services"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "type",
+                  "output"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "action"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "wire_instruction": "Propose one to five candidate services with distinct responsibilities grounded in supplied evidence. Use allowed labels and cite real evidence IDs for each responsibility. No class assignments are requested. Choose a single service if justified by the evidence; no minimum separation is required. Evidence is compressed: declaration anchors and typed dependency summaries, not full source. Partial source warnings apply. Return only the strict action envelope with type submit and output.services. Keep each responsibility to one concise sentence of at most160characters. Cite only one or two distinct strongest evidence IDs per service; do not enumerate every class.",
+      "usage": {
+        "prompt_tokens": 2440,
+        "completion_tokens": 1065,
+        "total_tokens": 3505
+      },
+      "status": "parsed",
+      "response_json_received": true,
+      "action_json_received": true,
+      "returned_model": "openai/gpt-oss-20b",
+      "finish_reason": "stop",
+      "action_shape": {
+        "is_object": true,
+        "has_type": true,
+        "type_is_string": true,
+        "type_allowed": true
+      },
+      "rate_limits": {
+        "x-ratelimit-limit-requests": 1000,
+        "x-ratelimit-remaining-requests": 999,
+        "x-ratelimit-limit-tokens": 8000,
+        "x-ratelimit-remaining-tokens": 4695,
+        "x-ratelimit-reset-requests": "1m26.4s",
+        "x-ratelimit-reset-tokens": "24.787s"
+      },
+      "pacing_wait_seconds": 0,
+      "pacing_wait_total_seconds": 0,
+      "elapsed_seconds": 1.703
+    }
+  ],
+  "output": {
+    "services": [
+      {
+        "label": "candidate_1",
+        "responsibility": "Handles owner data and pet associations, providing CRUD operations for owners.",
+        "evidence": [
+          "E13",
+          "E12"
+        ]
+      },
+      {
+        "label": "candidate_2",
+        "responsibility": "Manages pet entities and pet types, including creation, validation, and persistence.",
+        "evidence": [
+          "E20",
+          "E18"
+        ]
+      },
+      {
+        "label": "candidate_3",
+        "responsibility": "Coordinates visit scheduling and persistence for owners and pets.",
+        "evidence": [
+          "E31",
+          "E29"
+        ]
+      },
+      {
+        "label": "candidate_4",
+        "responsibility": "Manages vet information and specialties, including CRUD operations.",
+        "evidence": [
+          "E45",
+          "E43"
+        ]
+      },
+      {
+        "label": "candidate_5",
+        "responsibility": "Provides application configuration, caching, and error handling.",
+        "evidence": [
+          "E17",
+          "E19"
+        ]
+      }
+    ]
+  },
+  "findings": []
+}

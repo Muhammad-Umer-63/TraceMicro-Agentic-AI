@@ -1,0 +1,9 @@
+{
+  "condition": "global_plan_compact_v3_planning_cap2048",
+  "started_utc": "2026-11-27T10:53:45.771328+00:00",
+  "development_cutoff": "2026-11-27T17:30:00+05:00",
+  "allocated_wall_seconds": 1500,
+  "requests": 15,
+  "interval_seconds": 60,
+  "requested_wait_seconds": 840
+}

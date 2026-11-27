@@ -1,0 +1,1860 @@
+{
+  "eligible_classes": [
+    "org.springframework.samples.petclinic.PetClinicApplication",
+    "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+    "org.springframework.samples.petclinic.model.BaseEntity",
+    "org.springframework.samples.petclinic.model.NamedEntity",
+    "org.springframework.samples.petclinic.model.Person",
+    "org.springframework.samples.petclinic.owner.Owner",
+    "org.springframework.samples.petclinic.owner.OwnerController",
+    "org.springframework.samples.petclinic.owner.OwnerRepository",
+    "org.springframework.samples.petclinic.owner.Pet",
+    "org.springframework.samples.petclinic.owner.PetController",
+    "org.springframework.samples.petclinic.owner.PetType",
+    "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+    "org.springframework.samples.petclinic.owner.PetTypeRepository",
+    "org.springframework.samples.petclinic.owner.PetValidator",
+    "org.springframework.samples.petclinic.owner.Visit",
+    "org.springframework.samples.petclinic.owner.VisitController",
+    "org.springframework.samples.petclinic.system.CacheConfiguration",
+    "org.springframework.samples.petclinic.system.CrashController",
+    "org.springframework.samples.petclinic.system.WebConfiguration",
+    "org.springframework.samples.petclinic.system.WelcomeController",
+    "org.springframework.samples.petclinic.vet.Specialty",
+    "org.springframework.samples.petclinic.vet.Vet",
+    "org.springframework.samples.petclinic.vet.VetController",
+    "org.springframework.samples.petclinic.vet.VetRepository",
+    "org.springframework.samples.petclinic.vet.Vets"
+  ],
+  "typed_records": 59,
+  "directed_pairs": 42,
+  "quality_scores": null,
+  "current_pending_or_interrupted": [],
+  "current_sessions": {
+    "live_v3": {
+      "charged_attempts": 1,
+      "attempts_in_terminal_summaries": 1,
+      "charged_attempts_outside_terminal_summaries": 0,
+      "requested_pacing_seconds": 0
+    },
+    "live_cap2048_25m": {
+      "charged_attempts": 2,
+      "attempts_in_terminal_summaries": 2,
+      "charged_attempts_outside_terminal_summaries": 0,
+      "requested_pacing_seconds": 59.43800000002375
+    }
+  },
+  "original_runs_aggregate": {
+    "attempts": 27,
+    "known_total_tokens": 144478,
+    "tokens_mean": 48159.333333333336,
+    "tokens_sample_sd": 370.42723082048565,
+    "elapsed_mean_seconds": 511.47933333332185,
+    "elapsed_sample_sd_seconds": 33.789861561321
+  },
+  "comparison": [
+    {
+      "method": "package",
+      "kind": "deterministic_recomputation",
+      "status": "complete",
+      "resources": {
+        "attempts": 0
+      },
+      "finding_counts": {},
+      "assigned": 25,
+      "eligible": 25,
+      "group_count": 5,
+      "sizes": [
+        11,
+        5,
+        4,
+        3,
+        2
+      ],
+      "shared_classes": [],
+      "groups": {
+        "org.springframework.samples.petclinic.model": [
+          "org.springframework.samples.petclinic.model.BaseEntity",
+          "org.springframework.samples.petclinic.model.NamedEntity",
+          "org.springframework.samples.petclinic.model.Person"
+        ],
+        "org.springframework.samples.petclinic.owner": [
+          "org.springframework.samples.petclinic.owner.Owner",
+          "org.springframework.samples.petclinic.owner.OwnerController",
+          "org.springframework.samples.petclinic.owner.OwnerRepository",
+          "org.springframework.samples.petclinic.owner.Pet",
+          "org.springframework.samples.petclinic.owner.PetController",
+          "org.springframework.samples.petclinic.owner.PetType",
+          "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+          "org.springframework.samples.petclinic.owner.PetTypeRepository",
+          "org.springframework.samples.petclinic.owner.PetValidator",
+          "org.springframework.samples.petclinic.owner.Visit",
+          "org.springframework.samples.petclinic.owner.VisitController"
+        ],
+        "org.springframework.samples.petclinic": [
+          "org.springframework.samples.petclinic.PetClinicApplication",
+          "org.springframework.samples.petclinic.PetClinicRuntimeHints"
+        ],
+        "org.springframework.samples.petclinic.system": [
+          "org.springframework.samples.petclinic.system.CacheConfiguration",
+          "org.springframework.samples.petclinic.system.CrashController",
+          "org.springframework.samples.petclinic.system.WebConfiguration",
+          "org.springframework.samples.petclinic.system.WelcomeController"
+        ],
+        "org.springframework.samples.petclinic.vet": [
+          "org.springframework.samples.petclinic.vet.Specialty",
+          "org.springframework.samples.petclinic.vet.Vet",
+          "org.springframework.samples.petclinic.vet.VetController",
+          "org.springframework.samples.petclinic.vet.VetRepository",
+          "org.springframework.samples.petclinic.vet.Vets"
+        ]
+      },
+      "crossing": {
+        "typed_records": {
+          "typed_edges_total": 59,
+          "typed_edges_with_both_classes_assigned": 59,
+          "typed_edges_without_common_service": 14,
+          "ratio_over_covered_edges": 0.23728813559322035,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        },
+        "directed_pairs": {
+          "typed_edges_total": 42,
+          "typed_edges_with_both_classes_assigned": 42,
+          "typed_edges_without_common_service": 14,
+          "ratio_over_covered_edges": 0.3333333333333333,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        }
+      }
+    },
+    {
+      "method": "dependency",
+      "kind": "deterministic_recomputation",
+      "status": "complete",
+      "resources": {
+        "attempts": 0
+      },
+      "finding_counts": {},
+      "assigned": 25,
+      "eligible": 25,
+      "group_count": 5,
+      "sizes": [
+        21,
+        1,
+        1,
+        1,
+        1
+      ],
+      "shared_classes": [],
+      "groups": {
+        "group_1": [
+          "org.springframework.samples.petclinic.PetClinicApplication",
+          "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+          "org.springframework.samples.petclinic.model.BaseEntity",
+          "org.springframework.samples.petclinic.model.NamedEntity",
+          "org.springframework.samples.petclinic.model.Person",
+          "org.springframework.samples.petclinic.owner.Owner",
+          "org.springframework.samples.petclinic.owner.OwnerController",
+          "org.springframework.samples.petclinic.owner.OwnerRepository",
+          "org.springframework.samples.petclinic.owner.Pet",
+          "org.springframework.samples.petclinic.owner.PetController",
+          "org.springframework.samples.petclinic.owner.PetType",
+          "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+          "org.springframework.samples.petclinic.owner.PetTypeRepository",
+          "org.springframework.samples.petclinic.owner.PetValidator",
+          "org.springframework.samples.petclinic.owner.Visit",
+          "org.springframework.samples.petclinic.owner.VisitController",
+          "org.springframework.samples.petclinic.vet.Specialty",
+          "org.springframework.samples.petclinic.vet.Vet",
+          "org.springframework.samples.petclinic.vet.VetController",
+          "org.springframework.samples.petclinic.vet.VetRepository",
+          "org.springframework.samples.petclinic.vet.Vets"
+        ],
+        "group_2": [
+          "org.springframework.samples.petclinic.system.CacheConfiguration"
+        ],
+        "group_3": [
+          "org.springframework.samples.petclinic.system.CrashController"
+        ],
+        "group_4": [
+          "org.springframework.samples.petclinic.system.WebConfiguration"
+        ],
+        "group_5": [
+          "org.springframework.samples.petclinic.system.WelcomeController"
+        ]
+      },
+      "crossing": {
+        "typed_records": {
+          "typed_edges_total": 59,
+          "typed_edges_with_both_classes_assigned": 59,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": 0.0,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        },
+        "directed_pairs": {
+          "typed_edges_total": 42,
+          "typed_edges_with_both_classes_assigned": 42,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": 0.0,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        }
+      }
+    },
+    {
+      "method": "original_1",
+      "kind": "groq_live",
+      "status": "basic_checks_passed",
+      "resources": {
+        "attempts": 9,
+        "known_input_tokens": 44014,
+        "known_output_tokens": 3823,
+        "known_total_tokens": 47837,
+        "records_missing_input": 0,
+        "records_missing_output": 0,
+        "records_missing_total": 0,
+        "pacing_seconds": 479.79899999988265,
+        "elapsed_seconds": 491.155999999959
+      },
+      "finding_counts": {},
+      "planning": null,
+      "batch_requests": [
+        {
+          "batch": "batch_01",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 3912,
+            "completion_tokens": 431,
+            "total_tokens": 4343
+          },
+          "input_bytes": 17326,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_02",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 5201,
+            "completion_tokens": 458,
+            "total_tokens": 5659
+          },
+          "input_bytes": 23180,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_03",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 6074,
+            "completion_tokens": 495,
+            "total_tokens": 6569
+          },
+          "input_bytes": 27081,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_04",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 5325,
+            "completion_tokens": 330,
+            "total_tokens": 5655
+          },
+          "input_bytes": 23690,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_05",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 5243,
+            "completion_tokens": 326,
+            "total_tokens": 5569
+          },
+          "input_bytes": 23038,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_06",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 5146,
+            "completion_tokens": 492,
+            "total_tokens": 5638
+          },
+          "input_bytes": 22996,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_07",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 4257,
+            "completion_tokens": 407,
+            "total_tokens": 4664
+          },
+          "input_bytes": 18926,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_08",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 6196,
+            "completion_tokens": 580,
+            "total_tokens": 6776
+          },
+          "input_bytes": 26691,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_09",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 2660,
+            "completion_tokens": 304,
+            "total_tokens": 2964
+          },
+          "input_bytes": 11740,
+          "provider_error": null
+        }
+      ],
+      "batches": [
+        {
+          "batch": 1,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 2,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 3,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 4,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 5,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 6,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 7,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 8,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 9,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        }
+      ],
+      "artifact": "results/final_day_20261127/saved/original_1/summary.json",
+      "summary_sha256": "8a6651d79cc180e61c8599bfbf77def5c0300a08b2ec578f58f2d84e6fcb9084",
+      "assigned": 25,
+      "eligible": 25,
+      "group_count": 1,
+      "sizes": [
+        25
+      ],
+      "shared_classes": [],
+      "groups": {
+        "candidate_1": [
+          "org.springframework.samples.petclinic.PetClinicApplication",
+          "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+          "org.springframework.samples.petclinic.model.BaseEntity",
+          "org.springframework.samples.petclinic.model.NamedEntity",
+          "org.springframework.samples.petclinic.model.Person",
+          "org.springframework.samples.petclinic.owner.Owner",
+          "org.springframework.samples.petclinic.owner.OwnerController",
+          "org.springframework.samples.petclinic.owner.OwnerRepository",
+          "org.springframework.samples.petclinic.owner.Pet",
+          "org.springframework.samples.petclinic.owner.PetController",
+          "org.springframework.samples.petclinic.owner.PetType",
+          "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+          "org.springframework.samples.petclinic.owner.PetTypeRepository",
+          "org.springframework.samples.petclinic.owner.PetValidator",
+          "org.springframework.samples.petclinic.owner.Visit",
+          "org.springframework.samples.petclinic.owner.VisitController",
+          "org.springframework.samples.petclinic.system.CacheConfiguration",
+          "org.springframework.samples.petclinic.system.CrashController",
+          "org.springframework.samples.petclinic.system.WebConfiguration",
+          "org.springframework.samples.petclinic.system.WelcomeController",
+          "org.springframework.samples.petclinic.vet.Specialty",
+          "org.springframework.samples.petclinic.vet.Vet",
+          "org.springframework.samples.petclinic.vet.VetController",
+          "org.springframework.samples.petclinic.vet.VetRepository",
+          "org.springframework.samples.petclinic.vet.Vets"
+        ]
+      },
+      "crossing": {
+        "typed_records": {
+          "typed_edges_total": 59,
+          "typed_edges_with_both_classes_assigned": 59,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": 0.0,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        },
+        "directed_pairs": {
+          "typed_edges_total": 42,
+          "typed_edges_with_both_classes_assigned": 42,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": 0.0,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        }
+      }
+    },
+    {
+      "method": "original_2",
+      "kind": "groq_live",
+      "status": "basic_checks_passed",
+      "resources": {
+        "attempts": 9,
+        "known_input_tokens": 44014,
+        "known_output_tokens": 4063,
+        "known_total_tokens": 48077,
+        "records_missing_input": 0,
+        "records_missing_output": 0,
+        "records_missing_total": 0,
+        "pacing_seconds": 479.85900000005495,
+        "elapsed_seconds": 492.7970000000205
+      },
+      "finding_counts": {},
+      "planning": null,
+      "batch_requests": [
+        {
+          "batch": "batch_01",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 3912,
+            "completion_tokens": 431,
+            "total_tokens": 4343
+          },
+          "input_bytes": 17326,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_02",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 5201,
+            "completion_tokens": 497,
+            "total_tokens": 5698
+          },
+          "input_bytes": 23180,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_03",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 6074,
+            "completion_tokens": 495,
+            "total_tokens": 6569
+          },
+          "input_bytes": 27081,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_04",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 5325,
+            "completion_tokens": 448,
+            "total_tokens": 5773
+          },
+          "input_bytes": 23690,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_05",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 5243,
+            "completion_tokens": 502,
+            "total_tokens": 5745
+          },
+          "input_bytes": 23038,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_06",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 5146,
+            "completion_tokens": 480,
+            "total_tokens": 5626
+          },
+          "input_bytes": 22996,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_07",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 4257,
+            "completion_tokens": 407,
+            "total_tokens": 4664
+          },
+          "input_bytes": 18926,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_08",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 6196,
+            "completion_tokens": 492,
+            "total_tokens": 6688
+          },
+          "input_bytes": 26691,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_09",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 2660,
+            "completion_tokens": 311,
+            "total_tokens": 2971
+          },
+          "input_bytes": 11740,
+          "provider_error": null
+        }
+      ],
+      "batches": [
+        {
+          "batch": 1,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 2,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 3,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 4,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 5,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 6,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 7,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 8,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 9,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        }
+      ],
+      "artifact": "results/final_day_20261127/saved/original_2/summary.json",
+      "summary_sha256": "249129337d11140d2bcd1e370d6812bebef0b53b7eeec4cc0a88ef19bb2b10e3",
+      "assigned": 25,
+      "eligible": 25,
+      "group_count": 1,
+      "sizes": [
+        25
+      ],
+      "shared_classes": [],
+      "groups": {
+        "candidate_1": [
+          "org.springframework.samples.petclinic.PetClinicApplication",
+          "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+          "org.springframework.samples.petclinic.model.BaseEntity",
+          "org.springframework.samples.petclinic.model.NamedEntity",
+          "org.springframework.samples.petclinic.model.Person",
+          "org.springframework.samples.petclinic.owner.Owner",
+          "org.springframework.samples.petclinic.owner.OwnerController",
+          "org.springframework.samples.petclinic.owner.OwnerRepository",
+          "org.springframework.samples.petclinic.owner.Pet",
+          "org.springframework.samples.petclinic.owner.PetController",
+          "org.springframework.samples.petclinic.owner.PetType",
+          "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+          "org.springframework.samples.petclinic.owner.PetTypeRepository",
+          "org.springframework.samples.petclinic.owner.PetValidator",
+          "org.springframework.samples.petclinic.owner.Visit",
+          "org.springframework.samples.petclinic.owner.VisitController",
+          "org.springframework.samples.petclinic.system.CacheConfiguration",
+          "org.springframework.samples.petclinic.system.CrashController",
+          "org.springframework.samples.petclinic.system.WebConfiguration",
+          "org.springframework.samples.petclinic.system.WelcomeController",
+          "org.springframework.samples.petclinic.vet.Specialty",
+          "org.springframework.samples.petclinic.vet.Vet",
+          "org.springframework.samples.petclinic.vet.VetController",
+          "org.springframework.samples.petclinic.vet.VetRepository",
+          "org.springframework.samples.petclinic.vet.Vets"
+        ]
+      },
+      "crossing": {
+        "typed_records": {
+          "typed_edges_total": 59,
+          "typed_edges_with_both_classes_assigned": 59,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": 0.0,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        },
+        "directed_pairs": {
+          "typed_edges_total": 42,
+          "typed_edges_with_both_classes_assigned": 42,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": 0.0,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        }
+      }
+    },
+    {
+      "method": "original_3",
+      "kind": "groq_live",
+      "status": "basic_checks_passed",
+      "resources": {
+        "attempts": 9,
+        "known_input_tokens": 44014,
+        "known_output_tokens": 4550,
+        "known_total_tokens": 48564,
+        "records_missing_input": 0,
+        "records_missing_output": 0,
+        "records_missing_total": 0,
+        "pacing_seconds": 539.1090000001714,
+        "elapsed_seconds": 550.484999999986
+      },
+      "finding_counts": {},
+      "planning": null,
+      "batch_requests": [
+        {
+          "batch": "batch_01",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 3912,
+            "completion_tokens": 431,
+            "total_tokens": 4343
+          },
+          "input_bytes": 17326,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_02",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 5201,
+            "completion_tokens": 489,
+            "total_tokens": 5690
+          },
+          "input_bytes": 23180,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_03",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 6074,
+            "completion_tokens": 558,
+            "total_tokens": 6632
+          },
+          "input_bytes": 27081,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_04",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 5325,
+            "completion_tokens": 448,
+            "total_tokens": 5773
+          },
+          "input_bytes": 23690,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_05",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 5243,
+            "completion_tokens": 471,
+            "total_tokens": 5714
+          },
+          "input_bytes": 23038,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_06",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 5146,
+            "completion_tokens": 951,
+            "total_tokens": 6097
+          },
+          "input_bytes": 22996,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_07",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 4257,
+            "completion_tokens": 407,
+            "total_tokens": 4664
+          },
+          "input_bytes": 18926,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_08",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 6196,
+            "completion_tokens": 484,
+            "total_tokens": 6680
+          },
+          "input_bytes": 26691,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_09",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "prompt_tokens": 2660,
+            "completion_tokens": 311,
+            "total_tokens": 2971
+          },
+          "input_bytes": 11740,
+          "provider_error": null
+        }
+      ],
+      "batches": [
+        {
+          "batch": 1,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 2,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 3,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 4,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 5,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 6,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 7,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 8,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 9,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        }
+      ],
+      "artifact": "results/final_day_20261127/saved/original_3/summary.json",
+      "summary_sha256": "3a7e811b85998fd1712d2966131bf29cf3c6bec133490d05ad4f58e0e0e23161",
+      "assigned": 25,
+      "eligible": 25,
+      "group_count": 1,
+      "sizes": [
+        25
+      ],
+      "shared_classes": [],
+      "groups": {
+        "candidate_1": [
+          "org.springframework.samples.petclinic.PetClinicApplication",
+          "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+          "org.springframework.samples.petclinic.model.BaseEntity",
+          "org.springframework.samples.petclinic.model.NamedEntity",
+          "org.springframework.samples.petclinic.model.Person",
+          "org.springframework.samples.petclinic.owner.Owner",
+          "org.springframework.samples.petclinic.owner.OwnerController",
+          "org.springframework.samples.petclinic.owner.OwnerRepository",
+          "org.springframework.samples.petclinic.owner.Pet",
+          "org.springframework.samples.petclinic.owner.PetController",
+          "org.springframework.samples.petclinic.owner.PetType",
+          "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+          "org.springframework.samples.petclinic.owner.PetTypeRepository",
+          "org.springframework.samples.petclinic.owner.PetValidator",
+          "org.springframework.samples.petclinic.owner.Visit",
+          "org.springframework.samples.petclinic.owner.VisitController",
+          "org.springframework.samples.petclinic.system.CacheConfiguration",
+          "org.springframework.samples.petclinic.system.CrashController",
+          "org.springframework.samples.petclinic.system.WebConfiguration",
+          "org.springframework.samples.petclinic.system.WelcomeController",
+          "org.springframework.samples.petclinic.vet.Specialty",
+          "org.springframework.samples.petclinic.vet.Vet",
+          "org.springframework.samples.petclinic.vet.VetController",
+          "org.springframework.samples.petclinic.vet.VetRepository",
+          "org.springframework.samples.petclinic.vet.Vets"
+        ]
+      },
+      "crossing": {
+        "typed_records": {
+          "typed_edges_total": 59,
+          "typed_edges_with_both_classes_assigned": 59,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": 0.0,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        },
+        "directed_pairs": {
+          "typed_edges_total": 42,
+          "typed_edges_with_both_classes_assigned": 42,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": 0.0,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        }
+      }
+    },
+    {
+      "method": "planner_v1",
+      "kind": "groq_live",
+      "status": "failed_plan",
+      "resources": {
+        "attempts": 1,
+        "known_input_tokens": null,
+        "known_output_tokens": null,
+        "known_total_tokens": null,
+        "records_missing_input": 1,
+        "records_missing_output": 1,
+        "records_missing_total": 1,
+        "pacing_seconds": 0,
+        "elapsed_seconds": 0.375
+      },
+      "finding_counts": {
+        "missing_class": 25
+      },
+      "planning": {
+        "status": "error",
+        "output": null,
+        "findings": [],
+        "http_status": 413,
+        "error_code": "http_error",
+        "provider_code": "rate_limit_exceeded",
+        "finish_reason": null,
+        "response_json_received": false,
+        "action_json_received": false,
+        "usage": null,
+        "input_bytes": 139972,
+        "rejected_generation": null
+      },
+      "batch_requests": [],
+      "batches": [],
+      "artifact": "results/final_day_20261127/saved/planner_v1/summary.json",
+      "summary_sha256": "c863d36abf760f0982422dc0b045cfbcd301679909f1329dfd8e7bb4875943ee",
+      "assigned": 0,
+      "eligible": 25,
+      "group_count": 0,
+      "sizes": [],
+      "shared_classes": [],
+      "groups": {},
+      "crossing": {
+        "typed_records": {
+          "typed_edges_total": 59,
+          "typed_edges_with_both_classes_assigned": 0,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": null,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        },
+        "directed_pairs": {
+          "typed_edges_total": 42,
+          "typed_edges_with_both_classes_assigned": 0,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": null,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        }
+      }
+    },
+    {
+      "method": "compact_v2",
+      "kind": "groq_live",
+      "status": "failed_plan",
+      "resources": {
+        "attempts": 1,
+        "known_input_tokens": null,
+        "known_output_tokens": null,
+        "known_total_tokens": null,
+        "records_missing_input": 1,
+        "records_missing_output": 1,
+        "records_missing_total": 1,
+        "pacing_seconds": 0,
+        "elapsed_seconds": 1.827999999979511
+      },
+      "finding_counts": {
+        "missing_class": 25
+      },
+      "planning": {
+        "status": "error",
+        "output": null,
+        "findings": [],
+        "http_status": 400,
+        "error_code": "bad_request",
+        "provider_code": "json_validate_failed",
+        "finish_reason": null,
+        "response_json_received": false,
+        "action_json_received": false,
+        "usage": null,
+        "input_bytes": 9464,
+        "rejected_generation": {
+          "present": true,
+          "representation": "string",
+          "characters_capped": 0,
+          "parsed": false,
+          "reason": "empty_generation"
+        }
+      },
+      "batch_requests": [],
+      "batches": [],
+      "artifact": "results/final_day_20261127/saved/compact_v2/summary.json",
+      "summary_sha256": "3ac822a0e2dc1b3e3cee95712d29432fd3ff8218f3f69535513caf56d903d608",
+      "assigned": 0,
+      "eligible": 25,
+      "group_count": 0,
+      "sizes": [],
+      "shared_classes": [],
+      "groups": {},
+      "crossing": {
+        "typed_records": {
+          "typed_edges_total": 59,
+          "typed_edges_with_both_classes_assigned": 0,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": null,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        },
+        "directed_pairs": {
+          "typed_edges_total": 42,
+          "typed_edges_with_both_classes_assigned": 0,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": null,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        }
+      }
+    },
+    {
+      "method": "compact_v3_run_1",
+      "kind": "groq_live",
+      "status": "failed_plan",
+      "resources": {
+        "attempts": 1,
+        "known_input_tokens": 2440,
+        "known_output_tokens": 1024,
+        "known_total_tokens": 3464,
+        "records_missing_input": 0,
+        "records_missing_output": 0,
+        "records_missing_total": 0,
+        "pacing_seconds": 0,
+        "elapsed_seconds": 2.0160000000032596
+      },
+      "finding_counts": {
+        "missing_class": 25
+      },
+      "planning": {
+        "status": "error",
+        "output": null,
+        "findings": [],
+        "http_status": null,
+        "error_code": "truncated_or_nonstop_response",
+        "provider_code": null,
+        "finish_reason": "length",
+        "response_json_received": true,
+        "action_json_received": false,
+        "usage": {
+          "prompt_tokens": 2440,
+          "completion_tokens": 1024,
+          "total_tokens": 3464
+        },
+        "input_bytes": 9804,
+        "rejected_generation": null
+      },
+      "batch_requests": [],
+      "batches": [],
+      "artifact": "results/final_day_20261127/live_v3/run_1/summary.json",
+      "summary_sha256": "57df3e88ba7a857f7e7da5c2870029658dda697e04f2babcea219200693d5986",
+      "assigned": 0,
+      "eligible": 25,
+      "group_count": 0,
+      "sizes": [],
+      "shared_classes": [],
+      "groups": {},
+      "crossing": {
+        "typed_records": {
+          "typed_edges_total": 59,
+          "typed_edges_with_both_classes_assigned": 0,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": null,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        },
+        "directed_pairs": {
+          "typed_edges_total": 42,
+          "typed_edges_with_both_classes_assigned": 0,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": null,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        }
+      }
+    },
+    {
+      "method": "compact_v3_fresh_run_1_cap2048",
+      "kind": "groq_live",
+      "status": "failed_batch",
+      "resources": {
+        "attempts": 2,
+        "known_input_tokens": 2440,
+        "known_output_tokens": 1065,
+        "known_total_tokens": 3505,
+        "records_missing_input": 1,
+        "records_missing_output": 1,
+        "records_missing_total": 1,
+        "pacing_seconds": 59.43800000002375,
+        "elapsed_seconds": 63.54700000002049
+      },
+      "finding_counts": {
+        "missing_class": 25
+      },
+      "planning": {
+        "status": "accepted",
+        "output": {
+          "services": [
+            {
+              "label": "candidate_1",
+              "responsibility": "Handles owner data and pet associations, providing CRUD operations for owners.",
+              "evidence": [
+                "E13",
+                "E12"
+              ]
+            },
+            {
+              "label": "candidate_2",
+              "responsibility": "Manages pet entities and pet types, including creation, validation, and persistence.",
+              "evidence": [
+                "E20",
+                "E18"
+              ]
+            },
+            {
+              "label": "candidate_3",
+              "responsibility": "Coordinates visit scheduling and persistence for owners and pets.",
+              "evidence": [
+                "E31",
+                "E29"
+              ]
+            },
+            {
+              "label": "candidate_4",
+              "responsibility": "Manages vet information and specialties, including CRUD operations.",
+              "evidence": [
+                "E45",
+                "E43"
+              ]
+            },
+            {
+              "label": "candidate_5",
+              "responsibility": "Provides application configuration, caching, and error handling.",
+              "evidence": [
+                "E17",
+                "E19"
+              ]
+            }
+          ]
+        },
+        "findings": [],
+        "http_status": null,
+        "error_code": null,
+        "provider_code": null,
+        "finish_reason": "stop",
+        "response_json_received": true,
+        "action_json_received": true,
+        "usage": {
+          "prompt_tokens": 2440,
+          "completion_tokens": 1065,
+          "total_tokens": 3505
+        },
+        "input_bytes": 9804,
+        "rejected_generation": null
+      },
+      "batch_requests": [
+        {
+          "batch": "batch_01",
+          "status": "failed",
+          "http_status": 400,
+          "error_code": "bad_request",
+          "finish_reason": null,
+          "response_json_received": false,
+          "action_json_received": false,
+          "usage": null,
+          "input_bytes": 18263,
+          "provider_error": {
+            "classification": "json_output_rejected",
+            "code": "json_validate_failed",
+            "type": "invalid_request_error",
+            "rejected_generation_structure": {
+              "present": true,
+              "representation": "string",
+              "characters_capped": 0,
+              "parsed": false,
+              "reason": "empty_generation"
+            }
+          }
+        }
+      ],
+      "batches": [
+        {
+          "batch": 1,
+          "stop": "action_or_provider_error",
+          "findings": [],
+          "errors": [
+            {
+              "sequence": 4,
+              "kind": "error",
+              "timestamp_utc": "2026-11-27T10:54:49.299301+00:00",
+              "error_type": "ProviderError",
+              "code": "bad_request",
+              "http_status": 400,
+              "error_source": "http_response",
+              "provider_error": {
+                "classification": "json_output_rejected",
+                "code": "json_validate_failed",
+                "type": "invalid_request_error",
+                "rejected_generation_structure": {
+                  "present": true,
+                  "representation": "string",
+                  "characters_capped": 0,
+                  "parsed": false,
+                  "reason": "empty_generation"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "artifact": "results/final_day_20261127/live_cap2048_25m/run_1_cap2048/summary.json",
+      "summary_sha256": "18c97faf9dfb0a4bda543b86807dc01a99b56dc7e01d7ae734c7478cbba4406d",
+      "assigned": 0,
+      "eligible": 25,
+      "group_count": 0,
+      "sizes": [],
+      "shared_classes": [],
+      "groups": {},
+      "crossing": {
+        "typed_records": {
+          "typed_edges_total": 59,
+          "typed_edges_with_both_classes_assigned": 0,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": null,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        },
+        "directed_pairs": {
+          "typed_edges_total": 42,
+          "typed_edges_with_both_classes_assigned": 0,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": null,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        }
+      }
+    }
+  ],
+  "supplemental": [
+    {
+      "method": "synthetic_v3",
+      "kind": "groq_simulated_http",
+      "status": "basic_checks_passed",
+      "resources": {
+        "attempts": 10,
+        "known_input_tokens": null,
+        "known_output_tokens": null,
+        "known_total_tokens": 100,
+        "records_missing_input": 10,
+        "records_missing_output": 10,
+        "records_missing_total": 0,
+        "pacing_seconds": 540.0,
+        "elapsed_seconds": 0.75
+      },
+      "finding_counts": {},
+      "planning": {
+        "status": "accepted",
+        "output": {
+          "services": [
+            {
+              "label": "candidate_2",
+              "responsibility": "Synthetic test role",
+              "evidence": [
+                "E1"
+              ]
+            },
+            {
+              "label": "candidate_4",
+              "responsibility": "Second synthetic role",
+              "evidence": [
+                "E2"
+              ]
+            }
+          ]
+        },
+        "findings": [],
+        "http_status": null,
+        "error_code": null,
+        "provider_code": null,
+        "finish_reason": "stop",
+        "response_json_received": true,
+        "action_json_received": true,
+        "usage": {
+          "total_tokens": 10
+        },
+        "input_bytes": 9804,
+        "rejected_generation": null
+      },
+      "batch_requests": [
+        {
+          "batch": "batch_01",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "total_tokens": 10
+          },
+          "input_bytes": 17474,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_02",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "total_tokens": 10
+          },
+          "input_bytes": 23376,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_03",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "total_tokens": 10
+          },
+          "input_bytes": 27316,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_04",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "total_tokens": 10
+          },
+          "input_bytes": 23972,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_05",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "total_tokens": 10
+          },
+          "input_bytes": 23361,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_06",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "total_tokens": 10
+          },
+          "input_bytes": 23366,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_07",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "total_tokens": 10
+          },
+          "input_bytes": 19339,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_08",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "total_tokens": 10
+          },
+          "input_bytes": 27165,
+          "provider_error": null
+        },
+        {
+          "batch": "batch_09",
+          "status": "parsed",
+          "http_status": null,
+          "error_code": null,
+          "finish_reason": "stop",
+          "response_json_received": true,
+          "action_json_received": true,
+          "usage": {
+            "total_tokens": 10
+          },
+          "input_bytes": 12258,
+          "provider_error": null
+        }
+      ],
+      "batches": [
+        {
+          "batch": 1,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 2,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 3,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 4,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 5,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 6,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 7,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 8,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        },
+        {
+          "batch": 9,
+          "stop": "basic_checks_passed",
+          "findings": [],
+          "errors": []
+        }
+      ],
+      "artifact": "results/final_day_20261127/saved/synthetic_v3/summary.json",
+      "summary_sha256": "7b6a319cf56d75e92dac4b9edf0af5502dc76a2022d0132210c11ff22b8771f6",
+      "assigned": 25,
+      "eligible": 25,
+      "group_count": 2,
+      "sizes": [
+        25,
+        25
+      ],
+      "shared_classes": [
+        "org.springframework.samples.petclinic.PetClinicApplication",
+        "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+        "org.springframework.samples.petclinic.model.BaseEntity",
+        "org.springframework.samples.petclinic.model.NamedEntity",
+        "org.springframework.samples.petclinic.model.Person",
+        "org.springframework.samples.petclinic.owner.Owner",
+        "org.springframework.samples.petclinic.owner.OwnerController",
+        "org.springframework.samples.petclinic.owner.OwnerRepository",
+        "org.springframework.samples.petclinic.owner.Pet",
+        "org.springframework.samples.petclinic.owner.PetController",
+        "org.springframework.samples.petclinic.owner.PetType",
+        "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+        "org.springframework.samples.petclinic.owner.PetTypeRepository",
+        "org.springframework.samples.petclinic.owner.PetValidator",
+        "org.springframework.samples.petclinic.owner.Visit",
+        "org.springframework.samples.petclinic.owner.VisitController",
+        "org.springframework.samples.petclinic.system.CacheConfiguration",
+        "org.springframework.samples.petclinic.system.CrashController",
+        "org.springframework.samples.petclinic.system.WebConfiguration",
+        "org.springframework.samples.petclinic.system.WelcomeController",
+        "org.springframework.samples.petclinic.vet.Specialty",
+        "org.springframework.samples.petclinic.vet.Vet",
+        "org.springframework.samples.petclinic.vet.VetController",
+        "org.springframework.samples.petclinic.vet.VetRepository",
+        "org.springframework.samples.petclinic.vet.Vets"
+      ],
+      "groups": {
+        "candidate_2": [
+          "org.springframework.samples.petclinic.PetClinicApplication",
+          "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+          "org.springframework.samples.petclinic.model.BaseEntity",
+          "org.springframework.samples.petclinic.model.NamedEntity",
+          "org.springframework.samples.petclinic.model.Person",
+          "org.springframework.samples.petclinic.owner.Owner",
+          "org.springframework.samples.petclinic.owner.OwnerController",
+          "org.springframework.samples.petclinic.owner.OwnerRepository",
+          "org.springframework.samples.petclinic.owner.Pet",
+          "org.springframework.samples.petclinic.owner.PetController",
+          "org.springframework.samples.petclinic.owner.PetType",
+          "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+          "org.springframework.samples.petclinic.owner.PetTypeRepository",
+          "org.springframework.samples.petclinic.owner.PetValidator",
+          "org.springframework.samples.petclinic.owner.Visit",
+          "org.springframework.samples.petclinic.owner.VisitController",
+          "org.springframework.samples.petclinic.system.CacheConfiguration",
+          "org.springframework.samples.petclinic.system.CrashController",
+          "org.springframework.samples.petclinic.system.WebConfiguration",
+          "org.springframework.samples.petclinic.system.WelcomeController",
+          "org.springframework.samples.petclinic.vet.Specialty",
+          "org.springframework.samples.petclinic.vet.Vet",
+          "org.springframework.samples.petclinic.vet.VetController",
+          "org.springframework.samples.petclinic.vet.VetRepository",
+          "org.springframework.samples.petclinic.vet.Vets"
+        ],
+        "candidate_4": [
+          "org.springframework.samples.petclinic.PetClinicApplication",
+          "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+          "org.springframework.samples.petclinic.model.BaseEntity",
+          "org.springframework.samples.petclinic.model.NamedEntity",
+          "org.springframework.samples.petclinic.model.Person",
+          "org.springframework.samples.petclinic.owner.Owner",
+          "org.springframework.samples.petclinic.owner.OwnerController",
+          "org.springframework.samples.petclinic.owner.OwnerRepository",
+          "org.springframework.samples.petclinic.owner.Pet",
+          "org.springframework.samples.petclinic.owner.PetController",
+          "org.springframework.samples.petclinic.owner.PetType",
+          "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+          "org.springframework.samples.petclinic.owner.PetTypeRepository",
+          "org.springframework.samples.petclinic.owner.PetValidator",
+          "org.springframework.samples.petclinic.owner.Visit",
+          "org.springframework.samples.petclinic.owner.VisitController",
+          "org.springframework.samples.petclinic.system.CacheConfiguration",
+          "org.springframework.samples.petclinic.system.CrashController",
+          "org.springframework.samples.petclinic.system.WebConfiguration",
+          "org.springframework.samples.petclinic.system.WelcomeController",
+          "org.springframework.samples.petclinic.vet.Specialty",
+          "org.springframework.samples.petclinic.vet.Vet",
+          "org.springframework.samples.petclinic.vet.VetController",
+          "org.springframework.samples.petclinic.vet.VetRepository",
+          "org.springframework.samples.petclinic.vet.Vets"
+        ]
+      },
+      "crossing": {
+        "typed_records": {
+          "typed_edges_total": 59,
+          "typed_edges_with_both_classes_assigned": 59,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": 0.0,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        },
+        "directed_pairs": {
+          "typed_edges_total": 42,
+          "typed_edges_with_both_classes_assigned": 42,
+          "typed_edges_without_common_service": 0,
+          "ratio_over_covered_edges": 0.0,
+          "definition": "A directed typed static edge crosses when endpoints share no service. Shared memberships are sets. Missing endpoints excluded and counted separately; no runtime-frequency weighting."
+        }
+      }
+    },
+    {
+      "method": "reduced_probe",
+      "kind": "diagnostic_groq_live",
+      "status": "probe_passed",
+      "resources": {
+        "attempts": 1,
+        "known_input_tokens": 710,
+        "known_output_tokens": 648,
+        "known_total_tokens": 1358,
+        "records_missing_input": 0,
+        "records_missing_output": 0,
+        "records_missing_total": 0,
+        "pacing_seconds": 0,
+        "elapsed_seconds": 1.375
+      },
+      "plan": {
+        "services": [
+          {
+            "label": "candidate_1",
+            "responsibility": "Bootstraps the Spring Boot application by defining the main entry point.",
+            "evidence": [
+              "E1"
+            ]
+          },
+          {
+            "label": "candidate_2",
+            "responsibility": "Configures application-level settings and properties.",
+            "evidence": [
+              "E1"
+            ]
+          },
+          {
+            "label": "candidate_3",
+            "responsibility": "Serves as the primary application class for the PetClinic sample.",
+            "evidence": [
+              "E1"
+            ]
+          }
+        ]
+      },
+      "assignment_stage": false,
+      "artifact": "results/final_day_20261127/saved/reduced_probe/probe.json"
+    }
+  ],
+  "membership_agreement": [
+    {
+      "left": "package",
+      "right": "dependency",
+      "classes_compared": 25,
+      "same_neighborhood": 0,
+      "coassigned_pairs_left": 75,
+      "coassigned_pairs_right": 210,
+      "coassigned_pair_intersection": 69,
+      "coassigned_pair_union": 216
+    },
+    {
+      "left": "package",
+      "right": "original_1",
+      "classes_compared": 25,
+      "same_neighborhood": 0,
+      "coassigned_pairs_left": 75,
+      "coassigned_pairs_right": 300,
+      "coassigned_pair_intersection": 75,
+      "coassigned_pair_union": 300
+    },
+    {
+      "left": "package",
+      "right": "original_2",
+      "classes_compared": 25,
+      "same_neighborhood": 0,
+      "coassigned_pairs_left": 75,
+      "coassigned_pairs_right": 300,
+      "coassigned_pair_intersection": 75,
+      "coassigned_pair_union": 300
+    },
+    {
+      "left": "package",
+      "right": "original_3",
+      "classes_compared": 25,
+      "same_neighborhood": 0,
+      "coassigned_pairs_left": 75,
+      "coassigned_pairs_right": 300,
+      "coassigned_pair_intersection": 75,
+      "coassigned_pair_union": 300
+    },
+    {
+      "left": "dependency",
+      "right": "original_1",
+      "classes_compared": 25,
+      "same_neighborhood": 0,
+      "coassigned_pairs_left": 210,
+      "coassigned_pairs_right": 300,
+      "coassigned_pair_intersection": 210,
+      "coassigned_pair_union": 300
+    },
+    {
+      "left": "dependency",
+      "right": "original_2",
+      "classes_compared": 25,
+      "same_neighborhood": 0,
+      "coassigned_pairs_left": 210,
+      "coassigned_pairs_right": 300,
+      "coassigned_pair_intersection": 210,
+      "coassigned_pair_union": 300
+    },
+    {
+      "left": "dependency",
+      "right": "original_3",
+      "classes_compared": 25,
+      "same_neighborhood": 0,
+      "coassigned_pairs_left": 210,
+      "coassigned_pairs_right": 300,
+      "coassigned_pair_intersection": 210,
+      "coassigned_pair_union": 300
+    },
+    {
+      "left": "original_1",
+      "right": "original_2",
+      "classes_compared": 25,
+      "same_neighborhood": 25,
+      "coassigned_pairs_left": 300,
+      "coassigned_pairs_right": 300,
+      "coassigned_pair_intersection": 300,
+      "coassigned_pair_union": 300
+    },
+    {
+      "left": "original_1",
+      "right": "original_3",
+      "classes_compared": 25,
+      "same_neighborhood": 25,
+      "coassigned_pairs_left": 300,
+      "coassigned_pairs_right": 300,
+      "coassigned_pair_intersection": 300,
+      "coassigned_pair_union": 300
+    },
+    {
+      "left": "original_2",
+      "right": "original_3",
+      "classes_compared": 25,
+      "same_neighborhood": 25,
+      "coassigned_pairs_left": 300,
+      "coassigned_pairs_right": 300,
+      "coassigned_pair_intersection": 300,
+      "coassigned_pair_union": 300
+    }
+  ]
+}

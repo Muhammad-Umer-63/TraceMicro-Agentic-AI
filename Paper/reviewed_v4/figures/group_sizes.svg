@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 429 166" role="img">
+<title>Group sizes across three complete 25-class conditions</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#172e3b"/></marker></defs>
+<text x="277" y="14" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">Classes in each nonempty group</text>
+<text x="63" y="42" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">Package</text>
+<rect x="142" y="29" width="121" height="26" fill="#215674" stroke="#172e3b"/>
+<text x="202.5" y="42" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">11</text>
+<rect x="263" y="29" width="55" height="26" fill="#326987" stroke="#172e3b"/>
+<text x="290.5" y="42" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">5</text>
+<rect x="318" y="29" width="44" height="26" fill="#57849b" stroke="#172e3b"/>
+<text x="340.0" y="42" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">4</text>
+<rect x="362" y="29" width="33" height="26" fill="#7b9bad" stroke="#172e3b"/>
+<text x="378.5" y="42" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">3</text>
+<rect x="395" y="29" width="22" height="26" fill="#a6bfc9" stroke="#172e3b"/>
+<text x="406.0" y="42" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="63" y="80" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">Dependency</text>
+<rect x="142" y="67" width="231" height="26" fill="#215674" stroke="#172e3b"/>
+<text x="257.5" y="80" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">21</text>
+<rect x="373" y="67" width="11" height="26" fill="#326987" stroke="#172e3b"/>
+<text x="378.5" y="80" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">1</text>
+<rect x="384" y="67" width="11" height="26" fill="#57849b" stroke="#172e3b"/>
+<text x="389.5" y="80" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">1</text>
+<rect x="395" y="67" width="11" height="26" fill="#7b9bad" stroke="#172e3b"/>
+<text x="400.5" y="80" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">1</text>
+<rect x="406" y="67" width="11" height="26" fill="#a6bfc9" stroke="#172e3b"/>
+<text x="411.5" y="80" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="63" y="118" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">Original (3 runs)</text>
+<rect x="142" y="105" width="275" height="26" fill="#215674" stroke="#172e3b"/>
+<text x="279.5" y="118" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">25</text>
+<text x="276" y="148" fill="#172e3b" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central">Each row covers the same 25 classes</text>
+</svg>
